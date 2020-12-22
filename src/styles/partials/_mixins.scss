@@ -1,0 +1,27 @@
+/*======================= Media Breakpoints ======================= */
+
+// Changes to tablet format >=768px
+@mixin tablet{
+    @media (min-width:768px){
+        @content;
+    }
+}
+
+// Changes to desktop format >=1200px
+@mixin desktop{
+    @media (min-width:1200px){
+        @content;
+    }
+}
+
+@keyframes letterColor {
+    0%  {color: #000000;}
+    50% {color: #000000;}
+    100% {color: white;}
+}
+
+@keyframes bodyColor {
+0%  {color: #000000;}
+60% {color: #000000;}
+100% {color: lightgray;}
+}
