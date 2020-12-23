@@ -1,0 +1,213 @@
+@import '../../styles/globalstyles.scss';
+
+.home{
+    // box-sizing:border-box;
+    width:100%;
+    height:86vh;
+    background-size:cover;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+
+    @include tablet{
+        align-items:flex-start;
+    }
+    @include desktop{
+        background-position:center;
+    }
+}
+
+
+.trail{
+    // position:relative;
+    width:100%;
+    height:80vw;
+    display:flex;
+    justify-content:center;
+    font-size:12px;
+    color:white;
+    text-align:center;
+    
+    @include tablet{
+        // transform: rotate(0 deg);
+        box-sizing:border-box;
+        padding:75px;
+        margin-top:100px;
+        width:100%;
+        height:66vh; 
+    }
+
+    &__image{
+        transform:rotate(90deg);
+        width:500px;
+        height:68vw;
+        align-self:center;
+         @include tablet{
+            // transform: rotate(0deg);
+         }
+    }
+
+    &__head{
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+       
+        top:7%;
+        left:74%;
+        width:19%;
+        height:13%;
+        
+        &-icon{    
+            min-width:44px;
+            max-height:53px;
+            max-width:72px;
+        }
+    }
+
+    &__hiker{
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        top:18%;
+        right:16%;
+        width:49%;
+        height:15%;
+
+        &-icon{    
+            min-width:44px;
+            max-height:53px;
+            max-width:72px;
+        }
+    
+    }
+        
+    &__detour{
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        top:44%;
+        left:37%;
+        width:19%;
+        height:10%;
+        
+        &-icon{    
+            min-width:44px;
+            max-height:53px;
+            max-width:72px;
+        }
+
+    }
+    
+    &__db{
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        bottom:28%;
+        left:67%;
+        width:25%;
+        height:13%;
+
+        &-icon{    
+            min-width:44px;
+            max-height:53px;
+            max-width:72px;
+        }
+        &-title{
+            padding-top:5px;
+            max-width:72px;
+        }
+    }
+
+    &__db{
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        bottom:28%;
+        left:67%;
+        width:25%;
+        height:13%;
+
+        &-icon{    
+            min-width:44px;
+            max-height:53px;
+            max-width:72px;
+        }
+        &-title{
+            padding-top:5px;
+            max-width:72px;
+        }
+    }
+
+    &__end{
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        bottom:8%;
+        left:38%;
+        width:25%;
+        height:13%;
+
+        &-icon{    
+            min-width:44px;
+            max-height:53px;
+            max-width:72px;
+        }
+        &-title{
+            padding-top:5px;
+            max-width:72px;
+        }
+    }
+
+    &__dog{
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        bottom:38%;
+        left:5%;
+        width:25%;
+        height:13%;
+
+        &-icon{    
+            min-width:44px;
+            max-height:53px;
+            max-width:72px;
+        }
+        &-title{
+            padding-top:5px;
+            max-width:72px;
+        }
+    }
+
+}
+
+
+.myCanvas{
+    width:500px;
+    height:300px;
+}
+.icon{
+    position:absolute;
+
+}
