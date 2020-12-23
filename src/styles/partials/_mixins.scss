@@ -25,3 +25,23 @@
 60% {color: #000000;}
 100% {color: lightgray;}
 }
+
+@mixin buildTrailDiv($top-mobile, $left-mobile, $top-tablet, $left-tablet){
+     position:absolute;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+       
+        top:$top-mobile;
+        left:$left-mobile;
+        width:34%;
+        height:15%;
+
+        @include tablet{
+            top:$top-tablet;
+            left:$left-tablet;
+            width:18%;
+            height:18%;
+        }
+}

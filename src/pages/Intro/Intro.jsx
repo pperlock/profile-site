@@ -18,7 +18,7 @@ function Intro() {
                     </div>
                     <h2 className="logo__title">web developer</h2>    
                 </div>
-                <Link  to="/home" className="enter">Enter Site</Link>
+                <Link  to="/home" className="enter">Start the Adventure</Link>
             </div>
    
             <video className="video" autoPlay muted>
