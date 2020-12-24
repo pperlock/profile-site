@@ -1,19 +1,45 @@
 @import '../../styles/globalstyles.scss';
 
-.home{
-    // box-sizing:border-box;
+.initial-letter{
+    font-size:30px;  
+}
+.about{
+    font-family:"SourceSansPro";
     width:100%;
     height:86vh;
     background-size:cover;
     overflow:hidden;
     display:flex;
+    flex-direction:column;
     justify-content:center;
-    align-items:center;
+    // align-items:center;
     position:relative;
 
     @include tablet{
-        align-items:flex-start;
+        flex-direction:row;
         background-position:center;
+        height:88.5vh;
+    }
+
+    @include desktop{
+        background-size:cover;
+        height:89.5vh;
+    }
+
+
+    &__title{
+        font-family:"SourceSansPro";
+        color:#3D4849;
+        font-size:24px;
+        text-align:center;
+        width:100%;
+        position:absolute;
+        top:2%;
+
+        @include tablet{
+            font-size:28px;
+            top:3%;
+        }
     }
 }
 
@@ -32,6 +58,7 @@
 .trail-title{
     padding-top:5px;
     width:96px;
+    font-size:12px;
 }
 
 .trail{
@@ -73,7 +100,7 @@
     }
         
     &__detour{        
-        @include buildTrailDiv(40%, 36%, 45%, 37%);
+        @include buildTrailDiv(40%, 31%, 45%, 37%);
     }
     
     &__db{
@@ -85,7 +112,7 @@
     }
 
     &__dog{
-        @include buildTrailDiv(49%, 0%, 79%, 33%);
+        @include buildTrailDiv(49%, 0%, 77%, 43%);
     }
 
 }

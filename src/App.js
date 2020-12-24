@@ -4,7 +4,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.scss';
 
 import Intro from './pages/Intro/Intro';
-import Home from './pages/Home/Home';
+import About from './pages/About/About';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={Intro}/>
-                <Route path="/home" component={Home}/>
+                <Route path="/about" render={(props)=>(<About {...props}/>)}/>
             </Switch>
         </BrowserRouter>
     </div>
