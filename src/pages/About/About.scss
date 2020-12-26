@@ -10,6 +10,60 @@
     100% {height:0}
 }
 
+@keyframes text-off{
+    0% {top:0; opacity:1}
+    100% {top:-100vh; opacity:0}
+}
+
+@keyframes text-on{
+    0% {opacity:0}
+    10%{opacity:0}
+    100% {opacity:1}
+}
+
+.white-overlay{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    width: 100%; 
+    background-color:white;   
+    
+    &--on{
+        height:86vh;
+        animation: slide-down 0.5s ease-in;
+    }
+    &--off{
+        height:0;
+        animation: slide-up 0.5s ease-out;
+    }
+}
+
+.full-text{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    z-index:-5;
+    padding:16px;
+    top:-100vh;
+
+    &--on{
+        top:0;
+        height:90%;
+        z-index:1;
+        animation: text-on 0.5s ease-in;
+    }
+
+    &--off{
+        top:-100vh;
+        left:0;
+        z-index:1;
+        animation: text-off 0.75s ease-out;
+    }
+}
+
 .about{
     font-family:"SourceSansPro";
     width:100%;
@@ -20,7 +74,7 @@
     flex-direction:column;
     justify-content:center;
     position:relative;
-
+ 
     @include tablet{
         flex-direction:row;
         background-position:center;
@@ -52,51 +106,16 @@
         }
     }
 
-
-
     &__full-story{
-        position:absolute;
-        display:none;
-        background-color:white;
-        width:100%;
-        height:86vh;
-
         &-text{
-            display:none;
-
             &-title{
                 color:black;
             }
-
             &-main{
                 font-family: "SourceSansPro";
                 font-size:16px;
             }
-            &--on{
-                display:flex;
-                flex-direction:column;
-                justify-content:space-between;
-                align-items:center;
-                height:90%;
-                padding:16px;
-            }
-
         }
-        &--on{
-            display:block;
-            top:0;
-            left:0;
-            height:86vh;
-            animation: slide-down 0.5s ease-in;
-        }
-        &--off{
-            display:block;
-            top:0;
-            left:0;
-            height:0;
-            animation: slide-up 0.5s ease-in;
-        }
-
         &-up{
             width:40px;
             height:30px;

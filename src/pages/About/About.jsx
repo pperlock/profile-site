@@ -13,26 +13,28 @@ const mapIcons=[
     {id: 5, name:'trail__end', image:'/icons/end-of-trail.png', title:'Web Development', alt:"end of trail icon"}];
 
 const toggleStory = ()=>{
-    let fullStory = document.getElementById("full-story");
-    let fullStoryText = document.querySelector(".about__full-story-text");
-    console.log(fullStory.classList.length);
+    let whiteOverlay = document.getElementById("white-overlay");
+    let fullText = document.getElementById("full-text");
+    console.log(whiteOverlay.classList.length);
 
-    if (fullStory.classList.length===1){
-        fullStory.classList.add("about__full-story--on");
-        fullStoryText.classList.add("about__full-story-text--on");
+    if (whiteOverlay.classList.length <= 2){
+        fullText.classList.add("full-text--on");
+        whiteOverlay.classList.add("white-overlay--on");
+
     }else{
-        if (document.querySelector(".about__full-story--off")){
+        if (document.querySelector(".white-overlay--off")){
             console.log("turn on");
-            console.log(document.querySelector("about__full-story--off"));
-            fullStory.classList.remove("about__full-story--off");
-            fullStory.classList.add("about__full-story--on");
-            fullStoryText.classList.toggle("about__full-story-text--on");
+            fullText.classList.add("full-text--on");
+            fullText.classList.remove("full-text--off")
+            whiteOverlay.classList.add("white-overlay--on");
+            whiteOverlay.classList.remove("white-overlay--off");
 
         }else{
             console.log("turn off");
-            fullStory.classList.add("about__full-story--off");
-            fullStory.classList.remove("about__full-story--on"); 
-            fullStoryText.classList.toggle("about__full-story-text--on");
+            fullText.classList.remove("full-text--on");
+            fullText.classList.add("full-text--off")
+            whiteOverlay.classList.add("white-overlay--off");
+            whiteOverlay.classList.remove("white-overlay--on");
         }
     }
         
@@ -53,14 +55,14 @@ function About ({match}){
                         <img className="trail__image" src='/images/trail-path.png' alt="trail" />
                         {mapIcons.map(icon =><TrailIcon key={icon.id} icon={icon}/>)}                    
                     </div>
-                    <div id="full-story" className="about__full-story">
-                        <div className="about__full-story-text" > 
-                            <h1 className="about__full-story-text-title">ABOUT ME</h1>
-                            <p className="about__full-story-text-main"> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-                            <img className="about__full-story-up" onClick={()=>toggleStory()} src="/icons/chevron_up.png" alt="up chevron"/>
+                        <div id="white-overlay" className="white-overlay about__full-story">
+                            <div id="full-text" className="full-text about__full-story-text" > 
+                                <h1 className="about__full-story-text-title">ABOUT ME</h1>
+                                <p className="about__full-story-text-main"> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                                <img className="about__full-story-up" onClick={()=>toggleStory()} src="/icons/chevron_up.png" alt="up chevron"/>
+                            </div>
                         </div>
                     </div>
-                </div>
             </main>
         </>
     )
