@@ -13,7 +13,7 @@ function Header({path}) {
                     <p className="header__logo-name"> PATTI PERLOCK </p>
                     <p className="header__logo-title"> WEB DEVELOPER </p>
                 </div>
-                <img className="header__logo-image" src='/icons/logo-background.png' />
+                <img className="header__logo-image" src='/icons/logo-background.png' alt="mountain-logo" />
             </Link>
 
             <nav className="nav">
