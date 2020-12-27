@@ -4,16 +4,7 @@ import './About.scss';
 import {toggleStory} from '../../functions.jsx';
 
 import Header from '../../components/Header/Header';
-import TrailIcon from '../../components/TrailIcon/TrailIcon';
 import PageTitle from '../../components/PageTitle/PageTitle';
-
-const mapIcons=[
-    {id: 0, name:'trail__head', image:'/icons/trail-head.svg', title:'Trail Head', alt:"trail head"},
-    {id: 1, name:'trail__hiker', image:'/icons/hiking-solid.svg', title:'Computer Science & Geophysics', alt:"hiker icon"},
-    {id: 2, name:'trail__detour', image:'/icons/map-signs-solid.svg', title:'', alt:"trail sign icon"},
-    {id: 3, name:'trail__db', image:'/icons/database.svg', title:'Database Administration', alt:"database icon"},
-    {id: 4, name:'trail__dog', image:'/icons/dog-training.svg', title:'Dog Training', alt:"dog training icon"},
-    {id: 5, name:'trail__end', image:'/icons/end-of-trail.png', title:'Web Development', alt:"end of trail icon"}];
 
 
 function About ({match}){

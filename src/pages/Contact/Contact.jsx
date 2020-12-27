@@ -1,10 +1,9 @@
 import React from 'react'
-// import './About.scss';
+// import './Contact.scss';
 
 import {toggleStory} from '../../functions.jsx';
 
 import Header from '../../components/Header/Header';
-import TrailIcon from '../../components/TrailIcon/TrailIcon';
 import PageTitle from '../../components/PageTitle/PageTitle';
 
 function Contact({match}) {
