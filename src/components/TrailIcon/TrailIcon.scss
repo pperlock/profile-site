@@ -1,0 +1,32 @@
+@import '../../styles/globalstyles.scss';
+
+.trail-icon{
+    min-width:44px;
+    max-height:53px;
+    max-width:72px;
+
+    @include tablet{
+        min-width:61px;
+        max-height:72px;
+        max-width:72px;
+    }   
+}
+
+.trail-title{
+    padding-top:5px;
+    width:96px;
+    font-size:12px;
+}
+
+.skills-icon{
+    min-width:44px;
+    max-height:72px;
+    max-width:72px;
+
+    @include tablet{
+        min-width:61px;
+        max-height:72px;
+        max-width:72px;
+    } 
+
+}

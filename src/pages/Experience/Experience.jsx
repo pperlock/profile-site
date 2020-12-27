@@ -25,7 +25,7 @@ function Experience ({match}){
                 <PageTitle page="EDUCATON & EXPERIENCE"/>
                 <div className="trail">
                     <img className="trail__image" src='/images/trail-path.png' alt="trail" />
-                    {mapIcons.map(icon =><TrailIcon key={icon.id} icon={icon}/>)}                    
+                    {mapIcons.map(icon =><TrailIcon key={icon.id} icon={icon} type="trail"/>)}                    
                 </div>
                     <div id="white-overlay" className="white-overlay experience__full-story">
                         <div id="full-text" className="full-text experience__full-story-text" > 
