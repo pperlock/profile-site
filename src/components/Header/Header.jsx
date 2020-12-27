@@ -7,7 +7,6 @@ function Header({path}) {
     
     return (
         <header className="header">
-            {/* <div className="header__logo" style={{backgroundImage: "url('/icons/logo-background.png')"}}> */}
             <Link to="/" className="header__logo">
                 <div className="header__logo-text">
                     <p className="header__logo-name"> PATTI PERLOCK </p>
@@ -19,9 +18,10 @@ function Header({path}) {
             <nav className="nav">
                 <ul className="nav__list">
                     {path === "/about" ? <li><Link className="nav__link nav__link--active" to="/about">About</Link></li>:<li><Link className="nav__link nav__link" to="/about">About </Link></li>}
-                    {path === "/skills" ? <li><Link className="nav__link nav__link--active" to="/about">Skills</Link></li>:<li><Link className="nav__link nav__link" to="/about">Skills </Link></li>}      
-                    <li> <Link className="nav__link" to="/home"> Projects </Link> </li>
-                    <li> <Link className="nav__link" to="/home"> Contact </Link> </li>
+                    {path === "/experience" ? <li><Link className="nav__link nav__link--active" to="/experience">Experience</Link></li>:<li><Link className="nav__link nav__link" to="/experience">Experience</Link></li>}      
+                    {path === "/skills" ? <li><Link className="nav__link nav__link--active" to="/skills">Skills</Link></li>:<li><Link className="nav__link nav__link" to="/skills">Skills</Link></li>}
+                    {path === "/projects" ? <li><Link className="nav__link nav__link--active" to="/projects">Projects</Link></li>:<li><Link className="nav__link nav__link" to="/projects">Projects</Link></li>}      
+                    {path === "/contact" ? <li><Link className="nav__link nav__link--active" to="/contact">Contact</Link></li>:<li><Link className="nav__link nav__link" to="/contact">Contact</Link></li>}      
                 </ul>
             </nav>
         </header>

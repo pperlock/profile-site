@@ -21,9 +21,30 @@
 }
 
 @keyframes bodyColor {
-0%  {color: #000000;}
-60% {color: #000000;}
-100% {color: lightgray;}
+    0%  {color: #000000;}
+    60% {color: #000000;}
+    100% {color: lightgray;}
+}
+
+@keyframes slide-down{
+    0% {height:0}
+    100% {height:86vh}
+}
+
+@keyframes slide-up{
+    0% {height:86vh}
+    100% {height:0}
+}
+
+@keyframes text-off{
+    0% {top:0; opacity:1}
+    100% {top:-100vh; opacity:0}
+}
+
+@keyframes text-on{
+    0% {opacity:0}
+    10%{opacity:0}
+    100% {opacity:1}
 }
 
 @mixin buildTrailDiv($top-mobile, $left-mobile, $top-tablet, $left-tablet){

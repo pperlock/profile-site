@@ -27,3 +27,46 @@
     font-size:20px;
     text-align:center;
   }
+
+.white-overlay{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    width: 100%; 
+    background-color:white;   
+    
+    &--on{
+        height:86vh;
+        animation: slide-down 0.5s ease-in;
+    }
+    &--off{
+        height:0;
+        animation: slide-up 0.5s ease-out;
+    }
+}
+
+.full-text{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    z-index:-5;
+    padding:16px;
+    top:-100vh;
+
+    &--on{
+        top:0;
+        height:90%;
+        z-index:1;
+        animation: text-on 0.5s ease-in;
+    }
+
+    &--off{
+        top:-100vh;
+        left:0;
+        z-index:1;
+        animation: text-off 0.75s ease-out;
+    }
+}

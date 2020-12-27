@@ -1,0 +1,41 @@
+@import '../../styles/globalstyles.scss';
+
+.skills{
+    font-family:"SourceSansPro";
+    width:100%;
+    height:86vh;
+    background-size:cover;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position:relative;
+ 
+    @include tablet{
+        flex-direction:row;
+        background-position:center;
+        height:88.5vh;
+    }
+
+    @include desktop{
+        background-size:cover;
+        height:89.5vh;
+    }
+
+
+    &__full-story{
+        &-text{
+            &-title{
+                color:black;
+            }
+            &-main{
+                font-family: "SourceSansPro";
+                font-size:16px;
+            }
+        }
+        &-up{
+            width:40px;
+            height:30px;
+        }
+    }
+}
