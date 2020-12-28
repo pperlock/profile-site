@@ -1,4 +1,6 @@
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {HTML5Backend} from 'react-dnd-html5-backend';
+import {DndProvider} from 'react-dnd';
 
 import './App.scss';
 
@@ -11,6 +13,7 @@ import Contact from './pages/Contact/Contact';
 
 function App() {
   return (
+    <DndProvider backend={HTML5Backend}>
     <div className="App">
         <BrowserRouter>
             <Switch>
@@ -23,6 +26,7 @@ function App() {
             </Switch>
         </BrowserRouter>
     </div>
+    </DndProvider>
   );
 }
 

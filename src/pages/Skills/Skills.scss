@@ -13,9 +13,9 @@
     position:relative;
  
     @include tablet{
-        flex-direction:row;
         background-position:center;
         height:88.5vh;
+        align-items:center;
     }
 
     @include desktop{
@@ -36,6 +36,22 @@
             max-width:422px;
             
         }
+
+        @include tablet{
+            width:22%;
+        }
+    }
+
+    .skill-icon{
+        height:50px;
+        width:50px;
+    }
+
+    &__backpack{
+        @include buildTrailDiv(35%, 43%, 34%, 41%);
+        width:400px;
+        height:400px;
+        visibility:hidden;
     }
 
     &__html{

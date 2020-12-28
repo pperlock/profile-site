@@ -12,6 +12,7 @@ function About ({match}){
         <>
         <Header path={match.path}/>
         <main>
+        
             <div className="about" style={{backgroundImage: "url('/images/about-background2.jpg')"}}> 
                 <PageTitle page="ABOUT ME"/>
                 {/* <h1 className="about__title">ABOUT ME</h1> */}
