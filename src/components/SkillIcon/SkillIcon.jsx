@@ -21,7 +21,7 @@ const SkillIcon = props => {
     });
 
     return( 
-        <img ref={drag} className= "skill-icon" src={skill.image} alt={skill.alt}  opacity={isDragging ? '0.5' : '1'}/>
+        <img ref={drag} className= {`skills__icon ${skill.name}`} src={skill.image} alt={skill.alt}  opacity={isDragging ? '0.5' : '1'}/>
     )
 }
 

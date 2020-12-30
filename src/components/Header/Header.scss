@@ -8,13 +8,10 @@
     flex-direction:column;
     align-items:center;
     overflow:hidden;
-
-    @include tablet{
-        flex-direction:row;
-        justify-content:space-between;
-        align-items:center;
-        height:100px;
-    }
+    position:fixed;
+    top:0;
+    z-index:20;
+    box-shadow: 0px 0px 10px 0px rgba(silver, 1);
 
     &__logo{
 
@@ -22,6 +19,7 @@
         width:216px;
         height:100px;
         margin-top:8px;
+        font-family:"Montserrat";
 
         @include tablet{
             width:213px;
@@ -73,7 +71,7 @@
             padding: 0 5px;
         }
         &__link{
-            color:grey;
+            color:#d2c9c2;
             padding:8px;
             font-size:14px;
 

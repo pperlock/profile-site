@@ -2,6 +2,8 @@ import React, {useContext} from 'react'
 import {useDrop} from 'react-dnd';
 import {CardContext} from '../../pages/Skills/Skills';
 
+import './BackPack.scss';
+
 
 const ItemTypes = {
     CARD:'card',
@@ -20,9 +22,8 @@ const BackPack = props => {
     });
 
     return (
-        <div ref={drop} className="skills__main">
-            <img className="skills__main-image" src="/images/backpack.png"/>
-            {props.children}
+        <div ref={drop} className="backpack">
+            <img className="backpack__image" src="/images/backpack.png"/>
         </div> 
     )
 }

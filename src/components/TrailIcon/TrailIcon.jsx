@@ -3,8 +3,8 @@ import './TrailIcon.scss';
 
 function TrailIcon({icon}) {
     return(
-        <div className={icon.name}>
-            <img className= "trail-icon" src={icon.image} alt={icon.alt}/>
+        <div className={`trail__div trail__div-${icon.name}`} data-content={icon.content} >
+            <img className= "trail-icon" src={icon.image} alt={icon.alt} />
             <p className="trail-title">{icon.title}</p>
         </div>
     )

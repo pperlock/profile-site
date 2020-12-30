@@ -1,5 +1,5 @@
 import React from 'react'
-// import './Contact.scss';
+import './Contact.scss';
 
 import {toggleStory} from '../../functions.jsx';
 
@@ -9,9 +9,9 @@ import PageTitle from '../../components/PageTitle/PageTitle';
 function Contact({match}) {
     return (
         <>
-        <Header path={match.path}/>
-        <div className="skills" style={{backgroundImage: "url('/images/home-background2-2.jpg')"}}>
-            <PageTitle page="CONTACT"/>
+        {/* <Header path={match.path}/> */}
+        <div id="contact" className="contact">
+            <PageTitle title="Base Camp" page="Contact"/>
             <div id="white-overlay" className="white-overlay about__full-story">
                 <div id="full-text" className="full-text about__full-story-text" > 
                     <h1 className="about__full-story-text-title">CONTACT</h1>

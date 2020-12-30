@@ -1,14 +1,51 @@
 @import '../../styles/globalstyles.scss';
 
-.skills-icon{
-    min-width:44px;
-    max-height:72px;
-    max-width:72px;
+.skills{
+    &__icon{
+        width:20%;
+        height:auto;
+        max-height:121px;
+        max-width:90px;
+        cursor:grab;
+        
+        @include tablet{
+            width:12%;
+            max-height:200px;
+            max-width:120px;
+        }
+    }
+    
+    &__html{
+        @include buildSkillsIcon(22%, 74%, 27%, 79%);
+    }
 
-    @include tablet{
-        min-width:61px;
-        max-height:72px;
-        max-width:72px;
-    } 
+    &__css{
+        @include buildSkillsIcon(13%, 7%, 13%, 7%);
+    }
+        
+    &__js{        
+        @include buildSkillsIcon(34%, 2%, 40%, 14%);
+    }
+    
+    &__react{
+       @include buildSkillsIcon(9%, 66%, 9%, 66%);
+    }
 
+    &__sass{
+        
+        @include buildSkillsIcon(44%, 79%, 52%, 73%);
+    }
+
+    &__sql{
+        @include buildSkillsIcon(55%, 4%, 62%, 8%);
+    }
+
+    &__axios{
+        @include buildSkillsIcon(58%, 78%, 67%, 78%);
+    }
+    
+    &__git{
+        
+        @include buildSkillsIcon(19%, 36%, 14%, 36%);
+    }
 }

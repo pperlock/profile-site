@@ -1,0 +1,16 @@
+@import '../../styles/globalstyles.scss';
+
+.backpack{
+    width:100%;
+    // margin-top:63px;
+
+    max-height:410px;
+    max-width:410px;
+
+    @include tablet{
+        // margin-top:100px;
+
+        max-height:410px;
+        max-width:410px;
+    }
+}

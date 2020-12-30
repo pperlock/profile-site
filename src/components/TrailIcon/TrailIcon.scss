@@ -1,15 +1,107 @@
 @import '../../styles/globalstyles.scss';
 
-.trail-icon{
-    min-width:44px;
-    max-height:53px;
-    max-width:72px;
+.trail{
 
-    @include tablet{
-        min-width:61px;
-        max-height:72px;
+    &-icon{
+        min-width:44px;
+        max-height:53px;
         max-width:72px;
-    }   
+
+        @include tablet{
+            min-width:61px;
+            max-height:72px;
+            max-width:72px;
+        } 
+
+
+    }
+
+    &__div{
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        &::before{
+            display:none;
+            content: attr(data-content);
+            width:82vw;
+            height:19vw;
+            font-size: 12px;
+            padding: 1px 5px;
+            color: black;
+            // border-radius:4px;
+            background: silver;
+            opacity:0.75;
+            z-index:1;
+         }
+        // only show the tool tip when you hover over the delete button
+        &:hover::before {
+            position:absolute;
+            display: block;
+        }
+
+        &-head{
+            @include buildTrailDiv(6.5%, 66%, 3%, 0.5%);
+            &::before{
+                right:24px;
+                top:78px;
+            }
+
+        }
+
+        &-hiker{
+            @include buildTrailDiv(18%, 42%, 33%, 10%);
+            &::before{
+                right:-52px;
+                top:69px;
+            }
+        }
+            
+        &-detour{        
+            @include buildTrailDiv(40%, 31%, 45%, 37%);
+            &::before{
+                left:62px;
+                top:32px;
+
+                display:none;
+                content: attr(data-content);
+                width:27px;
+                height:14px;
+                font-size: 10px;
+                color: white;
+                // border-radius:4px;
+                background: black;
+                opacity:1;
+                z-index:1;
+            }
+        }
+        
+        &-db{
+            @include buildTrailDiv(58%, 61%, 14%, 58%);
+            &::before{
+                right:5px;
+                top:70px;
+            }
+        }
+
+        &-end{
+            @include buildTrailDiv(77%, 33%, 43%, 78%);
+            &::before{
+                right:-84px;
+                bottom:103px;
+            }
+        }
+
+        &-dog{
+            @include buildTrailDiv(49%, 0%, 77%, 43%);
+            &::before{
+                left:24px;
+                top:78px;
+            }
+        }
+    }
 }
 
 .trail-title{
@@ -17,3 +109,4 @@
     width:96px;
     font-size:12px;
 }
+

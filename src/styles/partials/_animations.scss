@@ -1,0 +1,38 @@
+@keyframes letterColor {
+    0%  {color: #000000;}
+    50% {color: #000000;}
+    100% {color: white;}
+}
+
+@keyframes slide-down{
+    0% {height:0}
+    100% {height:86vh}
+}
+
+@keyframes slide-up{
+    0% {height:86vh}
+    100% {height:0}
+}
+
+@keyframes text-off{
+    0% {top:0; opacity:1}
+    100% {top:-100vh; opacity:0}
+}
+
+@keyframes text-on{
+    0% {opacity:0}
+    10%{opacity:0}
+    100% {opacity:1}
+}
+
+@keyframes logo-in{
+    0% {opacity:1}
+    50%{opacity:1}
+    100% {opacity:0.5}
+}
+
+@keyframes logo2{
+    0% {opacity:0; width:0; height:0}
+    10%{opacity:0; width:0; height:0}
+    100% {opacity:1; width:100%; height:auto}
+}
