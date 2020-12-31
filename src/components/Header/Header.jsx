@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {Link} from 'react-router-dom';
 import './Header.scss';
 
@@ -8,13 +8,13 @@ function Header({path}) {
     path = "About";
     return (
         <header className="header">
-            <a to="/" className="header__logo">
+            <Link to="/" className="header__logo">
                 <div className="header__logo-text">
                     <p className="header__logo-name"> PATTI PERLOCK </p>
                     <p className="header__logo-title"> WEB DEVELOPER </p>
                 </div>
                 <img className="header__logo-image" src='/icons/logo-background.png' alt="mountain-logo" />
-            </a>
+            </Link>
 
             <nav className="nav">
                 <ul className="nav__list">

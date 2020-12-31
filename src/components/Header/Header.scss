@@ -22,7 +22,7 @@
         font-family:"Montserrat";
 
         @include tablet{
-            width:213px;
+            width:272px;
             margin-left:10px;
         }
 
@@ -34,24 +34,20 @@
             left:28px;
 
             @include tablet{
-                top:40px;
-                left:34px;
+                top:56px;
+                left:45px;
             }
         }
         &-name{
             font-weight:bold;
             letter-spacing:2px;
             @include tablet{
-                font-size:14px;
+                font-size:18px;
             }
         }
         &-title{
             font-size:12px;
             letter-spacing:1px;
-            
-            @include tablet{
-                font-size:10px;
-            }
         }
     }
 
@@ -74,6 +70,10 @@
             color:#d2c9c2;
             padding:8px;
             font-size:14px;
+
+            @include tablet{
+                font-size:16px;
+            }
 
             &--active{
                 color:white;

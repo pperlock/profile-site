@@ -9,7 +9,7 @@ const ItemTypes = {
 
 const SkillIcon = props => {
 
-    const {type, skill} = props;
+    const {skill} = props;
     const [{isDragging}, drag] = useDrag({
         item:{
             type:ItemTypes.CARD,

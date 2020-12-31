@@ -23,7 +23,7 @@ const BackPack = props => {
 
     return (
         <div ref={drop} className="backpack">
-            <img className="backpack__image" src="/images/backpack.png"/>
+            <img className="backpack__image" src="/images/backpack.png" alt="backpack"/>
         </div> 
     )
 }

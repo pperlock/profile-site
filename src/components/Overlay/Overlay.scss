@@ -1,0 +1,49 @@
+ @import '../../styles/globalstyles.scss';
+
+.white-overlay{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    width: 100%; 
+    background-color:white;   
+    z-index:2;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+        
+    &--on{
+        height:100%;
+        animation: slide-down 0.5s ease-in;
+    }
+    &--off{
+        height:0;
+        animation: slide-up 0.5s ease-out;
+    }
+}
+
+.full-text{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    z-index:-5;
+    padding:16px;
+    top:-600vh;
+
+    &--on{
+        top:0;
+        height:90%;
+        z-index:1;
+        animation: text-on 0.5s ease-in;
+    }
+
+    &--off{
+        top:-600vh;
+        left:0;
+        height:0;
+        z-index:1;
+        animation: text-off 0.75s ease-out;
+    }
+}

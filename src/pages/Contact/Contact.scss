@@ -1,7 +1,6 @@
 @import '../../styles/globalstyles.scss';
 
 .contact{
-    font-family:"SourceSansPro";
     width:100%;
     height:86vh;
     background-size:cover;
@@ -12,6 +11,9 @@
     // justify-content:center;
     position:relative;
     background-color:black;
+    color:white;
+    padding:50px 5% 0;
+    box-sizing:border-box;
  
     @include tablet{
         background-position:center;
@@ -24,31 +26,25 @@
         height:89.5vh;
     }
 
-    &__main{
-        display:flex;
-        margin-top:220px;
-        margin-right:40px;
-        justify-content:center;
+    &__quote{
+        font-family:"Montserrat";
+        margin:40px 0 20px 0;
+        color:silver;
+        font-size:20px;
+        text-align:center;
 
-        @include tablet{
-            margin-top:209px;
-            width:100%;
-        }
     }
 
-    &__full-story{
-        &-text{
-            &-title{
-                color:black;
-            }
-            &-main{
-                font-family: "SourceSansPro";
-                font-size:16px;
-            }
-        }
-        &-up{
-            width:40px;
-            height:30px;
-        }
+    &__author{
+        color:grey;
+        text-align:right;
+        margin-bottom:40px;
+        width:100%;
+    }
+
+    &__cta{
+        font-size:32px;
+        color:#d2c9c2;
     }
 }
+

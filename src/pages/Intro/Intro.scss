@@ -8,7 +8,7 @@ img{
     position:relative;
     display:flex;
     justify-content:center;
-    align-items:center;
+    // align-items:center;
   
   }
 
@@ -115,62 +115,6 @@ img{
 // }
 
 /********* OPTION 2 ****************/
-// .logo{
-//     position:absolute;
-//     z-index:1;
-//     display:flex;
-//     flex-direction:column;
-//     justify-content:center;
-//     align-items:center;
-//     margin-top:100px;
-//     color:white;
-//     font-family: "Montserrat";
-
-//     @include tablet{
-//         margin-top:95px;
-//     }
-
-
-//     &__name{
-//         letter-spacing:5px;
-//         font-size:28px;
-//         // padding: 5px;
-//         box-sizing: border-box;
-//         animation: letterColor 6s ease-in;
-//         text-align:center;
-//         width:100%;
-//         font-weight:bold;
-
-//         @include tablet{
-//             font-size:32px;
-//         }
-//     }
-
-//     &__title{
-//         font-size:20px;
-//         letter-spacing: 3px;
-//         text-align:center;
-//         animation: letterColor 7s ease-in;
-
-//     }
-//     &__filter{
-//         position:absolute;
-//         animation:logo-in 6s ease-in;
-//         top:-63px; 
-//         z-index:-1;
-//         opacity:0.5;
-
-//         @include tablet{
-//             width:44vw;
-//             max-width:337px;
-//             max-height:146px;
-//             top:-72px;
-//         }
-//     } 
-// }
-
-/********* OPTION 3 ****************/
-
 .logo{
     position:absolute;
     z-index:1;
@@ -178,8 +122,7 @@ img{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    // margin-top:100px;
-    width:100%;
+    margin-top:100px;
     color:white;
     font-family: "Montserrat";
 
@@ -212,20 +155,77 @@ img{
     }
     &__filter{
         position:absolute;
-        animation:logo2 6s ease-in;
-        // top:-63px; 
+        animation:logo-in 6s ease-in;
+        top:-63px; 
         z-index:-1;
         opacity:0.5;
-        width:90%;
 
         @include tablet{
-            // width:100%;
-            // max-width:337px;
-            // max-height:146px;
-            top:-187px;
+            width:44vw;
+            max-width:337px;
+            max-height:146px;
+            top:-72px;
         }
     } 
 }
+
+/********* OPTION 3 ****************/
+
+// .logo{
+//     position:absolute;
+//     z-index:1;
+//     display:flex;
+//     flex-direction:column;
+//     justify-content:center;
+//     align-items:center;
+//     // margin-top:100px;
+//     width:100%;
+//     color:white;
+//     font-family: "Montserrat";
+
+//     @include tablet{
+//         margin-top:95px;
+//     }
+
+
+//     &__name{
+//         letter-spacing:5px;
+//         font-size:28px;
+//         // padding: 5px;
+//         box-sizing: border-box;
+//         animation: letterColor 6s ease-in;
+//         text-align:center;
+//         width:100%;
+//         font-weight:bold;
+
+//         @include tablet{
+//             font-size:32px;
+//         }
+//     }
+
+//     &__title{
+//         font-size:20px;
+//         letter-spacing: 3px;
+//         text-align:center;
+//         animation: letterColor 7s ease-in;
+
+//     }
+//     &__filter{
+//         position:absolute;
+//         animation:logo2 6s ease-in;
+//         // top:-63px; 
+//         z-index:-1;
+//         opacity:0.5;
+//         width:90%;
+
+//         @include tablet{
+//             // width:100%;
+//             // max-width:337px;
+//             // max-height:146px;
+//             top:-187px;
+//         }
+//     } 
+// }
 
 .enter{
     position:absolute;
@@ -262,11 +262,11 @@ img{
     height:100vh;
   }
 
-.video-filter{
-        position:absolute;
-        background-color:black;
-        width:100%;
-        height:100vh;
-        animation:text-on 6s ease-in;
-        z-index:0;
-    }
+// .video-filter{
+//         position:absolute;
+//         background-color:black;
+//         width:100%;
+//         height:100vh;
+//         animation:text-on 6s ease-in;
+//         z-index:0;
+//     }

@@ -1,7 +1,11 @@
 @import '../../styles/globalstyles.scss';
 
+#about{
+    padding-top: 700px;
+    margin-top: -620px;
+}
+
 .about{
-    font-family:"SourceSansPro";
     width:100%;
     height:89.5vh;
     background-size:cover;
@@ -11,8 +15,9 @@
     flex-direction:column;
     // justify-content:center;
     position:relative;
-    margin-top:151px;
-    // transition: all 2s ease-in;
+    padding-top:95px;
+    // box-sizing:border-box;
+
  
     @include tablet{
         background-position:bottom;
@@ -25,6 +30,7 @@
     &__content{
         width:90%;
         align-self:center;
+        height:100%;
 
         @include desktop{
             width:65%;
@@ -51,22 +57,12 @@
         }
     }
 
-    &__white-overlay{
-        @extend .white-overlay;
-    }
-
-    &__full-text{
-        @extend .full-text;
-    }
-
-
     &__full-story{
         &-text{
             &-title{
                 color:black;
             }
             &-main{
-                font-family: "SourceSansPro";
                 font-size:16px;
             }
         }

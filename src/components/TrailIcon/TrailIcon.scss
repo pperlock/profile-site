@@ -1,7 +1,6 @@
 @import '../../styles/globalstyles.scss';
 
 .trail{
-
     &-icon{
         min-width:44px;
         max-height:53px;
@@ -26,8 +25,8 @@
         &::before{
             display:none;
             content: attr(data-content);
-            width:82vw;
-            height:19vw;
+            width:270px;
+            height:100px;
             font-size: 12px;
             padding: 1px 5px;
             color: black;
@@ -35,6 +34,8 @@
             background: silver;
             opacity:0.75;
             z-index:1;
+            bottom:0;
+            left:0;
          }
         // only show the tool tip when you hover over the delete button
         &:hover::before {
@@ -43,24 +44,15 @@
         }
 
         &-head{
-            @include buildTrailDiv(6.5%, 66%, 3%, 0.5%);
-            &::before{
-                right:24px;
-                top:78px;
-            }
-
+            @include buildTrailDiv(-3.5%, 5%, -3.5%, 5%);
         }
 
         &-hiker{
-            @include buildTrailDiv(18%, 42%, 33%, 10%);
-            &::before{
-                right:-52px;
-                top:69px;
-            }
+            @include buildTrailDiv(9%, 29%, 9%, 29%);
         }
             
         &-detour{        
-            @include buildTrailDiv(40%, 31%, 45%, 37%);
+            @include buildTrailDiv(38%, 42%, 38%, 42%);
             &::before{
                 left:62px;
                 top:32px;
@@ -79,7 +71,7 @@
         }
         
         &-db{
-            @include buildTrailDiv(58%, 61%, 14%, 58%);
+            @include buildTrailDiv(61%, 10%, 61%, 10%);
             &::before{
                 right:5px;
                 top:70px;
@@ -87,7 +79,7 @@
         }
 
         &-end{
-            @include buildTrailDiv(77%, 33%, 43%, 78%);
+            @include buildTrailDiv(82%, 39%, 82%, 39%);
             &::before{
                 right:-84px;
                 bottom:103px;
@@ -95,7 +87,7 @@
         }
 
         &-dog{
-            @include buildTrailDiv(49%, 0%, 77%, 43%);
+            @include buildTrailDiv(43%, 75%, 43%, 75%);
             &::before{
                 left:24px;
                 top:78px;

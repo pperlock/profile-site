@@ -1,11 +1,6 @@
 import React, {useState, createContext} from 'react';
-import {Link} from 'react-router-dom';
 
 import './Skills.scss';
-
-import Header from '../../components/Header/Header';
-import PageTitle from '../../components/PageTitle/PageTitle';
-import {toggleStory} from '../../functions.jsx';
 
 import SkillIcon from '../../components/SkillIcon/SkillIcon';
 import BackPack from '../../components/BackPack/BackPack';
@@ -34,30 +29,16 @@ const Skills = ({match, text}) => {
     }
 
     return (
- 
         <CardContext.Provider value={{markAsDone}}>
-            <div id="skills" className="skills">
-                
-                <PageTitle title= "Pack Your Bags" page="SKILLS" section="skills"/>
-                
-                <div className="skills__main">
+            {skillList.filter(skill => skill.status === "out").length ==0 && <a className="skills__packed" href="#experience"> All Packed - Let's Go!</a>}
+            <div className="skills__main">
+                    
+                <BackPack/>
 
-                    {skillList.filter(skill => skill.status =="out").length ===0 ? <a className="skills__unpacked" href="#experience"> All Packed - Let's Go!</a> : <p className="skills__packed"> Drop the skills into the pack </p>}
-                     
-                     <BackPack/>
+                {skillList
+                .filter((skill,i)=> skill.status === "out")
+                .map((skill,index) => <SkillIcon  key={skill.id} id={skill.id} skill={skill} type="skills"/>)}
 
-                    {skillList
-                    .filter((skill,i)=> skill.status === "out")
-                    .map((skill,index) => <SkillIcon  key={skill.id} id={skill.id} skill={skill} type="skills"/>)}
-
-                </div>
-                <div id="skills__white-overlay" className="white-overlay skills__full-story">
-                    <div id="skills__full-text" className="full-text skills__full-story-text" > 
-                        <h1 className="skills__full-story-text-title">SKILLS</h1>
-                        <p className="skills__full-story-text-main"> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-                        <img className="skills__full-story-up" onClick={()=>toggleStory("skills")} src="/icons/chevron_up.png" alt="up chevron"/>
-                    </div>
-                </div>
             </div>
         </CardContext.Provider>
        

@@ -6,7 +6,7 @@ import './Intro.scss';
 function Intro() {
     return (
         <main className="intro"> 
-            {/* <div className="logo"> */}
+            <div className="logo"> 
                 {/* <div className="logo__name">
                     <div className="logo__name-first">
                         <h1 className="logo__name-first-letter">P</h1>
@@ -29,11 +29,11 @@ function Intro() {
                 </div>
             </div>
             <Link  to="/main" className="enter">ENTER</Link>
-            {/* </div> */}
+            </div>
             <div className="video-filter"></div>
             <video className="video" autoPlay muted>
-                    {/* <source src="/images/Final-50mm.mp4" type="video/mp4"></source> */}
-                    <source src="/images/clouds.mp4" type="video/mp4"></source>
+                    <source src="/images/Final-50mm.mp4" type="video/mp4"></source>
+                    {/* <source src="/images/clouds.mp4" type="video/mp4"></source> */}
                 </video>
         </main>
     )

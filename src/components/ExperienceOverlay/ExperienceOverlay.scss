@@ -1,0 +1,67 @@
+@keyframes slide-in {
+    0%{transform: translateX(-100%);}
+    100% { transform: translateX(0%); }
+}
+
+
+.education, .professional{
+    padding:5%;
+    box-sizing:border-box;
+    width:100%;
+
+    &__title{
+        font-family:"Montserrat";
+        text-align:center;
+        color:black;
+        padding-bottom:10px;   
+    }
+    
+    &__list{
+        text-align:center;
+        width:100%;
+        &-item{
+            margin:10px 0;
+            background-size:contain;
+            background-repeat:no-repeat;
+            background-position:center;
+            animation: slide-in 4s forwards;
+        }
+        &-title{
+            background-color:rgba(0,0,0,0.25);
+            color:#d2c9c2;
+            color:#3D4849;
+            font-size:18px;
+            font-weight:bold;
+            padding:5px 0;
+        }
+
+        &__place{
+            display:flex;
+            align-items:center;
+            padding:10px 0;
+            // font-weight:bold;
+           
+            &-title{
+                font-style:italic;
+            }
+            &-image{
+                width:30px;
+                height:30px;
+                margin-right:5px;
+            }
+        }
+
+        &-focus{
+            text-align:left;
+        }
+        &-description{
+            text-align:left;
+            padding:5px 0;
+        }
+    }
+}
+.emphasize{
+    color:#3D4849;
+    font-weight:bold;
+}
+
