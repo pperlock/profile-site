@@ -3,7 +3,7 @@ import './ExperienceOverlay.scss';
 
 function ExperienceOverlay() {
     return (
-        <div>
+        <>
             <div className="education"> 
                 <h2 className= "education__title">EDUCATION</h2>
                 <div className="education__list">
@@ -60,7 +60,7 @@ Using a Linear Inversion and Genetic Algorithm </li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

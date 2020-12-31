@@ -1,4 +1,4 @@
-@import '../../styles/globalstyles.scss';
+@import '../../styles/globalimports.scss';
 
 .experience{
     height:136vh;
@@ -6,7 +6,7 @@
 
     &__content{
         width:100%;
-        height:100%;
+        height:50%;
         display:relative;
         overflow:hidden;
         

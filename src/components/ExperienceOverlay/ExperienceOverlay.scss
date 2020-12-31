@@ -11,6 +11,7 @@
 
     &__title{
         font-family:"Montserrat";
+        font-size:18px;
         text-align:center;
         color:black;
         padding-bottom:10px;   
@@ -57,6 +58,7 @@
         &-description{
             text-align:left;
             padding:5px 0;
+            font-size:13px;
         }
     }
 }
