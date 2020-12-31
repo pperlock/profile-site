@@ -4,15 +4,16 @@ import "aos/dist/aos.css";
 import "./MainPage.scss";
 
 import Header from '../../components/Header/Header';
-import Overlay from '../../components/Overlay/Overlay';
-import PageTitle from '../../components/PageTitle/PageTitle';
-import About from '../../pages/About/About';
-import Skills from '../../pages/Skills/Skills';
-import Experience from '../../pages/Experience/Experience';
-import Projects from '../../pages/Projects/Projects';
-import Contact from '../../pages/Contact/Contact';
+import Section from '../../components/Section/Section';
 
 function MainPage() {
+
+    let sections=[
+        {name:"about", title:"ABOUT ME", background: '/images/about-background2.jpg', scrollAnimation: {animation:"fade-up", anchor:"", anchorPlacement:""}, overlay:true},
+        {name:"skills", title:"SKILLS", background: false, scrollAnimation: {animation:"flip-left", anchor:".skills", anchorPlacement:"top-center"}, overlay:true},
+        {name:"experience", title:"EXPERIENCE", background: '/images/home-background2-2.jpg', scrollAnimation: {animation:"zoom-in-up", anchor:".experience", anchorPlacement:"top-center"}, overlay:true},
+        {name:"projects", title:"PROJECTS", background: false, scrollAnimation: {animation:"", anchor:"", anchorPlacement:""}, overlay:false},
+        {name:"contact", title:"CONTACT", background: false, scrollAnimation: {animation:"", anchor:"", anchorPlacement:""}, overlay:false}];
 
     useEffect(() => {
         // Aos.init({duration:2000, once:false, mirror:true});
@@ -23,53 +24,14 @@ function MainPage() {
         <>
             <Header />
             <main>
-            <div className = "main__contacts">
-                <img src="/icons/github-icon.png" />
-                <img src="/icons/linkedin-icon.svg" />
-                <img src="/icons/email-icon.svg" />
-            </div>
+                <aside className = "main__contacts">
+                    <img src="/icons/github-icon.png" alt="github" />
+                    <img src="/icons/linkedin-icon.svg" alt="linked in" />
+                    <img src="/icons/email-icon.svg" alt="email"/>
+                </aside>
 
-            <div className="about" style={{backgroundImage: "url('/images/about-background2.jpg')"}}>
-                <PageTitle title="ABOUT ME" page="Full Story" section="about"/>
-                <div className="about__content" data-aos="fade-up" >
-                    <About />
-                </div>
-                <Overlay section="about"/>
-                <div className="transition1"></div>
-            </div>
-
-            
-            <div className="skills" >
-                <PageTitle title= "SKILLS" page="SKILLS" section="skills" />
-                <div className="skills__pack"> 
-                    <p className="skills__unpacked"> Pack Your Bag </p>
-                    <img className="skills__hand" src="/icons/hand.png" />
-                </div>
-                <div className="skills__content" data-aos="flip-left" data-aos-anchor-placement="top-center" >
-                    <Skills />
-                </div>
-                <Overlay section="skills"/>
-            </div>
-
-            <div className="experience"  style={{backgroundImage: "url('/images/home-background2-2.jpg')"}}>
-                <div className="transition2"></div>
-                <PageTitle title="MY PATH TO WEB DEVELOPMENT" page="Education & Experience" section="experience"/>
-                <div className="experience__content" data-aos="zoom-in-up">
-                    <Experience />
-                </div>
-                <Overlay section="experience"/>
-                <div className="transition3"></div>
-            </div>
-
-            <div className="projects">
-                <Projects />
-                <img className="projects__mountain" src="/images/mountain4.png" alt="top of mountain" data-aos-anchor=".projects" data-aos="fade-left" data-aos-offset="500" data-aos-duration="3000"/>
-            </div>
-
-            <div className="contact">
-                <PageTitle title="CONTACT" page="Contact"/>
-                <Contact />
-            </div>
+                {sections.map((section,i) => <Section key={i} section={section}/>)}
+                
             </main>
 
         </>

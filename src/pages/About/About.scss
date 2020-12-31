@@ -6,23 +6,13 @@
 }
 
 .about{
-    width:100%;
     height:89.5vh;
+    padding-top:95px;
     background-size:cover;
     background-position:center;
-    overflow:hidden;
-    display:flex;
-    flex-direction:column;
-    // justify-content:center;
-    position:relative;
-    padding-top:95px;
-    // box-sizing:border-box;
-
- 
     @include tablet{
         background-position:bottom;
     }
-
     @include desktop{
         height:100vh;
     }

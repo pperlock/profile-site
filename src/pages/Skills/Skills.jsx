@@ -30,7 +30,7 @@ const Skills = ({match, text}) => {
 
     return (
         <CardContext.Provider value={{markAsDone}}>
-            {skillList.filter(skill => skill.status === "out").length ==0 && <a className="skills__packed" href="#experience"> All Packed - Let's Go!</a>}
+            {skillList.filter(skill => skill.status === "out").length === 0 && <a className="skills__packed" href="#experience"> All Packed - Let's Go!</a>}
             <div className="skills__main">
                     
                 <BackPack/>
