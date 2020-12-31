@@ -24,7 +24,7 @@ function Section({section}) {
     };
 
     return (
-        <section className={`section ${name}`} style={{backgroundImage: `url(${background})`}}>
+        <section id={name} className={`section ${name}`} style={{backgroundImage: `url(${background})`}}>
             {name==="experience" && <div className="transition2"></div>}
             <PageTitle title={title} section={name}/>
             {displayHand()}

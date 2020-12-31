@@ -6,7 +6,7 @@ import {toggleStory} from '../../functions.jsx';
 
 function PageTitle({title, section}) {
     return (
-        <div id={section} className="title">
+        <div className="title">
                 <h1 className="title-text">{title}</h1>
             <div className="chevron-wrapper" onClick={()=>toggleStory(section)} >
                 {(section === "about" || section === "experience" || section ==="skills") && <img className="title-down" src="/icons/chevron_down2.png" alt="down chevron" />}

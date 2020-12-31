@@ -1,12 +1,7 @@
 @import '../../styles/globalstyles.scss';
-#projects{
-    padding-top: 800px;
-    margin-top: -600px;
-}
 
 .projects{
     height:100vh;
-    justify-content:center;
     background-color:black;
  
     @include tablet{
@@ -37,29 +32,21 @@
             width:50%;
         }
     }
-
-    &__full-story{
-        &-text{
-            &-title{
-                color:black;
-            }
-            &-main{
-                font-size:16px;
-            }
-        }
-        &-up{
-            width:40px;
-            height:30px;
-        }
+    
+    &__content{
+        display:flex;
+        flex-direction:column;
     }
 }
 
 .transition4{
+    position:absolute;
     width:100%;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,1));
     height:49vw;
     z-index:5;
-    align-self:flex-end;
+    bottom:0;
+    
 }
 
 .project{

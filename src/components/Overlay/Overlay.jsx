@@ -8,8 +8,8 @@ import SkillsOverlay from '../../components/SkillsOverlay/SkillsOverlay';
 
 function Overlay({section}) {
     return (
-        <div id={section +"__white-overlay"} className={"white-overlay " + section + "__full-story"}>
-            <div id={section + "__full-text"} className={"full-text " + section + "__full-story-text"} > 
+        <div id={section +"__white-overlay"} className="white-overlay full">
+            <div id={section + "__full-text"} className="full-text" > 
                 {section ==="experience" &&  <ExperienceOverlay />}
                 {section ==="about" &&  <AboutOverlay />}
                 {section ==="skills" &&  <SkillsOverlay />}

@@ -4,7 +4,7 @@ import './AboutOverlay.scss';
 function AboutOverlay() {
     return (
 
-        <div className="about"> 
+        <div className="about__overlay"> 
             <h2 className= "about__title">ABOUT ME</h2>
             <div className="about__list"></div>
         </div>

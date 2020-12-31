@@ -4,9 +4,9 @@ import './SkillsOverlay.scss';
 function SkillsOverlay() {
     return (
 
-        <div className="about"> 
-            <h2 className= "about__title">SKILLS</h2>
-            <div className="about__list"></div>
+        <div className="skills_overlay"> 
+            <h2 className= "skills__title">SKILLS</h2>
+            <div className="skills__list"></div>
         </div>
     )
 }
