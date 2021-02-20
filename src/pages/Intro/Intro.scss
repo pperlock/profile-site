@@ -8,113 +8,9 @@ img{
     position:relative;
     display:flex;
     justify-content:center;
-    // align-items:center;
   
   }
 
-/********* OPTION 1 ****************/
-//   .logo{
-//     position:absolute;
-//     z-index:1;
-//     display:flex;
-//     flex-direction:column;
-//     justify-content:center;
-//     align-items:center;
-//     margin-top:100px;
-
-//     @include tablet{
-//         margin-top:66px;
-//     }
-
-//     &__name{
-//         font-family: "Montserrat";
-//         position:relative;
-//         letter-spacing:5px;
-//         width:320px;
-//         padding: 5px;
-//         box-sizing: border-box;
-
-//         @include tablet{
-//             display:flex;
-//             flex-wrap:nowrap;
-//             width:600px;
-//         }
-
-//         &-first{
-//             margin-left:30px;
-//             &-letter{
-//                 animation: letterColor 6s ease-in;
-//                 display:inline;
-//                 font-family: "PinyonScript";
-//                 color:white;
-//                 font-size:83px;
-//                 line-height:0.5px;                
-                
-//                 @include tablet{
-//                     line-height:12.2rem;
-//                     font-size:157px;
-//                 }
-//             }
-//         }
-
-//         &-last{
-//             margin-left:100px;
-//             &-letter{
-//                 animation: letterColor 6s ease-in;
-//                 display:inline;
-//                 font-family: "PinyonScript";
-//                 color:white;
-//                 font-size:83px;
- 
-//                 @include tablet{
-//                     font-size:157px;
-//                 }
-//             }
-//         }
-
-
-//         &-body{
-//             animation: bodyColor 6s ease-in;
-//             display:inline;
-//             color:lightgray; 
-//             margin:-30px;
-//             font-size:24px;
-
-//             @include tablet{
-//                 font-size:48px;
-//             }
-//         }
-
-//     }
-
-//     &__title{
-//         font-family: "PinyonScript";
-//         font-size:24px;
-//         color:grey;
-//         font-style:italic;
-//         letter-spacing: 3px;
-//         position:absolute;
-//         width:200px;
-//         bottom:0;
-//         right:15px;
-//         text-align:right;
-        
-//         @include tablet{
-//             font-size:40px;
-//             width:300px;
-//             bottom:22px;
-//             right:-61px;
-//         }
-
-//         @include desktop{
-//             font-size:48px;
-//             bottom:14px;
-//             right:-91px;
-//         }
-//   }
-// }
-
-/********* OPTION 2 ****************/
 .logo{
     position:absolute;
     z-index:1;
@@ -125,18 +21,21 @@ img{
     margin-top:100px;
     color:white;
     font-family: "Montserrat";
+    width:100%;
 
     @include tablet{
         margin-top:95px;
     }
 
+    &-text{
+        color:white;
+        animation: letterColor 6s ease-in;
+    }
 
     &__name{
         letter-spacing:5px;
-        font-size:28px;
-        // padding: 5px;
+        font-size:24px;
         box-sizing: border-box;
-        animation: letterColor 6s ease-in;
         text-align:center;
         width:100%;
         font-weight:bold;
@@ -147,18 +46,23 @@ img{
     }
 
     &__title{
-        font-size:20px;
+        font-size:18px;
         letter-spacing: 3px;
         text-align:center;
         animation: letterColor 7s ease-in;
 
+        @include tablet{
+            font-size:20px;
+        }
+
     }
     &__filter{
         position:absolute;
-        animation:logo-in 6s ease-in;
-        top:-63px; 
+        animation:logo-in 7s ease-in;
+        top:-60px; 
         z-index:-1;
         opacity:0.5;
+        width:79%;
 
         @include tablet{
             width:44vw;
@@ -168,64 +72,6 @@ img{
         }
     } 
 }
-
-/********* OPTION 3 ****************/
-
-// .logo{
-//     position:absolute;
-//     z-index:1;
-//     display:flex;
-//     flex-direction:column;
-//     justify-content:center;
-//     align-items:center;
-//     // margin-top:100px;
-//     width:100%;
-//     color:white;
-//     font-family: "Montserrat";
-
-//     @include tablet{
-//         margin-top:95px;
-//     }
-
-
-//     &__name{
-//         letter-spacing:5px;
-//         font-size:28px;
-//         // padding: 5px;
-//         box-sizing: border-box;
-//         animation: letterColor 6s ease-in;
-//         text-align:center;
-//         width:100%;
-//         font-weight:bold;
-
-//         @include tablet{
-//             font-size:32px;
-//         }
-//     }
-
-//     &__title{
-//         font-size:20px;
-//         letter-spacing: 3px;
-//         text-align:center;
-//         animation: letterColor 7s ease-in;
-
-//     }
-//     &__filter{
-//         position:absolute;
-//         animation:logo2 6s ease-in;
-//         // top:-63px; 
-//         z-index:-1;
-//         opacity:0.5;
-//         width:90%;
-
-//         @include tablet{
-//             // width:100%;
-//             // max-width:337px;
-//             // max-height:146px;
-//             top:-187px;
-//         }
-//     } 
-// }
 
 .enter{
     position:absolute;
@@ -260,6 +106,9 @@ img{
     object-fit:cover;
     width:100%;
     height:100vh;
+    &__link{
+        width:100vw;
+    }
   }
 
 // .video-filter{

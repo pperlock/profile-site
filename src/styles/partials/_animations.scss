@@ -26,13 +26,7 @@
 }
 
 @keyframes logo-in{
-    0% {opacity:1}
-    50%{opacity:1}
-    100% {opacity:0.5}
-}
-
-@keyframes logo2{
-    0% {opacity:0; width:0; height:0}
-    10%{opacity:0; width:0; height:0}
-    100% {opacity:1; width:100%; height:auto}
+    0% {opacity:0;}
+    50% {opacity:0;}
+    100% {opacity:0.5;}
 }

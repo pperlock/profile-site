@@ -33,7 +33,7 @@ const Skills = ({match, text}) => {
             {skillList.filter(skill => skill.status === "out").length === 0 && <a className="skills__packed" href="#experience"> All Packed - Let's Go!</a>}
             <div className="skills__main">
                     
-                <BackPack/>
+                <BackPack data-aos-anchor=".projects" data-aos="fade-left" data-aos-offset="500" data-aos-duration="3000"/>
 
                 {skillList
                 .filter((skill,i)=> skill.status === "out")

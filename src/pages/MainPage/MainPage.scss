@@ -1,5 +1,11 @@
 @import '../../styles/globalstyles.scss';
 
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-8px);}
+  80% {transform: translateY(-5px);}
+}
 .main__contacts{
     position:sticky;
     padding:10px;
@@ -10,4 +16,15 @@
 
     width:20px;
     z-index:20;
+    
+    @include desktop{
+        width:30px;
+        top:86.5vh;        
+    }
+
+    &-icon{
+         &:hover{
+           animation: bounce 1s; 
+        }
+    }
 }

@@ -1,6 +1,8 @@
 import React, {useContext} from 'react'
 import {useDrop} from 'react-dnd';
 import {CardContext} from '../../pages/Skills/Skills';
+import "aos/dist/aos.css";
+
 
 import './BackPack.scss';
 
@@ -23,9 +25,8 @@ const BackPack = props => {
 
     return (
         <div ref={drop} className="backpack">
-            <img className="backpack__image" src="/images/backpack.png" alt="backpack"/>
+            <img data-aos-anchor=".skills" data-aos="flip-left" data-aos-offset="10" data-aos-duration="3000" data-aos-anchor-placement="top-center" className="backpack__image" src="/images/backpack.png" alt="backpack"/>
         </div> 
     )
 }
-
 export default BackPack

@@ -1,0 +1,2644 @@
+(this["webpackJsonpcapstone-first-pass"] = this["webpackJsonpcapstone-first-pass"] || []).push([["main"],{
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/App.scss":
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!./node_modules/postcss-loader/src??postcss!./node_modules/resolve-url-loader??ref--5-oneOf-6-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./src/App.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_fonts_Montserrat_Bold_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/fonts/Montserrat-Bold.ttf */ "./src/assets/fonts/Montserrat-Bold.ttf");
+/* harmony import */ var _assets_fonts_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/fonts/Montserrat-Regular.ttf */ "./src/assets/fonts/Montserrat-Regular.ttf");
+/* harmony import */ var _assets_fonts_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/fonts/Montserrat-SemiBold.ttf */ "./src/assets/fonts/Montserrat-SemiBold.ttf");
+/* harmony import */ var _assets_fonts_SourceSansPro_Regular_ttf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/fonts/SourceSansPro-Regular.ttf */ "./src/assets/fonts/SourceSansPro-Regular.ttf");
+/* harmony import */ var _assets_fonts_SourceSansPro_Bold_ttf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/fonts/SourceSansPro-Bold.ttf */ "./src/assets/fonts/SourceSansPro-Bold.ttf");
+/* harmony import */ var _assets_fonts_PinyonScript_Regular_ttf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/fonts/PinyonScript-Regular.ttf */ "./src/assets/fonts/PinyonScript-Regular.ttf");
+// Imports
+
+
+
+
+
+
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_Bold_ttf__WEBPACK_IMPORTED_MODULE_2__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_4__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_SourceSansPro_Regular_ttf__WEBPACK_IMPORTED_MODULE_5__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_SourceSansPro_Bold_ttf__WEBPACK_IMPORTED_MODULE_6__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_5___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_PinyonScript_Regular_ttf__WEBPACK_IMPORTED_MODULE_7__["default"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, "@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  font-weight: 700;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n  font-weight: 600;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"SourceSansPro\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"SourceSansPro\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ");\n  font-weight: 700;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"PinyonScript\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ");\n  font-weight: 100;\n  font-style: normal; }\n\n/*========== COLOR PALETTE ===============*/\n/*========== COLOR PALETTE ===============*/\n* {\n  margin: 0;\n  padding: 0; }\n\nbody {\n  font-family: \"SourceSansPro\"; }\n\na {\n  text-decoration: none; }\n\nul {\n  list-style-type: none; }\n", "",{"version":3,"sources":["webpack://src/styles/partials/_typography.scss","webpack://src/styles/partials/_variables.scss","webpack://src/styles/globalStyles.scss"],"names":[],"mappings":"AAAA;EACI,yBAAyB;EACzB,4CAAiD;EACjD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,yBAAyB;EACzB,4CAAoD;EACpD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,yBAAyB;EACzB,4CAAqD;EACrD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,4BAA4B;EAC5B,4CAAuD;EACvD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,4BAA4B;EAC5B,4CAAoD;EACpD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,2BAA2B;EAC3B,4CAAsD;EACtD,gBAAgB;EAChB,kBAAkB,EAAA;;ACvCtB,2CAAA;AAAA,2CAAA;ACEA;EACI,SAAQ;EACR,UAAS,EAAA;;AAGb;EACG,4BAA4B,EAAA;;AAG/B;EACI,qBAAoB,EAAA;;AAGxB;EACI,qBAAoB,EAAA","sourcesContent":["@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-Bold.ttf\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-Regular.ttf\");\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-SemiBold.ttf\");\r\n    font-weight: 600;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"SourceSansPro\";\r\n    src:url(\"../../assets/fonts/SourceSansPro-Regular.ttf\");\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"SourceSansPro\";\r\n    src:url(\"../../assets/fonts/SourceSansPro-Bold.ttf\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"PinyonScript\";\r\n    src:url(\"../../assets/fonts/PinyonScript-Regular.ttf\");\r\n    font-weight: 100;\r\n    font-style: normal;\r\n}\r\n\r\n","/*========== COLOR PALETTE ===============*/\r\n\r\n$accent-color:#7d94a1;\r\n$light-text: #F3F3F4;\r\n$contrast-text: #B1A494;\r\n$dark-text: #808080;\r\n$lighter-green:#c4baae;\r\n\r\n$dark-background: #E1DDDE;\r\n$medium-background: #F3F3F4;\r\n$light-background:white;","@import '../styles/globalImports.scss';\r\n\r\n*{\r\n    margin:0;\r\n    padding:0;\r\n}\r\n\r\nbody{\r\n   font-family: \"SourceSansPro\"; \r\n}\r\n\r\na{\r\n    text-decoration:none;\r\n}\r\n\r\nul{\r\n    list-style-type:none;\r\n}\r\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/Pages/Intro/Intro.scss":
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!./node_modules/postcss-loader/src??postcss!./node_modules/resolve-url-loader??ref--5-oneOf-6-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./src/Pages/Intro/Intro.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_fonts_Montserrat_Bold_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/fonts/Montserrat-Bold.ttf */ "./src/assets/fonts/Montserrat-Bold.ttf");
+/* harmony import */ var _assets_fonts_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/fonts/Montserrat-Regular.ttf */ "./src/assets/fonts/Montserrat-Regular.ttf");
+/* harmony import */ var _assets_fonts_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/fonts/Montserrat-SemiBold.ttf */ "./src/assets/fonts/Montserrat-SemiBold.ttf");
+/* harmony import */ var _assets_fonts_SourceSansPro_Regular_ttf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/fonts/SourceSansPro-Regular.ttf */ "./src/assets/fonts/SourceSansPro-Regular.ttf");
+/* harmony import */ var _assets_fonts_SourceSansPro_Bold_ttf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/fonts/SourceSansPro-Bold.ttf */ "./src/assets/fonts/SourceSansPro-Bold.ttf");
+/* harmony import */ var _assets_fonts_PinyonScript_Regular_ttf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/fonts/PinyonScript-Regular.ttf */ "./src/assets/fonts/PinyonScript-Regular.ttf");
+/* harmony import */ var _intro_background_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./intro-background.png */ "./src/Pages/Intro/intro-background.png");
+// Imports
+
+
+
+
+
+
+
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_Bold_ttf__WEBPACK_IMPORTED_MODULE_2__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_4__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_SourceSansPro_Regular_ttf__WEBPACK_IMPORTED_MODULE_5__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_SourceSansPro_Bold_ttf__WEBPACK_IMPORTED_MODULE_6__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_5___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_PinyonScript_Regular_ttf__WEBPACK_IMPORTED_MODULE_7__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_6___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_intro_background_png__WEBPACK_IMPORTED_MODULE_8__["default"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, "@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  font-weight: 700;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n  font-weight: 600;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"SourceSansPro\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"SourceSansPro\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ");\n  font-weight: 700;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"PinyonScript\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ");\n  font-weight: 100;\n  font-style: normal; }\n\n/*========== COLOR PALETTE ===============*/\n/*========== COLOR PALETTE ===============*/\n.intro {\n  font-family: \"Montserrat\";\n  color: #B1A494;\n  width: 100vw;\n  height: 100vh;\n  overflow: hidden;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ");\n  background-size: contain;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  .intro__logo {\n    font-family: \"Montserrat\";\n    margin-top: 150px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-bottom: 32px; }\n    .intro__logo-title {\n      font-size: 60px;\n      letter-spacing: 5px; }\n    .intro__logo-bigLetter {\n      font-size: 100px;\n      font-weight: 600; }\n  .intro__divider {\n    width: 250px;\n    border: 2px solid #B1A494;\n    margin-bottom: 32px; }\n  .intro__subtitle {\n    font-weight: 600;\n    margin-bottom: 32px; }\n  .intro__button {\n    background-color: #7d94a1;\n    border-radius: 10px;\n    width: 200px;\n    height: 50px;\n    border: none;\n    font-family: \"SourceSansPro\";\n    color: white;\n    font-size: 24px; }\n", "",{"version":3,"sources":["webpack://src/styles/partials/_typography.scss","webpack://src/styles/partials/_variables.scss","webpack://src/Pages/Intro/Intro.scss","webpack://src/styles/partials/_mixins.scss"],"names":[],"mappings":"AAAA;EACI,yBAAyB;EACzB,4CAAiD;EACjD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,yBAAyB;EACzB,4CAAoD;EACpD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,yBAAyB;EACzB,4CAAqD;EACrD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,4BAA4B;EAC5B,4CAAuD;EACvD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,4BAA4B;EAC5B,4CAAoD;EACpD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,2BAA2B;EAC3B,4CAAsD;EACtD,gBAAgB;EAChB,kBAAkB,EAAA;;ACvCtB,2CAAA;AAAA,2CAAA;ACEA;EACI,yBAAwB;EACxB,cDAmB;ECCnB,YAAW;EACX,aAAY;EACZ,gBAAe;EACf,mDAAuC;EACvC,wBAAuB;EAEvB,aAAY;EACZ,sBAAqB;EACrB,mBAAkB,EAAA;EAElB;IACI,yBAAwB;IACxB,iBAAgB;IAChB,aAAY;IACZ,uBAAsB;IACtB,mBAAkB;IAClB,mBAAkB,EAAA;IAElB;MACI,eAAc;MACd,mBAAkB,EAAA;IAGtB;MACI,gBAAe;MACf,gBAAe,EAAA;EAIvB;IACI,YAAW;IACX,yBDhCe;ICiCf,mBAAkB,EAAA;EAGtB;IACI,gBAAe;IACf,mBAAkB,EAAA;EAGtB;IC1CA,yBFDiB;IEEjB,mBAAkB;IAClB,YDyC8B;ICxC9B,YDwCmC;ICvCnC,YAAW;IACX,4BAA4B;IAC5B,YAAW;IACX,eAAc,EAAA","sourcesContent":["@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-Bold.ttf\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-Regular.ttf\");\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-SemiBold.ttf\");\r\n    font-weight: 600;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"SourceSansPro\";\r\n    src:url(\"../../assets/fonts/SourceSansPro-Regular.ttf\");\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"SourceSansPro\";\r\n    src:url(\"../../assets/fonts/SourceSansPro-Bold.ttf\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"PinyonScript\";\r\n    src:url(\"../../assets/fonts/PinyonScript-Regular.ttf\");\r\n    font-weight: 100;\r\n    font-style: normal;\r\n}\r\n\r\n","/*========== COLOR PALETTE ===============*/\r\n\r\n$accent-color:#7d94a1;\r\n$light-text: #F3F3F4;\r\n$contrast-text: #B1A494;\r\n$dark-text: #808080;\r\n$lighter-green:#c4baae;\r\n\r\n$dark-background: #E1DDDE;\r\n$medium-background: #F3F3F4;\r\n$light-background:white;","@import '../../styles/globalImports.scss';\r\n\r\n.intro{\r\n    font-family:\"Montserrat\";\r\n    color: $contrast-text;\r\n    width:100vw;\r\n    height:100vh;\r\n    overflow:hidden;\r\n    background: url('intro-background.png');\r\n    background-size:contain;\r\n    \r\n    display:flex;\r\n    flex-direction:column;\r\n    align-items:center;\r\n\r\n    &__logo{\r\n        font-family:\"Montserrat\";\r\n        margin-top:150px;\r\n        display:flex;\r\n        justify-content:center;\r\n        align-items:center;\r\n        margin-bottom:32px;\r\n\r\n        &-title{\r\n            font-size:60px;\r\n            letter-spacing:5px;\r\n        }\r\n\r\n        &-bigLetter{\r\n            font-size:100px;\r\n            font-weight:600;\r\n        }\r\n    }\r\n\r\n    &__divider{\r\n        width:250px;\r\n        border: 2px solid $contrast-text;\r\n        margin-bottom:32px;\r\n        \r\n    }\r\n    &__subtitle{\r\n        font-weight:600;\r\n        margin-bottom:32px;\r\n    }\r\n\r\n    &__button{\r\n        @include buildButton(200px,50px);\r\n    }\r\n\r\n\r\n    \r\n}","@import '../../styles/partials/variables.scss';\r\n\r\n@mixin buildButton($width, $height){\r\n    background-color: $accent-color;\r\n    border-radius:10px;\r\n    width:$width;\r\n    height:$height;\r\n    border:none;\r\n    font-family: \"SourceSansPro\";\r\n    color:white;\r\n    font-size:24px;\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/Pages/Main/Main.scss":
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!./node_modules/postcss-loader/src??postcss!./node_modules/resolve-url-loader??ref--5-oneOf-6-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./src/Pages/Main/Main.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".main-layout {\n  display: flex;\n  height: 100vh; }\n", "",{"version":3,"sources":["webpack://src/Pages/Main/Main.scss"],"names":[],"mappings":"AAAA;EACI,aAAY;EACZ,aAAY,EAAA","sourcesContent":[".main-layout{\r\n    display:flex;\r\n    height:100vh;\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/Pages/Programs/Programs.scss":
+/*!**********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!./node_modules/postcss-loader/src??postcss!./node_modules/resolve-url-loader??ref--5-oneOf-6-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./src/Pages/Programs/Programs.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_fonts_Montserrat_Bold_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/fonts/Montserrat-Bold.ttf */ "./src/assets/fonts/Montserrat-Bold.ttf");
+/* harmony import */ var _assets_fonts_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/fonts/Montserrat-Regular.ttf */ "./src/assets/fonts/Montserrat-Regular.ttf");
+/* harmony import */ var _assets_fonts_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/fonts/Montserrat-SemiBold.ttf */ "./src/assets/fonts/Montserrat-SemiBold.ttf");
+/* harmony import */ var _assets_fonts_SourceSansPro_Regular_ttf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/fonts/SourceSansPro-Regular.ttf */ "./src/assets/fonts/SourceSansPro-Regular.ttf");
+/* harmony import */ var _assets_fonts_SourceSansPro_Bold_ttf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/fonts/SourceSansPro-Bold.ttf */ "./src/assets/fonts/SourceSansPro-Bold.ttf");
+/* harmony import */ var _assets_fonts_PinyonScript_Regular_ttf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/fonts/PinyonScript-Regular.ttf */ "./src/assets/fonts/PinyonScript-Regular.ttf");
+// Imports
+
+
+
+
+
+
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_Bold_ttf__WEBPACK_IMPORTED_MODULE_2__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_4__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_SourceSansPro_Regular_ttf__WEBPACK_IMPORTED_MODULE_5__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_SourceSansPro_Bold_ttf__WEBPACK_IMPORTED_MODULE_6__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_5___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_PinyonScript_Regular_ttf__WEBPACK_IMPORTED_MODULE_7__["default"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, "@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  font-weight: 700;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n  font-weight: 600;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"SourceSansPro\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"SourceSansPro\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ");\n  font-weight: 700;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"PinyonScript\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ");\n  font-weight: 100;\n  font-style: normal; }\n\n/*========== COLOR PALETTE ===============*/\n/*========== COLOR PALETTE ===============*/\n.programs__container {\n  display: flex;\n  background-color: #E1DDDE;\n  width: 80%;\n  height: 100%;\n  padding-left: 300px; }\n", "",{"version":3,"sources":["webpack://src/styles/partials/_typography.scss","webpack://src/styles/partials/_variables.scss","webpack://src/Pages/Programs/Programs.scss"],"names":[],"mappings":"AAAA;EACI,yBAAyB;EACzB,4CAAiD;EACjD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,yBAAyB;EACzB,4CAAoD;EACpD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,yBAAyB;EACzB,4CAAqD;EACrD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,4BAA4B;EAC5B,4CAAuD;EACvD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,4BAA4B;EAC5B,4CAAoD;EACpD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,2BAA2B;EAC3B,4CAAsD;EACtD,gBAAgB;EAChB,kBAAkB,EAAA;;ACvCtB,2CAAA;AAAA,2CAAA;ACGI;EACI,aAAY;EACZ,yBDGiB;ECFjB,UAAS;EACT,YAAW;EACX,mBAAkB,EAAA","sourcesContent":["@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-Bold.ttf\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-Regular.ttf\");\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-SemiBold.ttf\");\r\n    font-weight: 600;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"SourceSansPro\";\r\n    src:url(\"../../assets/fonts/SourceSansPro-Regular.ttf\");\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"SourceSansPro\";\r\n    src:url(\"../../assets/fonts/SourceSansPro-Bold.ttf\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"PinyonScript\";\r\n    src:url(\"../../assets/fonts/PinyonScript-Regular.ttf\");\r\n    font-weight: 100;\r\n    font-style: normal;\r\n}\r\n\r\n","/*========== COLOR PALETTE ===============*/\r\n\r\n$accent-color:#7d94a1;\r\n$light-text: #F3F3F4;\r\n$contrast-text: #B1A494;\r\n$dark-text: #808080;\r\n$lighter-green:#c4baae;\r\n\r\n$dark-background: #E1DDDE;\r\n$medium-background: #F3F3F4;\r\n$light-background:white;","@import '../../styles/globalImports.scss';\r\n\r\n.programs{\r\n    &__container{\r\n        display:flex;\r\n        background-color:$dark-background;\r\n        width:80%;\r\n        height:100%;\r\n        padding-left:300px;\r\n    }\r\n    \r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/ProgramBar/ProgramBar.scss":
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!./node_modules/postcss-loader/src??postcss!./node_modules/resolve-url-loader??ref--5-oneOf-6-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./src/components/ProgramBar/ProgramBar.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_fonts_Montserrat_Bold_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/fonts/Montserrat-Bold.ttf */ "./src/assets/fonts/Montserrat-Bold.ttf");
+/* harmony import */ var _assets_fonts_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/fonts/Montserrat-Regular.ttf */ "./src/assets/fonts/Montserrat-Regular.ttf");
+/* harmony import */ var _assets_fonts_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/fonts/Montserrat-SemiBold.ttf */ "./src/assets/fonts/Montserrat-SemiBold.ttf");
+/* harmony import */ var _assets_fonts_SourceSansPro_Regular_ttf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/fonts/SourceSansPro-Regular.ttf */ "./src/assets/fonts/SourceSansPro-Regular.ttf");
+/* harmony import */ var _assets_fonts_SourceSansPro_Bold_ttf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/fonts/SourceSansPro-Bold.ttf */ "./src/assets/fonts/SourceSansPro-Bold.ttf");
+/* harmony import */ var _assets_fonts_PinyonScript_Regular_ttf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/fonts/PinyonScript-Regular.ttf */ "./src/assets/fonts/PinyonScript-Regular.ttf");
+// Imports
+
+
+
+
+
+
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_Bold_ttf__WEBPACK_IMPORTED_MODULE_2__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_4__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_SourceSansPro_Regular_ttf__WEBPACK_IMPORTED_MODULE_5__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_SourceSansPro_Bold_ttf__WEBPACK_IMPORTED_MODULE_6__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_5___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_PinyonScript_Regular_ttf__WEBPACK_IMPORTED_MODULE_7__["default"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, "@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  font-weight: 700;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n  font-weight: 600;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"SourceSansPro\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"SourceSansPro\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ");\n  font-weight: 700;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"PinyonScript\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ");\n  font-weight: 100;\n  font-style: normal; }\n\n/*========== COLOR PALETTE ===============*/\n/*========== COLOR PALETTE ===============*/\n.program-bar {\n  background-color: #c4baae;\n  height: 100%;\n  width: 300px;\n  box-shadow: 10px 10px 8px silver;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 20px;\n  box-sizing: border-box;\n  font-size: 20px;\n  color: #F3F3F4;\n  position: fixed; }\n  .program-bar__title {\n    box-sizing: border-box;\n    width: 100%;\n    padding: 10px 16px;\n    text-align: center;\n    margin-top: 140px;\n    font-size: 24px;\n    background-color: #F3F3F4;\n    border-radius: 4px;\n    box-shadow: 5px 5px 5px silver;\n    color: #7d94a1; }\n  .program-bar__menu {\n    padding-top: 32px; }\n    .program-bar__menu-link {\n      color: #F3F3F4;\n      margin-bottom: 20px; }\n", "",{"version":3,"sources":["webpack://src/styles/partials/_typography.scss","webpack://src/styles/partials/_variables.scss","webpack://src/components/ProgramBar/ProgramBar.scss"],"names":[],"mappings":"AAAA;EACI,yBAAyB;EACzB,4CAAiD;EACjD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,yBAAyB;EACzB,4CAAoD;EACpD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,yBAAyB;EACzB,4CAAqD;EACrD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,4BAA4B;EAC5B,4CAAuD;EACvD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,4BAA4B;EAC5B,4CAAoD;EACpD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,2BAA2B;EAC3B,4CAAsD;EACtD,gBAAgB;EAChB,kBAAkB,EAAA;;ACvCtB,2CAAA;AAAA,2CAAA;ACEA;EACI,yBDGkB;ECFlB,YAAW;EACX,YAAW;EACX,gCAAgC;EAChC,aAAY;EACZ,sBAAqB;EACrB,mBAAkB;EAClB,aAAY;EACZ,sBAAqB;EACrB,eAAc;EACd,cDVgB;ECWhB,eAAc,EAAA;EAEd;IACI,sBAAqB;IACrB,WAAU;IACV,kBAAiB;IACjB,kBAAiB;IACjB,iBAAgB;IAChB,eAAc;IACd,yBDpBY;ICqBZ,kBAAiB;IACjB,8BAA8B;IAC9B,cDxBa,EAAA;EC0BjB;IACI,iBAAgB,EAAA;IAChB;MACI,cD5BQ;MC8BR,mBAAkB,EAAA","sourcesContent":["@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-Bold.ttf\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-Regular.ttf\");\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-SemiBold.ttf\");\r\n    font-weight: 600;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"SourceSansPro\";\r\n    src:url(\"../../assets/fonts/SourceSansPro-Regular.ttf\");\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"SourceSansPro\";\r\n    src:url(\"../../assets/fonts/SourceSansPro-Bold.ttf\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"PinyonScript\";\r\n    src:url(\"../../assets/fonts/PinyonScript-Regular.ttf\");\r\n    font-weight: 100;\r\n    font-style: normal;\r\n}\r\n\r\n","/*========== COLOR PALETTE ===============*/\r\n\r\n$accent-color:#7d94a1;\r\n$light-text: #F3F3F4;\r\n$contrast-text: #B1A494;\r\n$dark-text: #808080;\r\n$lighter-green:#c4baae;\r\n\r\n$dark-background: #E1DDDE;\r\n$medium-background: #F3F3F4;\r\n$light-background:white;","@import '../../styles/globalImports.scss';\r\n\r\n.program-bar{\r\n    background-color:$lighter-green;\r\n    height:100%;\r\n    width:300px;\r\n    box-shadow: 10px 10px 8px silver; \r\n    display:flex;\r\n    flex-direction:column;\r\n    align-items:center;\r\n    padding:20px;\r\n    box-sizing:border-box;\r\n    font-size:20px;\r\n    color: $light-text;\r\n    position:fixed;\r\n\r\n    &__title{\r\n        box-sizing:border-box;\r\n        width:100%;\r\n        padding:10px 16px;\r\n        text-align:center;\r\n        margin-top:140px;\r\n        font-size:24px;\r\n        background-color: $light-text;\r\n        border-radius:4px;\r\n        box-shadow: 5px 5px 5px silver; \r\n        color: $accent-color;\r\n    }\r\n    &__menu{\r\n        padding-top:32px;\r\n        &-link{\r\n            color:$light-text;\r\n            // color:grey;\r\n            margin-bottom:20px;\r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/ProgramContent/ProgramContent.scss":
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!./node_modules/postcss-loader/src??postcss!./node_modules/resolve-url-loader??ref--5-oneOf-6-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./src/components/ProgramContent/ProgramContent.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_fonts_Montserrat_Bold_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/fonts/Montserrat-Bold.ttf */ "./src/assets/fonts/Montserrat-Bold.ttf");
+/* harmony import */ var _assets_fonts_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/fonts/Montserrat-Regular.ttf */ "./src/assets/fonts/Montserrat-Regular.ttf");
+/* harmony import */ var _assets_fonts_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/fonts/Montserrat-SemiBold.ttf */ "./src/assets/fonts/Montserrat-SemiBold.ttf");
+/* harmony import */ var _assets_fonts_SourceSansPro_Regular_ttf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/fonts/SourceSansPro-Regular.ttf */ "./src/assets/fonts/SourceSansPro-Regular.ttf");
+/* harmony import */ var _assets_fonts_SourceSansPro_Bold_ttf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/fonts/SourceSansPro-Bold.ttf */ "./src/assets/fonts/SourceSansPro-Bold.ttf");
+/* harmony import */ var _assets_fonts_PinyonScript_Regular_ttf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/fonts/PinyonScript-Regular.ttf */ "./src/assets/fonts/PinyonScript-Regular.ttf");
+// Imports
+
+
+
+
+
+
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_Bold_ttf__WEBPACK_IMPORTED_MODULE_2__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_4__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_SourceSansPro_Regular_ttf__WEBPACK_IMPORTED_MODULE_5__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_SourceSansPro_Bold_ttf__WEBPACK_IMPORTED_MODULE_6__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_5___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_PinyonScript_Regular_ttf__WEBPACK_IMPORTED_MODULE_7__["default"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, "@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  font-weight: 700;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n  font-weight: 600;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"SourceSansPro\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"SourceSansPro\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ");\n  font-weight: 700;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"PinyonScript\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ");\n  font-weight: 100;\n  font-style: normal; }\n\n/*========== COLOR PALETTE ===============*/\n/*========== COLOR PALETTE ===============*/\n.program {\n  padding: 50px 20px 0 20px;\n  height: 100vh;\n  width: 75%;\n  padding-left: 320px; }\n  .program__title {\n    position: absolute;\n    width: 98%;\n    top: -2%;\n    left: 1%;\n    box-sizing: border-box;\n    background-color: #7d94a1;\n    border-radius: 4px;\n    box-shadow: -4px 10px 8px #E1DDDE;\n    color: #F3F3F4;\n    padding: 16px; }\n    .program__title-name {\n      font-size: 24px; }\n  .program__description {\n    margin-top: 60px;\n    padding: 16px;\n    text-align: center; }\n  .program__resources {\n    box-sizing: border-box;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    position: relative;\n    border-radius: 4px;\n    padding: 16px;\n    border-radius: 4px;\n    background-color: white; }\n\n.resource__list {\n  padding: 16px;\n  margin-top: 40px; }\n  .resource__list-item {\n    background-color: #F3F3F4;\n    padding: 16px;\n    margin-bottom: 10px; }\n\n.resource__add {\n  background-color: #7d94a1;\n  border-radius: 10px;\n  width: 50px;\n  height: 30px;\n  border: none;\n  font-family: \"SourceSansPro\";\n  color: white;\n  font-size: 24px;\n  margin-right: 16px;\n  font-size: 12px;\n  align-self: flex-end; }\n", "",{"version":3,"sources":["webpack://src/styles/partials/_typography.scss","webpack://src/styles/partials/_variables.scss","webpack://src/components/ProgramContent/ProgramContent.scss","webpack://src/styles/partials/_mixins.scss"],"names":[],"mappings":"AAAA;EACI,yBAAyB;EACzB,4CAAiD;EACjD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,yBAAyB;EACzB,4CAAoD;EACpD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,yBAAyB;EACzB,4CAAqD;EACrD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,4BAA4B;EAC5B,4CAAuD;EACvD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,4BAA4B;EAC5B,4CAAoD;EACpD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,2BAA2B;EAC3B,4CAAsD;EACtD,gBAAgB;EAChB,kBAAkB,EAAA;;ACvCtB,2CAAA;AAAA,2CAAA;ACEA;EACI,yBAAwB;EACxB,aAAY;EACZ,UAAS;EACT,mBAAkB,EAAA;EAElB;IACI,kBAAiB;IACjB,UAAS;IACT,QAAO;IACP,QAAO;IACP,sBAAqB;IACrB,yBDZa;ICab,kBAAiB;IACjB,iCDRiB;ICSjB,cDdY;ICeZ,aAAY,EAAA;IAEZ;MACI,eAAc,EAAA;EAItB;IACI,gBAAe;IACf,aAAY;IACZ,kBAAiB,EAAA;EAGrB;IACI,sBAAqB;IACrB,YAAW;IACX,aAAY;IACZ,sBAAqB;IACrB,kBAAiB;IACjB,kBAAiB;IACjB,aAAY;IACZ,kBAAiB;IACjB,uBAAsB,EAAA;;AAK1B;EACI,aAAY;EACZ,gBAAe,EAAA;EACf;IACI,yBDxCe;ICyCf,aAAY;IACZ,mBAAkB,EAAA;;AAG1B;ECnDA,yBFDiB;EEEjB,mBAAkB;EAClB,WDkD6B;ECjD7B,YDiDkC;EChDlC,YAAW;EACX,4BAA4B;EAC5B,YAAW;EACX,eAAc;ED8CV,kBAAiB;EACjB,eAAc;EACd,oBAAmB,EAAA","sourcesContent":["@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-Bold.ttf\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-Regular.ttf\");\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-SemiBold.ttf\");\r\n    font-weight: 600;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"SourceSansPro\";\r\n    src:url(\"../../assets/fonts/SourceSansPro-Regular.ttf\");\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"SourceSansPro\";\r\n    src:url(\"../../assets/fonts/SourceSansPro-Bold.ttf\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"PinyonScript\";\r\n    src:url(\"../../assets/fonts/PinyonScript-Regular.ttf\");\r\n    font-weight: 100;\r\n    font-style: normal;\r\n}\r\n\r\n","/*========== COLOR PALETTE ===============*/\r\n\r\n$accent-color:#7d94a1;\r\n$light-text: #F3F3F4;\r\n$contrast-text: #B1A494;\r\n$dark-text: #808080;\r\n$lighter-green:#c4baae;\r\n\r\n$dark-background: #E1DDDE;\r\n$medium-background: #F3F3F4;\r\n$light-background:white;","@import '../../styles/globalImports.scss';\r\n\r\n.program{\r\n    padding:50px 20px 0 20px;\r\n    height:100vh;\r\n    width:75%;\r\n    padding-left:320px;\r\n    \r\n    &__title{\r\n        position:absolute;\r\n        width:98%;\r\n        top:-2%;\r\n        left:1%;\r\n        box-sizing:border-box;\r\n        background-color:$accent-color;\r\n        border-radius:4px;\r\n        box-shadow: -4px 10px 8px  $dark-background; \r\n        color: $light-text;\r\n        padding:16px;\r\n        \r\n        &-name{\r\n            font-size:24px;\r\n        }\r\n        \r\n    }\r\n    &__description{\r\n        margin-top:60px;\r\n        padding:16px;\r\n        text-align:center;\r\n        \r\n    }\r\n    &__resources{\r\n        box-sizing:border-box;\r\n        height:100%;\r\n        display:flex;\r\n        flex-direction:column;\r\n        position:relative;\r\n        border-radius:4px;\r\n        padding:16px;\r\n        border-radius:4px;\r\n        background-color:white;\r\n    }\r\n}\r\n\r\n.resource{\r\n    &__list{\r\n        padding:16px;\r\n        margin-top:40px;\r\n        &-item{\r\n            background-color:$medium-background;\r\n            padding:16px;\r\n            margin-bottom:10px;\r\n        }\r\n    }\r\n    &__add{\r\n        @include buildButton(50px,30px);\r\n        margin-right:16px;\r\n        font-size:12px;\r\n        align-self:flex-end;\r\n    }\r\n}","@import '../../styles/partials/variables.scss';\r\n\r\n@mixin buildButton($width, $height){\r\n    background-color: $accent-color;\r\n    border-radius:10px;\r\n    width:$width;\r\n    height:$height;\r\n    border:none;\r\n    font-family: \"SourceSansPro\";\r\n    color:white;\r\n    font-size:24px;\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/SideBar/SideBar.scss":
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!./node_modules/postcss-loader/src??postcss!./node_modules/resolve-url-loader??ref--5-oneOf-6-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./src/components/SideBar/SideBar.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_fonts_Montserrat_Bold_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/fonts/Montserrat-Bold.ttf */ "./src/assets/fonts/Montserrat-Bold.ttf");
+/* harmony import */ var _assets_fonts_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/fonts/Montserrat-Regular.ttf */ "./src/assets/fonts/Montserrat-Regular.ttf");
+/* harmony import */ var _assets_fonts_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/fonts/Montserrat-SemiBold.ttf */ "./src/assets/fonts/Montserrat-SemiBold.ttf");
+/* harmony import */ var _assets_fonts_SourceSansPro_Regular_ttf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/fonts/SourceSansPro-Regular.ttf */ "./src/assets/fonts/SourceSansPro-Regular.ttf");
+/* harmony import */ var _assets_fonts_SourceSansPro_Bold_ttf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/fonts/SourceSansPro-Bold.ttf */ "./src/assets/fonts/SourceSansPro-Bold.ttf");
+/* harmony import */ var _assets_fonts_PinyonScript_Regular_ttf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/fonts/PinyonScript-Regular.ttf */ "./src/assets/fonts/PinyonScript-Regular.ttf");
+// Imports
+
+
+
+
+
+
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_Bold_ttf__WEBPACK_IMPORTED_MODULE_2__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_4__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_SourceSansPro_Regular_ttf__WEBPACK_IMPORTED_MODULE_5__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_SourceSansPro_Bold_ttf__WEBPACK_IMPORTED_MODULE_6__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_5___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_PinyonScript_Regular_ttf__WEBPACK_IMPORTED_MODULE_7__["default"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, "@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  font-weight: 700;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"Montserrat\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n  font-weight: 600;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"SourceSansPro\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n  font-weight: 400;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"SourceSansPro\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ");\n  font-weight: 700;\n  font-style: normal; }\n\n@font-face {\n  font-family: \"PinyonScript\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ");\n  font-weight: 100;\n  font-style: normal; }\n\n/*========== COLOR PALETTE ===============*/\n/*========== COLOR PALETTE ===============*/\n.sidebar {\n  background-color: #F3F3F4;\n  height: 100vh;\n  width: 300px;\n  box-shadow: 10px 10px 8px #E1DDDE;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 20px;\n  box-sizing: border-box;\n  font-size: 24px;\n  color: grey;\n  z-index: 2;\n  position: fixed; }\n  .sidebar__logo {\n    font-family: \"Montserrat\";\n    color: #B1A494;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-bottom: 10px; }\n    .sidebar__logo-title {\n      font-size: 24px; }\n    .sidebar__logo-bigLetter {\n      font-size: 32px;\n      font-weight: 600; }\n  .sidebar__divider {\n    width: 140px;\n    border: 2px solid #B1A494;\n    margin-bottom: 32px; }\n  .sidebar__menu {\n    margin-top: 24px;\n    width: 100%;\n    height: 50%; }\n    .sidebar__menu-link {\n      color: #808080;\n      display: flex;\n      align-items: center;\n      padding: 10px 16px;\n      margin-bottom: 32px; }\n      .sidebar__menu-link--active {\n        background-color: #7d94a1;\n        border-radius: 4px;\n        box-shadow: 10px 10px 8px #E1DDDE;\n        color: #F3F3F4; }\n    .sidebar__menu-icon {\n      height: 25px;\n      width: 25px;\n      margin-right: 20px;\n      filter: invert(52%) sepia(0%) saturate(0%) hue-rotate(250deg) brightness(96%) contrast(80%); }\n      .sidebar__menu-icon--active {\n        filter: invert(100%) sepia(2%) saturate(976%) hue-rotate(228deg) brightness(95%) contrast(101%); }\n", "",{"version":3,"sources":["webpack://src/styles/partials/_typography.scss","webpack://src/styles/partials/_variables.scss","webpack://src/components/SideBar/SideBar.scss"],"names":[],"mappings":"AAAA;EACI,yBAAyB;EACzB,4CAAiD;EACjD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,yBAAyB;EACzB,4CAAoD;EACpD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,yBAAyB;EACzB,4CAAqD;EACrD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,4BAA4B;EAC5B,4CAAuD;EACvD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,4BAA4B;EAC5B,4CAAoD;EACpD,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,2BAA2B;EAC3B,4CAAsD;EACtD,gBAAgB;EAChB,kBAAkB,EAAA;;ACvCtB,2CAAA;AAAA,2CAAA;ACEA;EACI,yBDMuB;ECLvB,aAAY;EACZ,YAAW;EACX,iCDEqB;ECDrB,aAAY;EACZ,sBAAqB;EACrB,mBAAkB;EAClB,aAAY;EACZ,sBAAqB;EACrB,eAAc;EACd,WAAW;EACX,UAAS;EACT,eAAc,EAAA;EAEd;IACI,yBAAwB;IACxB,cDfe;ICgBf,aAAY;IACZ,uBAAsB;IACtB,mBAAkB;IAClB,mBAAkB,EAAA;IAElB;MACI,eAAc,EAAA;IAGlB;MACI,eAAc;MACd,gBAAe,EAAA;EAIvB;IACI,YAAW;IACX,yBDjCe;ICkCf,mBAAkB,EAAA;EAGtB;IACI,gBAAe;IACf,WAAU;IACV,WAAU,EAAA;IAEV;MACI,cD1CO;MC2CP,aAAY;MACZ,mBAAkB;MAElB,kBAAiB;MACjB,mBAAkB,EAAA;MAElB;QACI,yBDrDK;QCsDL,kBAAiB;QACjB,iCDjDS;QCkDT,cDvDI,EAAA;IC0DZ;MACI,YAAW;MACX,WAAU;MACV,kBAAiB;MACjB,2FAA2F,EAAA;MAE3F;QACI,+FAA+F,EAAA","sourcesContent":["@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-Bold.ttf\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-Regular.ttf\");\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"Montserrat\";\r\n    src:url(\"../../assets/fonts/Montserrat-SemiBold.ttf\");\r\n    font-weight: 600;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"SourceSansPro\";\r\n    src:url(\"../../assets/fonts/SourceSansPro-Regular.ttf\");\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"SourceSansPro\";\r\n    src:url(\"../../assets/fonts/SourceSansPro-Bold.ttf\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face{\r\n    font-family: \"PinyonScript\";\r\n    src:url(\"../../assets/fonts/PinyonScript-Regular.ttf\");\r\n    font-weight: 100;\r\n    font-style: normal;\r\n}\r\n\r\n","/*========== COLOR PALETTE ===============*/\r\n\r\n$accent-color:#7d94a1;\r\n$light-text: #F3F3F4;\r\n$contrast-text: #B1A494;\r\n$dark-text: #808080;\r\n$lighter-green:#c4baae;\r\n\r\n$dark-background: #E1DDDE;\r\n$medium-background: #F3F3F4;\r\n$light-background:white;","@import '../../styles/globalImports.scss';\r\n\r\n.sidebar{\r\n    background-color:$medium-background;\r\n    height:100vh;\r\n    width:300px;\r\n    box-shadow: 10px 10px 8px  $dark-background; \r\n    display:flex;\r\n    flex-direction:column;\r\n    align-items:center;\r\n    padding:20px;\r\n    box-sizing:border-box;\r\n    font-size:24px;\r\n    color: grey; \r\n    z-index:2;\r\n    position:fixed;\r\n    \r\n    &__logo{\r\n        font-family:\"Montserrat\";\r\n        color: $contrast-text;\r\n        display:flex;\r\n        justify-content:center;\r\n        align-items:center;\r\n        margin-bottom:10px;\r\n\r\n        &-title{\r\n            font-size:24px;\r\n        }\r\n\r\n        &-bigLetter{\r\n            font-size:32px;\r\n            font-weight:600;\r\n        }\r\n        \r\n    }\r\n    &__divider{\r\n        width:140px;\r\n        border: 2px solid $contrast-text;\r\n        margin-bottom:32px;\r\n        \r\n    }\r\n    &__menu{\r\n        margin-top:24px;\r\n        width:100%;\r\n        height:50%;\r\n\r\n        &-link{\r\n            color: $dark-text; \r\n            display:flex;\r\n            align-items:center;\r\n            \r\n            padding:10px 16px;\r\n            margin-bottom:32px;\r\n\r\n            &--active{\r\n                background-color:$accent-color;\r\n                border-radius:4px;\r\n                box-shadow: 10px 10px 8px  $dark-background; \r\n                color: $light-text;\r\n            }\r\n        }\r\n        &-icon{\r\n            height:25px;\r\n            width:25px;\r\n            margin-right:20px;\r\n            filter: invert(52%) sepia(0%) saturate(0%) hue-rotate(250deg) brightness(96%) contrast(80%);\r\n\r\n            &--active{\r\n                filter: invert(100%) sepia(2%) saturate(976%) hue-rotate(228deg) brightness(95%) contrast(101%);\r\n            }\r\n            \r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _App_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.scss */ "./src/App.scss");
+/* harmony import */ var _App_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_App_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Pages_Intro_Intro__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Pages/Intro/Intro */ "./src/Pages/Intro/Intro.jsx");
+/* harmony import */ var _Pages_Main_Main__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Pages/Main/Main */ "./src/Pages/Main/Main.jsx");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+
+var _jsxFileName = "C:\\Users\\patti\\Desktop\\WebDev\\capstone\\initial-layout\\capstone-first-pass\\src\\App.js";
+
+
+
+
+
+function App() {
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+    className: "App",
+    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], {
+      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], {
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+          path: "/",
+          exact: true,
+          component: _Pages_Intro_Intro__WEBPACK_IMPORTED_MODULE_3__["default"]
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 17
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+          path: "/main",
+          render: props => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Pages_Main_Main__WEBPACK_IMPORTED_MODULE_4__["default"], { ...props
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 14,
+            columnNumber: 55
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 17
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 12,
+        columnNumber: 13
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 9
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 10,
+    columnNumber: 5
+  }, this);
+}
+
+_c = App;
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "App");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/App.scss":
+/*!**********************!*\
+  !*** ./src/App.scss ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../node_modules/postcss-loader/src??postcss!../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./App.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/App.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+if (true) {
+  if (!content.locals || module.hot.invalidate) {
+    var isEqualLocals = function isEqualLocals(a, b, isNamedExport) {
+  if (!a && b || a && !b) {
+    return false;
+  }
+
+  var p;
+
+  for (p in a) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (a[p] !== b[p]) {
+      return false;
+    }
+  }
+
+  for (p in b) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (!a[p]) {
+      return false;
+    }
+  }
+
+  return true;
+};
+    var oldLocals = content.locals;
+
+    module.hot.accept(
+      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../node_modules/postcss-loader/src??postcss!../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./App.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/App.scss",
+      function () {
+        content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../node_modules/postcss-loader/src??postcss!../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./App.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/App.scss");
+
+              content = content.__esModule ? content.default : content;
+
+              if (typeof content === 'string') {
+                content = [[module.i, content, '']];
+              }
+
+              if (!isEqualLocals(oldLocals, content.locals)) {
+                module.hot.invalidate();
+
+                return;
+              }
+
+              oldLocals = content.locals;
+
+              update(content);
+      }
+    )
+  }
+
+  module.hot.dispose(function() {
+    update();
+  });
+}
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/Pages/Intro/Intro.jsx":
+/*!***********************************!*\
+  !*** ./src/Pages/Intro/Intro.jsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Intro_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Intro.scss */ "./src/Pages/Intro/Intro.scss");
+/* harmony import */ var _Intro_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Intro_scss__WEBPACK_IMPORTED_MODULE_3__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+
+var _jsxFileName = "C:\\Users\\patti\\Desktop\\WebDev\\capstone\\initial-layout\\capstone-first-pass\\src\\Pages\\Intro\\Intro.jsx";
+
+
+
+
+function Intro() {
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+    className: "intro",
+    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+      className: "intro__logo",
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("h1", {
+        className: "intro__logo-title",
+        children: "PLAN"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 10,
+        columnNumber: 17
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("span", {
+        className: "intro__logo-bigLetter",
+        children: "2"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 11,
+        columnNumber: 17
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("h1", {
+        className: "intro__logo-title",
+        children: " TRAIN"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 12,
+        columnNumber: 17
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 13
+    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+      className: "intro__divider"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 13
+    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("h2", {
+      className: "intro__subtitle",
+      children: " Organizing Your Client Information"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 13
+    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+      to: "/main",
+      children: [" ", /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
+        className: "intro__button",
+        children: " Get Started "
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 16,
+        columnNumber: 31
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 13
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 9
+  }, this);
+}
+
+_c = Intro;
+/* harmony default export */ __webpack_exports__["default"] = (Intro);
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "Intro");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/Pages/Intro/Intro.scss":
+/*!************************************!*\
+  !*** ./src/Pages/Intro/Intro.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./Intro.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/Pages/Intro/Intro.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+if (true) {
+  if (!content.locals || module.hot.invalidate) {
+    var isEqualLocals = function isEqualLocals(a, b, isNamedExport) {
+  if (!a && b || a && !b) {
+    return false;
+  }
+
+  var p;
+
+  for (p in a) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (a[p] !== b[p]) {
+      return false;
+    }
+  }
+
+  for (p in b) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (!a[p]) {
+      return false;
+    }
+  }
+
+  return true;
+};
+    var oldLocals = content.locals;
+
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./Intro.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/Pages/Intro/Intro.scss",
+      function () {
+        content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./Intro.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/Pages/Intro/Intro.scss");
+
+              content = content.__esModule ? content.default : content;
+
+              if (typeof content === 'string') {
+                content = [[module.i, content, '']];
+              }
+
+              if (!isEqualLocals(oldLocals, content.locals)) {
+                module.hot.invalidate();
+
+                return;
+              }
+
+              oldLocals = content.locals;
+
+              update(content);
+      }
+    )
+  }
+
+  module.hot.dispose(function() {
+    update();
+  });
+}
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/Pages/Intro/intro-background.png":
+/*!**********************************************!*\
+  !*** ./src/Pages/Intro/intro-background.png ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "static/media/intro-background.4a930224.png");
+
+/***/ }),
+
+/***/ "./src/Pages/Main/Main.jsx":
+/*!*********************************!*\
+  !*** ./src/Pages/Main/Main.jsx ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Main.scss */ "./src/Pages/Main/Main.scss");
+/* harmony import */ var _Main_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Main_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_SideBar_SideBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/SideBar/SideBar */ "./src/components/SideBar/SideBar.jsx");
+/* harmony import */ var _Programs_Programs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Programs/Programs */ "./src/Pages/Programs/Programs.jsx");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+
+var _jsxFileName = "C:\\Users\\patti\\Desktop\\WebDev\\capstone\\initial-layout\\capstone-first-pass\\src\\Pages\\Main\\Main.jsx";
+
+
+
+
+
+function Main() {
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+    className: "main-layout",
+    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_components_SideBar_SideBar__WEBPACK_IMPORTED_MODULE_3__["default"], {}, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 13
+    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Programs_Programs__WEBPACK_IMPORTED_MODULE_4__["default"], {}, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 13
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 10,
+    columnNumber: 9
+  }, this);
+}
+
+_c = Main;
+/* harmony default export */ __webpack_exports__["default"] = (Main);
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "Main");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/Pages/Main/Main.scss":
+/*!**********************************!*\
+  !*** ./src/Pages/Main/Main.scss ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./Main.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/Pages/Main/Main.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+if (true) {
+  if (!content.locals || module.hot.invalidate) {
+    var isEqualLocals = function isEqualLocals(a, b, isNamedExport) {
+  if (!a && b || a && !b) {
+    return false;
+  }
+
+  var p;
+
+  for (p in a) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (a[p] !== b[p]) {
+      return false;
+    }
+  }
+
+  for (p in b) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (!a[p]) {
+      return false;
+    }
+  }
+
+  return true;
+};
+    var oldLocals = content.locals;
+
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./Main.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/Pages/Main/Main.scss",
+      function () {
+        content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./Main.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/Pages/Main/Main.scss");
+
+              content = content.__esModule ? content.default : content;
+
+              if (typeof content === 'string') {
+                content = [[module.i, content, '']];
+              }
+
+              if (!isEqualLocals(oldLocals, content.locals)) {
+                module.hot.invalidate();
+
+                return;
+              }
+
+              oldLocals = content.locals;
+
+              update(content);
+      }
+    )
+  }
+
+  module.hot.dispose(function() {
+    update();
+  });
+}
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/Pages/Programs/Programs.jsx":
+/*!*****************************************!*\
+  !*** ./src/Pages/Programs/Programs.jsx ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Programs_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Programs.scss */ "./src/Pages/Programs/Programs.scss");
+/* harmony import */ var _Programs_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Programs_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_ProgramBar_ProgramBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/ProgramBar/ProgramBar */ "./src/components/ProgramBar/ProgramBar.jsx");
+/* harmony import */ var _components_ProgramContent_ProgramContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/ProgramContent/ProgramContent */ "./src/components/ProgramContent/ProgramContent.jsx");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+
+var _jsxFileName = "C:\\Users\\patti\\Desktop\\WebDev\\capstone\\initial-layout\\capstone-first-pass\\src\\Pages\\Programs\\Programs.jsx";
+
+
+
+
+
+function Programs() {
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+    className: "programs__container",
+    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_components_ProgramBar_ProgramBar__WEBPACK_IMPORTED_MODULE_3__["default"], {}, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 13
+    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_components_ProgramContent_ProgramContent__WEBPACK_IMPORTED_MODULE_4__["default"], {}, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 13
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 9,
+    columnNumber: 9
+  }, this);
+}
+
+_c = Programs;
+;
+/* harmony default export */ __webpack_exports__["default"] = (Programs);
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "Programs");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/Pages/Programs/Programs.scss":
+/*!******************************************!*\
+  !*** ./src/Pages/Programs/Programs.scss ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./Programs.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/Pages/Programs/Programs.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+if (true) {
+  if (!content.locals || module.hot.invalidate) {
+    var isEqualLocals = function isEqualLocals(a, b, isNamedExport) {
+  if (!a && b || a && !b) {
+    return false;
+  }
+
+  var p;
+
+  for (p in a) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (a[p] !== b[p]) {
+      return false;
+    }
+  }
+
+  for (p in b) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (!a[p]) {
+      return false;
+    }
+  }
+
+  return true;
+};
+    var oldLocals = content.locals;
+
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./Programs.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/Pages/Programs/Programs.scss",
+      function () {
+        content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./Programs.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/Pages/Programs/Programs.scss");
+
+              content = content.__esModule ? content.default : content;
+
+              if (typeof content === 'string') {
+                content = [[module.i, content, '']];
+              }
+
+              if (!isEqualLocals(oldLocals, content.locals)) {
+                module.hot.invalidate();
+
+                return;
+              }
+
+              oldLocals = content.locals;
+
+              update(content);
+      }
+    )
+  }
+
+  module.hot.dispose(function() {
+    update();
+  });
+}
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Montserrat-Bold.ttf":
+/*!**********************************************!*\
+  !*** ./src/assets/fonts/Montserrat-Bold.ttf ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "static/media/Montserrat-Bold.079ca05d.ttf");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Montserrat-Regular.ttf":
+/*!*************************************************!*\
+  !*** ./src/assets/fonts/Montserrat-Regular.ttf ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "static/media/Montserrat-Regular.3cd78665.ttf");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Montserrat-SemiBold.ttf":
+/*!**************************************************!*\
+  !*** ./src/assets/fonts/Montserrat-SemiBold.ttf ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "static/media/Montserrat-SemiBold.fa8441f3.ttf");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/PinyonScript-Regular.ttf":
+/*!***************************************************!*\
+  !*** ./src/assets/fonts/PinyonScript-Regular.ttf ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "static/media/PinyonScript-Regular.49526d59.ttf");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/SourceSansPro-Bold.ttf":
+/*!*************************************************!*\
+  !*** ./src/assets/fonts/SourceSansPro-Bold.ttf ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "static/media/SourceSansPro-Bold.12e6acd2.ttf");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/SourceSansPro-Regular.ttf":
+/*!****************************************************!*\
+  !*** ./src/assets/fonts/SourceSansPro-Regular.ttf ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "static/media/SourceSansPro-Regular.efa76f83.ttf");
+
+/***/ }),
+
+/***/ "./src/components/ProgramBar/ProgramBar.jsx":
+/*!**************************************************!*\
+  !*** ./src/components/ProgramBar/ProgramBar.jsx ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _ProgramBar_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ProgramBar.scss */ "./src/components/ProgramBar/ProgramBar.scss");
+/* harmony import */ var _ProgramBar_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ProgramBar_scss__WEBPACK_IMPORTED_MODULE_3__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+
+var _jsxFileName = "C:\\Users\\patti\\Desktop\\WebDev\\capstone\\initial-layout\\capstone-first-pass\\src\\components\\ProgramBar\\ProgramBar.jsx";
+
+
+
+
+function ProgramBar() {
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+    className: "program-bar",
+    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+      className: "program-bar__title",
+      children: "Available Programs"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 17
+    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("ol", {
+      className: "program-bar__menu",
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/",
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
+          className: "program-bar__menu-link",
+          children: "Puppy"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 25
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 11,
+        columnNumber: 21
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/",
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
+          className: "program-bar__menu-link",
+          children: "Basic Obedience"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 25
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 14,
+        columnNumber: 21
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/",
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
+          className: "program-bar__menu-link",
+          children: "Intermediate Obedience"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 25
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 17,
+        columnNumber: 21
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/",
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
+          className: "program-bar__menu-link",
+          children: "Advanced Obedience"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 25
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 21
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/",
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
+          className: "program-bar__menu-link",
+          children: "Tricks"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 25
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 23,
+        columnNumber: 21
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 17
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 13
+  }, this);
+}
+
+_c = ProgramBar;
+/* harmony default export */ __webpack_exports__["default"] = (ProgramBar);
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "ProgramBar");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/components/ProgramBar/ProgramBar.scss":
+/*!***************************************************!*\
+  !*** ./src/components/ProgramBar/ProgramBar.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./ProgramBar.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/ProgramBar/ProgramBar.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+if (true) {
+  if (!content.locals || module.hot.invalidate) {
+    var isEqualLocals = function isEqualLocals(a, b, isNamedExport) {
+  if (!a && b || a && !b) {
+    return false;
+  }
+
+  var p;
+
+  for (p in a) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (a[p] !== b[p]) {
+      return false;
+    }
+  }
+
+  for (p in b) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (!a[p]) {
+      return false;
+    }
+  }
+
+  return true;
+};
+    var oldLocals = content.locals;
+
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./ProgramBar.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/ProgramBar/ProgramBar.scss",
+      function () {
+        content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./ProgramBar.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/ProgramBar/ProgramBar.scss");
+
+              content = content.__esModule ? content.default : content;
+
+              if (typeof content === 'string') {
+                content = [[module.i, content, '']];
+              }
+
+              if (!isEqualLocals(oldLocals, content.locals)) {
+                module.hot.invalidate();
+
+                return;
+              }
+
+              oldLocals = content.locals;
+
+              update(content);
+      }
+    )
+  }
+
+  module.hot.dispose(function() {
+    update();
+  });
+}
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/components/ProgramContent/ProgramContent.jsx":
+/*!**********************************************************!*\
+  !*** ./src/components/ProgramContent/ProgramContent.jsx ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _ProgramContent_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ProgramContent.scss */ "./src/components/ProgramContent/ProgramContent.scss");
+/* harmony import */ var _ProgramContent_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_ProgramContent_scss__WEBPACK_IMPORTED_MODULE_2__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+
+var _jsxFileName = "C:\\Users\\patti\\Desktop\\WebDev\\capstone\\initial-layout\\capstone-first-pass\\src\\components\\ProgramContent\\ProgramContent.jsx";
+
+
+
+function ProgramContent() {
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+    className: "program",
+    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+      className: "program__resources",
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+        className: "program__title",
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+          className: "program__title-name",
+          children: "Puppy Training"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 9,
+          columnNumber: 21
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 8,
+        columnNumber: 17
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+        className: "program__description",
+        children: "Private in-home sessions let you and your puppy learn everything you need to know to create a great relationship from the get-go.  Have the chance to learn information one-on-one in your home where you and your puppy can focus more easily.  Create your own curriculum from the topics below."
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 11,
+        columnNumber: 17
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+        className: "resource__list",
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "resource__list-item",
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+            children: "Basic Manners "
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 14,
+            columnNumber: 25
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 21
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "resource__list-item",
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+            className: "resource__name",
+            children: "Intro to Basic Obedience"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 17,
+            columnNumber: 25
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 21
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "resource__list-item",
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+            className: "resource__name",
+            children: "Preventing Problem Behaviour"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 20,
+            columnNumber: 25
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 21
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "resource__list-item",
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+            className: "resource__name",
+            children: "Greeting Strangers"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 22,
+            columnNumber: 25
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 21
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "resource__list-item",
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+            className: "resource__name",
+            children: "Grooming"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 25,
+            columnNumber: 25
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 21
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "resource__list-item",
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+            className: "resource__name",
+            children: "Nutrition"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 28,
+            columnNumber: 25
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 27,
+          columnNumber: 21
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "resource__list-item",
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+            className: "resource__name",
+            children: "Crate Training"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 31,
+            columnNumber: 25
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 21
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "resource__list-item",
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+            className: "resource__name",
+            children: "Housebreaking"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 34,
+            columnNumber: 25
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 21
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "resource__list-item",
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+            className: "resource__name",
+            children: "Housebreaking"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 37,
+            columnNumber: 25
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 36,
+          columnNumber: 41
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "resource__list-item",
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+            className: "resource__name",
+            children: "Housebreaking"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 40,
+            columnNumber: 25
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 39,
+          columnNumber: 41
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "resource__list-item",
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+            className: "resource__name",
+            children: "Housebreaking"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 43,
+            columnNumber: 25
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 42,
+          columnNumber: 41
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "resource__list-item",
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+            className: "resource__name",
+            children: "Housebreaking"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 46,
+            columnNumber: 25
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 45,
+          columnNumber: 41
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 12,
+        columnNumber: 17
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
+        className: "resource__add",
+        children: " + Add "
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 49,
+        columnNumber: 17
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 13
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 6,
+    columnNumber: 9
+  }, this);
+}
+
+_c = ProgramContent;
+/* harmony default export */ __webpack_exports__["default"] = (ProgramContent);
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "ProgramContent");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/components/ProgramContent/ProgramContent.scss":
+/*!***********************************************************!*\
+  !*** ./src/components/ProgramContent/ProgramContent.scss ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./ProgramContent.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/ProgramContent/ProgramContent.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+if (true) {
+  if (!content.locals || module.hot.invalidate) {
+    var isEqualLocals = function isEqualLocals(a, b, isNamedExport) {
+  if (!a && b || a && !b) {
+    return false;
+  }
+
+  var p;
+
+  for (p in a) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (a[p] !== b[p]) {
+      return false;
+    }
+  }
+
+  for (p in b) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (!a[p]) {
+      return false;
+    }
+  }
+
+  return true;
+};
+    var oldLocals = content.locals;
+
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./ProgramContent.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/ProgramContent/ProgramContent.scss",
+      function () {
+        content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./ProgramContent.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/ProgramContent/ProgramContent.scss");
+
+              content = content.__esModule ? content.default : content;
+
+              if (typeof content === 'string') {
+                content = [[module.i, content, '']];
+              }
+
+              if (!isEqualLocals(oldLocals, content.locals)) {
+                module.hot.invalidate();
+
+                return;
+              }
+
+              oldLocals = content.locals;
+
+              update(content);
+      }
+    )
+  }
+
+  module.hot.dispose(function() {
+    update();
+  });
+}
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/components/SideBar/SideBar.jsx":
+/*!********************************************!*\
+  !*** ./src/components/SideBar/SideBar.jsx ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _SideBar_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SideBar.scss */ "./src/components/SideBar/SideBar.scss");
+/* harmony import */ var _SideBar_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_SideBar_scss__WEBPACK_IMPORTED_MODULE_3__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+
+var _jsxFileName = "C:\\Users\\patti\\Desktop\\WebDev\\capstone\\initial-layout\\capstone-first-pass\\src\\components\\SideBar\\SideBar.jsx";
+
+
+
+
+function SideBar() {
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+    className: "sidebar",
+    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+      to: "/",
+      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+        className: "sidebar__logo",
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("h1", {
+          className: "sidebar__logo-title",
+          children: "P"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 21
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("span", {
+          className: "sidebar__logo-bigLetter",
+          children: "2"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 21
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("h1", {
+          className: "sidebar__logo-title",
+          children: " T"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 21
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 10,
+        columnNumber: 17
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 13
+    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+      className: "sidebar__divider"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 13
+    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+      className: "sidebar__user",
+      children: "pperlock"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 13
+    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("ul", {
+      className: "sidebar__menu",
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/",
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
+          className: "sidebar__menu-link sidebar__menu-link--active",
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("img", {
+            className: "sidebar__menu-icon sidebar__menu-icon--active",
+            src: "/icons/programs-icon.svg"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 20,
+            columnNumber: 83
+          }, this), "Programs"]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 21
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 17
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/",
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
+          className: "sidebar__menu-link",
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("img", {
+            className: "sidebar__menu-icon",
+            src: "/icons/clients-icon.svg"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 23,
+            columnNumber: 56
+          }, this), "Clients"]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 23,
+          columnNumber: 21
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 17
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/",
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
+          className: "sidebar__menu-link",
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("img", {
+            className: "sidebar__menu-icon",
+            src: "/icons/calendar-icon.svg"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 26,
+            columnNumber: 56
+          }, this), "Schedule"]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 21
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 17
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/",
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("li", {
+          className: "sidebar__menu-link",
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("img", {
+            className: "sidebar__menu-icon",
+            src: "/icons/user-profile-icon.svg"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 29,
+            columnNumber: 56
+          }, this), "User Profile"]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 21
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 17
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 13
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 9
+  }, this);
+}
+
+_c = SideBar;
+/* harmony default export */ __webpack_exports__["default"] = (SideBar);
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "SideBar");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/components/SideBar/SideBar.scss":
+/*!*********************************************!*\
+  !*** ./src/components/SideBar/SideBar.scss ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./SideBar.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/SideBar/SideBar.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+if (true) {
+  if (!content.locals || module.hot.invalidate) {
+    var isEqualLocals = function isEqualLocals(a, b, isNamedExport) {
+  if (!a && b || a && !b) {
+    return false;
+  }
+
+  var p;
+
+  for (p in a) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (a[p] !== b[p]) {
+      return false;
+    }
+  }
+
+  for (p in b) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (!a[p]) {
+      return false;
+    }
+  }
+
+  return true;
+};
+    var oldLocals = content.locals;
+
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./SideBar.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/SideBar/SideBar.scss",
+      function () {
+        content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-6-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./SideBar.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/SideBar/SideBar.scss");
+
+              content = content.__esModule ? content.default : content;
+
+              if (typeof content === 'string') {
+                content = [[module.i, content, '']];
+              }
+
+              if (!isEqualLocals(oldLocals, content.locals)) {
+                module.hot.invalidate();
+
+                return;
+              }
+
+              oldLocals = content.locals;
+
+              update(content);
+      }
+    )
+  }
+
+  module.hot.dispose(function() {
+    update();
+  });
+}
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ "./src/App.js");
+/* harmony import */ var _reportWebVitals__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./reportWebVitals */ "./src/reportWebVitals.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+
+var _jsxFileName = "C:\\Users\\patti\\Desktop\\WebDev\\capstone\\initial-layout\\capstone-first-pass\\src\\index.js";
+
+
+
+
+react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.StrictMode, {
+  children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_App__WEBPACK_IMPORTED_MODULE_3__["default"], {}, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 9,
+    columnNumber: 5
+  }, undefined)
+}, void 0, false, {
+  fileName: _jsxFileName,
+  lineNumber: 8,
+  columnNumber: 3
+}, undefined), document.getElementById('root')); // If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+Object(_reportWebVitals__WEBPACK_IMPORTED_MODULE_4__["default"])();
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/reportWebVitals.js":
+/*!********************************!*\
+  !*** ./src/reportWebVitals.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+const reportWebVitals = onPerfEntry => {
+  if (onPerfEntry && onPerfEntry instanceof Function) {
+    __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! web-vitals */ "./node_modules/web-vitals/dist/web-vitals.es5.min.js")).then(({
+      getCLS,
+      getFID,
+      getFCP,
+      getLCP,
+      getTTFB
+    }) => {
+      getCLS(onPerfEntry);
+      getFID(onPerfEntry);
+      getFCP(onPerfEntry);
+      getLCP(onPerfEntry);
+      getTTFB(onPerfEntry);
+    });
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (reportWebVitals);
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ 1:
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** multi (webpack)/hot/dev-server.js ./node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
+  \**********************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\patti\Desktop\WebDev\capstone\initial-layout\capstone-first-pass\node_modules\webpack\hot\dev-server.js */"./node_modules/webpack/hot/dev-server.js");
+__webpack_require__(/*! C:\Users\patti\Desktop\WebDev\capstone\initial-layout\capstone-first-pass\node_modules\@pmmmwh\react-refresh-webpack-plugin\client\ReactRefreshEntry.js */"./node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js");
+__webpack_require__(/*! C:\Users\patti\Desktop\WebDev\capstone\initial-layout\capstone-first-pass\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\Users\patti\Desktop\WebDev\capstone\initial-layout\capstone-first-pass\src\index.js */"./src/index.js");
+
+
+/***/ })
+
+},[[1,"runtime-main",0]]]);
+//# sourceMappingURL=main.chunk.js.map
