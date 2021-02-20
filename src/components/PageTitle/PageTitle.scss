@@ -1,74 +1,68 @@
-  @import '../../styles/globalstyles.scss';
-  .title{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        margin-top:25px;
+@import '../../styles/globalstyles.scss';
+
+@keyframes arrow{
+    0%{opacity: 1;}
+    100%{opacity: 0; transform: translate(-5px, -5px);}
+}
+
+.title{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:25px;
+    // z-index:1;
+
+    &-text{
+        @include tablet{
+            font-size:28px;
+            top:3%;
+        }
+    }
+    &-down{
+        width:40px;
+        height:30px;
         z-index:1;
-    
-        &-text{
-            @include tablet{
-                font-size:28px;
-                top:3%;
-            }
-        }
-        &-down{
-            width:40px;
-            height:30px;
-        }
-  }
-
-// .chevron-wrapper{
-//     position:relative;
-//     &::before{
-//         display:none;
-//         position:absolute;
-//         width:200px;
-//         content: "Click to Expand";
-//         font-size: 12px;
-//         color: white;
-//         bottom:23px;
-//         left:-12px;
-//     }
-//     &:hover::before{
-//         display:block;
-//     }
-// }
-
-.arrow,.arrow:before{
-  position: absolute;
-  left: 50%;
+    }
 }
 
 .arrow{
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  margin: -20px 0 0 -20px;
-  -webkit-transform: rotate(45deg);
-  border-left: none;
-  border-top: none;
-  border-right: 2px #fff solid;
-  border-bottom: 2px #fff solid;
-}
+    &-wrapper{
+        position:relative;
+        margin-top:20px;
+        cursor:pointer;
+        display:flex;
+        justify-content:center;
+        border:none;
+        &:focus{
+            outline:none;
+            // @include rotateArrow(0, 180deg);
+        }
+    }
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+    transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
 
-  
-.arrow:before{
-  content: '';
-  width: 20px;
-  height: 20px;
-  top: 50%;
-  margin: -10px 0 0 -10px;
-  border-left: none;
-  border-top: none;
-  border-right: 1px #fff solid;
-  border-bottom: 1px #fff solid;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-name: arrow;
+    &:before{
+        content: '';
+        width: 10px;
+        height: 10px;
+        top: 50%;
+        margin: -10px 0 0 -10px;
+        border-left: none;
+        border-top: none;
+        border-right: 1px #fff solid;
+        border-bottom: 1px #fff solid;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-name: arrow;
+        position:absolute;
+        left:50%;
+    }
 }
   
-@keyframes arrow{
-  0%{opacity: 1;}
-  100%{opacity: 0; transform: translate(-10px, -10px);}
-}

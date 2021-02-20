@@ -42,3 +42,12 @@
         }
 }
 
+@mixin rotateArrow($start-angle, $end-angle){
+    @keyframes spinArrow {
+        0% {transform: rotate($start-angle);}
+        100% {transform: rotate($end-angle);}
+    }
+
+    animation:spinArrow 0.2s linear;
+}
+

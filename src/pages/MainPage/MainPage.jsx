@@ -16,6 +16,8 @@ function MainPage() {
         {name:"projects", title:"PROJECTS", background: false, scrollAnimation: {animation:"", anchor:"", anchorPlacement:""}, overlay:false},
         {name:"contact", title:"CONTACT", background: false, scrollAnimation: {animation:"", anchor:"", anchorPlacement:""}, overlay:false}];
 
+   
+
     useEffect(() => {
         // Aos.init({duration:2000, once:false, mirror:true});
         Aos.init({duration:3000});

@@ -1,2 +1,68 @@
+@import '../../styles/globalimports.scss';
 
+@keyframes type{ 
+  0% {width: 0;}
+} 
+
+.about__overlay{
+    padding-top:20px;
+    height:120vh;
+    padding:20px 4% 0 4%;
+    @include tablet{
+        padding:20px 5% 0 5%;
+    }
+
+    @include desktop{
+        padding:20px 10% 0 10%;
+    }
+    &-title{
+        font-size:16px;
+        margin-bottom:16px;
+        // color:#517384;
+        // color:#1A151B;
+        white-space: nowrap;
+        overflow: hidden;
+        width:100%;
+       
+        @include tablet{
+            font-size:20px;
+        }
+    }
+
+    &-text{
+        font-size:14px;
+        margin-bottom:25px;
+        line-height:1.5;
+        color:#242321;
+        @include tablet{
+            font-size:16px;
+        }
+        &--emphasize{
+            font-weight:bold;
+            // color:#173e43;
+            color:#3fb0ac;
+        }
+    }
+    &-who{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+
+        &-image{
+            width:100%;
+            margin-bottom:25px;
+
+            @include tablet{
+                width:75%;
+            }
+            @include desktop{
+                width:50%;
+            }
+        }
+    }
+}
+
+.animate{
+    animation: type 4s 0.25s steps(60, end); 
+}
 
