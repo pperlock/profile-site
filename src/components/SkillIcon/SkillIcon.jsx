@@ -8,8 +8,8 @@ const ItemTypes = {
 };
 
 const SkillIcon = props => {
-
     const {skill} = props;
+
     const [{isDragging}, drag] = useDrag({
         item:{
             type:ItemTypes.CARD,
@@ -21,7 +21,17 @@ const SkillIcon = props => {
     });
 
     return( 
-        <img ref={drag} className= {`skills__icon ${skill.name}`} src={skill.image} alt={skill.alt}  opacity={isDragging ? '0.5' : '1'}/>
+        <img 
+            ref={drag} 
+            className= {`skills__icon ${skill.name}`} 
+            src={skill.image} 
+            alt={skill.alt}  
+            opacity={isDragging ? '0.5' : '1'} 
+            data-aos-anchor=".skills"
+            data-aos={skill.animation}
+            data-aos-offset="500"
+            data-aos-duration="3000"
+        />
     )
 }
 
