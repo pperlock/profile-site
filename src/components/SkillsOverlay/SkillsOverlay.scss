@@ -1,0 +1,28 @@
+@import '../../styles/globalstyles.scss';
+
+.skills{
+    &__overlay{
+        display:flex;
+        margin-top:40px;
+        width:100%;;
+        background:#1e1e1e;
+    }
+    &__title{
+        margin-top:20px;
+    }
+    &__level{
+        &-terminal{
+            position:relative;
+        }
+        &-output{
+            position:absolute;
+            top:25px;
+            left:0;
+            z-index:5;
+            @include tablet{
+                margin-left:10px;
+                top:50px;
+            }
+        }
+    }
+}

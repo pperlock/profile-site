@@ -11,14 +11,15 @@ export const CardContext = createContext({
 
 const Skills = ({match, text}) => {
     const [skillList, setSkillList] = useState([
-        {id: "0", status:"out", name:'skills__html', image:'/icons/html5-icon.png', title:"", alt:"html 5"},
-        {id: "1", status:"out", name:'skills__css', image:'/icons/css3.png', title:"", alt:"css 3"},
-        {id: "2", status:"out", name:'skills__js', image:'/icons/js-icon.png', title:"", alt:"javascript"},
+        {id: "0", status:"out", name:'skills__html-css', image:'/icons/html5-css3.png', title:"", alt:"html 5"},
+        {id: "1", status:"out", name:'skills__js', image:'/icons/js-icon2.png', title:"", alt:"javascript"},
+        {id: "2", status:"out", name:'skills__node', image:'/icons/nodejs-icon.svg', title:"", alt:"nodejs"},
         {id: "3", status:"out", name:'skills__react', image:'/icons/react-icon.png', title:"", alt:"react"},
         {id: "4", status:"out", name:'skills__sass', image:'/icons/sass-icon.png', title:"", alt:"sass"},
-        {id: "5", status:"out", name:'skills__sql', image:'/icons/sql-icon.png', title:"", alt:"sql"},
+        // {id: "5", status:"out", name:'skills__sql', image:'/icons/sql.png', title:"", alt:"sql"},
         {id: "6", status:"out", name:'skills__axios', image:'/icons/axios-icon.png', title:"", alt:"axios"},
-        {id: "7", status:"out", name:'skills__git', image:'/icons/git-icon.png', title:"", alt:"git"},    
+        {id: "7", status:"out", name:'skills__git', image:'/icons/git-icon.png', title:"", alt:"git"}, 
+        {id: "8", status:"out", name:'skills__databases', image:'/icons/databases.png', title:"", alt:"sql"},   
     ]);
 
     const markAsDone = id => {
