@@ -8,7 +8,19 @@
         background:#1e1e1e;
     }
     &__title{
-        margin-top:20px;
+        color:#9CDCFE;
+        font-size:13.7px;
+        margin-bottom:20px;
+        width:100%;
+        font-family:"Consola";
+        &-keyword{
+           color:#569CD6; 
+        }
+        @include tablet{
+            font-size:26px;
+            margin-left:20px;
+            margin-bottom:40px;
+        }
     }
     &__level{
         &-terminal{
@@ -19,10 +31,50 @@
             top:25px;
             left:0;
             z-index:5;
+            visibility:hidden;
+
             @include tablet{
                 margin-left:10px;
                 top:50px;
             }
+            &--first{
+                visibility: visible;
+                animation: showArray 2s linear;
+            }
+            &--second{
+                visibility: visible;
+                animation: showArray 4.4s linear;
+            }
+            &--third{
+                visibility: visible;
+                animation: showArray 6.4s linear;
+            }
         }
+        &-title{
+            display:flex;
+            font-family:"Consola";
+            color:#9CDCFE;
+            font-size:16px;
+            margin-bottom:5px;
+
+            
+            @include tablet{
+                font-size:24px;
+                margin-left:20px;
+            }
+            &-method{
+                color:#DCDCAA;
+                white-space: nowrap;
+                overflow: hidden;
+                width:139px;
+                visibility:hidden;
+                @include tablet{
+                    width:207px;
+                }
+            }
+        }
+    }
+    &__cursor{
+        animation: 1s blink step-end infinite;
     }
 }

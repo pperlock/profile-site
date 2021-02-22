@@ -4,6 +4,8 @@
     height:86vh;
     background-color:black;
     color:white;
+    background-size:cover;
+    background-position:bottom right;
 
     @include tablet{
         height:88.5vh;

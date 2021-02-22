@@ -10,6 +10,12 @@
     display:flex;
     flex-direction:column;
     justify-content:space-between;
+    background-size:cover;
+    position:bottom right;
+
+    &--skills{
+        background-color:#1e1e1e;
+    }
         
     &--on{
         height:100%;
@@ -48,22 +54,23 @@
         z-index:1;
         animation: text-off 0.75s ease-out;
     }
-}
-
-.expand--up{
-    width:40px;
-    height:30px;
+    &__title{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-top:187px;
+        &-text{
+            color:#3fb0ac;
+        }
+    }
 }
 
 
 .overlay-arrow{
     &-wrapper{
         position:relative;
-        margin-top:187px;
+        margin-top:30px;
         cursor:pointer;
-        display:flex;
-        justify-content:center;
-        border:none;
         z-index:2;
         &:focus{
             outline:none;

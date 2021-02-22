@@ -10,11 +10,11 @@ function MainPage() {
 
     let sections=[
         {name:"about", title:"ABOUT ME", background: '/images/about-background2.jpg', scrollAnimation: {animation:"fade-up", anchor:"", anchorPlacement:""}, overlay:true},
-        // {name:"skills", title:"SKILLS", background: false, scrollAnimation: {animation:"flip-left", anchor:".skills", anchorPlacement:"top-center"}, overlay:true},
         {name:"skills", title:"SKILLS", background: false, scrollAnimation: {animation:"", anchor:"", anchorPlacement:""}, overlay:true},
         {name:"experience", title:"EXPERIENCE", background: '/images/home-background2-2.jpg', scrollAnimation: {animation:"zoom-in-up", anchor:".experience", anchorPlacement:"top-center"}, overlay:true},
         {name:"projects", title:"PROJECTS", background: false, scrollAnimation: {animation:"", anchor:"", anchorPlacement:""}, overlay:false},
-        {name:"contact", title:"CONTACT", background: false, scrollAnimation: {animation:"", anchor:"", anchorPlacement:""}, overlay:false}];
+        {name:"contact", title:"CONTACT", background: "/images/mist-transparent.png", scrollAnimation: {animation:"", anchor:"", anchorPlacement:""}, overlay:false}];
+        // {name:"contact", title:"CONTACT", background: "/images/mist-forest.webp", scrollAnimation: {animation:"", anchor:"", anchorPlacement:""}, overlay:false}];
 
    
 

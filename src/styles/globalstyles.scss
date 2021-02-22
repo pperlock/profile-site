@@ -30,13 +30,29 @@
   }
 
   #about__full-text, #skills__full-text, #experience__full-text{
-    padding-top:170px;
+    padding-top:230px;
     box-sizing:border-box;
 }
 
 .emphasize{
     color:#3D4849;
     font-weight:bold;
+}
+
+.animate-type{
+    animation: type 3.5s 0.25s steps(60, end); 
+    &--first{
+      visibility:visible;
+      animation: type 1.5s 0.25s steps(60, end); 
+    }
+    &--second{
+      visibility:visible;
+      animation: showArray 2.7s linear, type 1.5s 2.5s steps(60, end); 
+    }
+    &--third{
+      visibility:visible;
+      animation: showArray 4.7s linear, type 1.5s 4.5s steps(60, end); 
+    }
 }
 
 
