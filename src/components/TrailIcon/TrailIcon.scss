@@ -12,7 +12,6 @@
             max-width:72px;
         } 
 
-
     }
 
     &__div{
@@ -44,7 +43,8 @@
         }
 
         &-head{
-            @include buildTrailDiv(-3.5%, 5%, -3.5%, 5%);
+            // @include buildTrailDiv(-2.5%, 5%, 0, 0);
+             @include buildTrailDiv(-2.5%, 5%, 0, 6%);
         }
 
         &-hiker{
@@ -52,7 +52,7 @@
         }
             
         &-detour{        
-            @include buildTrailDiv(38%, 42%, 38%, 42%);
+            @include buildTrailDiv(38%, 42%, 38%, 44%);
             &::before{
                 left:62px;
                 top:32px;
@@ -71,7 +71,8 @@
         }
         
         &-db{
-            @include buildTrailDiv(61%, 10%, 61%, 10%);
+            // @include buildTrailDiv(61%, 10%, 60%, 5%);
+            @include buildTrailDiv(61%, 10%, 60%, 10%);
             &::before{
                 right:5px;
                 top:70px;
@@ -87,7 +88,8 @@
         }
 
         &-dog{
-            @include buildTrailDiv(43%, 75%, 43%, 75%);
+            // @include buildTrailDiv(43%, 75%, 43%, 82%);
+            @include buildTrailDiv(43%, 75%, 43%, 77%);
             &::before{
                 left:24px;
                 top:78px;

@@ -7,8 +7,6 @@ import SkillsOverlay from '../../components/SkillsOverlay/SkillsOverlay';
 
 function Overlay({section, showOverlay, toggleOverlay}) {
 
-    let background = {backgroundImage:"url('/images/white1.jpg')"};
-
     return (
         <div id={section +"__white-overlay"}
              className={!showOverlay ? "white-overlay white-overlay--off full" : 
@@ -24,7 +22,7 @@ function Overlay({section, showOverlay, toggleOverlay}) {
                 }
             </div>
             <div id={section + "__full-text"} className={!showOverlay ? "full-text full-text-off" : "full-text full-text--on"} > 
-                {section ==="experience" &&  <ExperienceOverlay />}
+                {section ==="experience" &&  <ExperienceOverlay showOverlay={showOverlay}/>}
                 {section ==="about" && <AboutOverlay showOverlay={showOverlay}/>}
                 {section ==="skills" &&  <SkillsOverlay showOverlay={showOverlay}/>}
             </div>

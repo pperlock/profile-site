@@ -50,4 +50,34 @@
     100% {visibility:visible;}
 }
 
+// @keyframes colorWave {
+//     from, to { color: hsl(324, 70%, 45%); }
+//     10%      { color: hsl(360, 65%, 45%); }
+//     // 20%      { color: hsl( 36, 80%, 45%); }
+//     // 30%      { color: hsl( 72, 75%, 35%); }
+//     // 40%      { color: hsl(108, 65%, 35%); }
+//     // 50%      { color: hsl(144, 75%, 35%); }
+//     // 60%      { color: hsl(180, 75%, 35%); }
+//     // 70%      { color: hsl(216, 60%, 45%); }
+//     // 80%      { color: hsl(252, 65%, 50%); }
+//     90%      { color: hsl(288, 60%, 40%); }
+// }
+
+@keyframes colorWave {
+    to {
+      // background-position: 200% center;
+      background-position: 200%;
+    }
+  }
+
+@keyframes growIcon {
+    0% {transform:rotate(360deg); left:0; width:25px; offset-distance:0%;}
+    100% {left:500px; width:50px; offset-distance:100%}
+}
+
+@keyframes fadeBackground {
+    0% {background-color:silver;}
+    100% {background-color:transparent;}
+}
+
 

@@ -16,6 +16,10 @@
 
     width:20px;
     z-index:20;
+
+    &--bottom{
+      background-color:transparent;
+    }
     
     @include desktop{
         width:30px;
@@ -26,5 +30,86 @@
          &:hover{
            animation: bounce 1s; 
         }
+
+        &--bottom{
+          &-first{
+            position:absolute;
+            width:40px;
+            // top:-40vw;
+			top:-120px;
+            left:-74vw;
+            animation: growIcon 1s linear;
+            offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
+          
+			@include tablet{
+				width:50px;
+				// top:-21vh;
+				top:-150px;
+				left:-85vw;
+				offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
+			}
+			@include desktop{
+				top:-147px;
+				left:-85vw;
+				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
+			}
+		  }
+        &-second{
+			position:absolute;
+			width:35px;
+			// top:-12.75vh;
+			top:-70px;
+			left:-74vw;
+			animation: growIcon 1s linear;
+			offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
+			@include tablet{
+				width:50px;
+				// top:-12.5vh;
+				top:-80px;
+				left:-85vw;
+				offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
+			}
+			@include desktop{
+				// top:-20vh;
+				top:-70px;
+				left:-85vw;
+				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
+			}
+		}
+          
+        &-third{
+			position:absolute;
+			width:35px;
+			// top:-7.5vh;
+			top:-23px;
+			left:-74vw;
+			animation: growIcon 1s linear;
+			offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
+			
+			@include tablet{
+				width:50px;
+				top:0px;
+				// top:-3vh;
+				left:-85vw;
+				offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
+			}
+			@include desktop{
+				top:8px;
+				left:-85vw;
+				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
+			}
+        }
+
+          // offset-path: path('M20,20 C20,100 200,0 200,100');
+          //M0,0 - move to - where to start
+
+          // c x1 y1,  x2 y2, x y
+          //x y -->where line should end
+          //x1, y1 - control point - start of curve
+          //x2, y2 - control point - end of curve
+          // animation: growIcon 2s linear, bounce 2s 1.8ss linear;
+        }
     }
 }
+
+

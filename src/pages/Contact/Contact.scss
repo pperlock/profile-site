@@ -26,6 +26,30 @@
             margin:40px 0 20px 0;
             color:silver;
             font-size:20px;
+            animation: colorWave 2s infinite;
+
+            text-align: center;
+            
+            // background: linear-gradient(to right, #FFF 20%, #FF0 40%, #FF0 60%, #FFF 80%);
+            // background: linear-gradient(45deg, #FFF 20%, #d2c9c2 40%, #3fb0ac 60%, #FFF 80%);
+            background: linear-gradient(315deg, #FFF 20%, #d2c9c2 40%, #3fb0ac 60%, #FFF 80%);
+            background-size: 200% auto;
+            
+            color: #000;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            animation: colorWave 5s linear infinite;
+
+            @include tablet{
+                font-size:23px;
+                line-height:1.5;
+            }
+            @include desktop{
+                font-size:28px;
+            }
         }
 
         &-author{
@@ -33,12 +57,61 @@
             text-align:right;
             margin-bottom:40px;
             width:100%;
+            @include tablet{
+                font-size:20px;
+            }
         }
 
         &-cta{
             font-size:27px;
-            color:#d2c9c2;
+            // color:#d2c9c2;
+            @include tablet{
+                font-size:40px;
+            }
+        }
+
+        &-list{
+            position:absolute;
+            display:flex;
+            flex-direction:column;
+            align-items:flex-start;
+            margin: 20px 1%;
+
+            @include tablet{
+                width:50%;
+                margin: 20px 5%;
+            }
+            
+            &-item{
+                display:flex;
+                align-items:center;
+                margin-bottom:20px;
+            }
+
+            &-icon{
+                width:50px;
+                margin-right:10px;
+                animation: growIcon 2s linear;
+                @include tablet{
+                    margin-right:20px;
+                }
+            }
+            &-text{
+                font-size:18px;
+                color:#d2c9c2;
+                margin-left:60px;
+                margin-top:25px;
+                @include tablet{
+                    font-size:40px;
+                    margin-left:40px;
+                }
+                @include desktop{
+                    margin-left:60px;
+                }
+            }
         }
     }
 }
+
+
 

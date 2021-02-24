@@ -1,5 +1,9 @@
 @import '../../styles/globalimports.scss';
 
+@keyframes dropButtons {
+    0%  {bottom: 100%;}
+}
+
 .projects{
     height:100vh;
     background-color:black;
@@ -37,6 +41,187 @@
         display:flex;
         flex-direction:column;
     }
+
+    &__list{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-top:40px;
+        @include tablet{
+            flex-direction:row;
+            justify-content:center;
+        }
+
+        &:hover .projects__list-first{
+            visibility:visible;
+            position:absolute;
+            left:10%;
+            bottom:10%;
+            animation:showArray 0.5s, dropButtons 0.5s 0.5s linear;
+        }
+
+        &:hover .projects__list-second{
+            visibility:visible;
+            position:absolute;
+            right:40%;
+            bottom:10%;
+            animation:showArray 0.6s, dropButtons 0.5s 0.6s linear;
+        }
+        &:hover .projects__list-third{
+            visibility:visible;
+            position:absolute;
+            right:10%;
+            bottom:10%;
+            animation:showArray 0.7s, dropButtons 0.5s 0.7s linear;
+        }
+
+        &-img{
+            height:100%;
+        }
+
+        &-first{
+            visibility:hidden;
+            background-color:black;
+            color:silver;
+            padding:10px 20px;
+            bottom:-100px;
+            cursor:pointer;
+            box-shadow: inset 0 0 0 2px silver;
+            border: none;
+
+            position: relative;
+            vertical-align: middle;
+
+            &::before,
+            &::after {
+                box-sizing: border-box;
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            
+            &:hover{
+
+                // color:#3fb0ac;
+                // transition: color 0.25s;
+
+                &::before, &::after {
+                    // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+                    border: 2px solid transparent;
+                    width: 0;
+                    height: 0;
+                }
+
+                // This covers the top & right borders (expands right, then down)
+                &::before {
+                    top: 0;
+                    left: 0;
+                }
+
+                // And this the bottom & left borders (expands left, then up)
+                &::after {
+                    bottom: 0;
+                    right: 0;
+                }
+                
+                // Hover styles
+                &:hover::before,
+                &:hover::after {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:hover::before {
+                    border-top-color: #3fb0ac; // Make borders visible
+                    border-right-color: #3fb0ac;
+                    transition:width 0.25s ease-out, // Width expands first
+                    height 0.25s ease-out; // And then height
+                }
+
+                &:hover::after {
+                    border-bottom-color: #3fb0ac; // Make borders visible
+                    border-left-color: #3fb0ac;
+                    transition:border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+                    width 0.25s ease-out 0.5s, // And then exanding width
+                    height 0.25s ease-out 0.75s; // And finally height
+                }
+            }
+        }
+
+        &-second{
+            visibility:hidden;
+            background-color:black;
+            color:silver;
+            border:3px solid silver;
+            padding:10px 20px;
+            bottom:-100px;
+            z-index:6;
+            cursor:pointer;
+        }
+
+        &-third{
+            visibility:hidden;
+            background-color:black;
+            color:silver;
+            border:3px solid silver;
+            padding:10px 20px;
+            bottom:-100px;
+            z-index:6;
+            cursor:pointer;
+        }
+
+        &-project{
+            position:relative;
+            z-index:6;
+
+            &:hover::before{
+                width:50%;
+                transition: width opacity;
+                transition-duration: 0.5s;
+            }
+            &:hover::after{
+                width:50%;
+                transition: width opacity;
+                transition-duration: 0.5s;
+            }
+            &::before{
+                position:absolute;
+                content:'';
+                opacity:0.6;
+                width:0%;
+                height:100%;
+                left:0;
+                background-color:silver;
+            }
+
+            &::after{
+                position:absolute;
+                content:'';
+                position:absolute;
+                opacity:0.6;
+                width:0px;
+                height:100%;
+                right:0;
+                top:0;
+                background-color:silver;
+            }
+
+            width:90%;
+            margin-bottom: 20px;
+            @include tablet{
+                width:40%;
+                height:29vw;
+                margin-left:40px;
+                max-height:270px;
+                max-width:356px;
+            }
+            @include desktop{
+                max-height:348px;
+                max-width:480px;
+            }
+        }
+    }
 }
 
 .transition4{
@@ -47,12 +232,4 @@
     z-index:5;
     bottom:0;
     
-}
-
-.project{
-    margin:10px auto;    
-    width:80%;
-    height:200px;
-    background-color:silver;
-    opacity:0.75;
 }
