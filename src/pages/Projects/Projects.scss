@@ -55,120 +55,66 @@
         &:hover .projects__list-first{
             visibility:visible;
             position:absolute;
-            left:10%;
+            animation:showArray 0.5s, dropButtons 0.5s 0.5s linear, bounce 1s 0.5s;
+            left:1%;
             bottom:10%;
-            animation:showArray 0.5s, dropButtons 0.5s 0.5s linear;
+
+            @include tablet{
+                left:3%;
+            }
+            
+            @include desktop{
+                left:15%;
+            }
         }
 
         &:hover .projects__list-second{
             visibility:visible;
             position:absolute;
-            right:40%;
+            right:37.5%;
             bottom:10%;
-            animation:showArray 0.6s, dropButtons 0.5s 0.6s linear;
+            animation:showArray 0.6s, dropButtons 0.5s 0.6s linear, bounce 1s 0.6s;
+            @include desktop{
+                right:42%;
+            }
         }
+        
+
         &:hover .projects__list-third{
             visibility:visible;
             position:absolute;
-            right:10%;
+            right:1%;
             bottom:10%;
-            animation:showArray 0.7s, dropButtons 0.5s 0.7s linear;
+            animation:showArray 0.7s, dropButtons 0.5s 0.7s linear, bounce 1s 0.7s;
+            
+            @include tablet{
+                right:3%;
+            }
+            
+            @include desktop{
+                right:15%;
+            }
         }
 
         &-img{
             height:100%;
+            &--brainflix{
+                object-fit:contain;
+            }
         }
 
         &-first{
-            visibility:hidden;
-            background-color:black;
-            color:silver;
-            padding:10px 20px;
-            bottom:-100px;
-            cursor:pointer;
-            box-shadow: inset 0 0 0 2px silver;
-            border: none;
-
-            position: relative;
-            vertical-align: middle;
-
-            &::before,
-            &::after {
-                box-sizing: border-box;
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 100%;
-            }
-            
-            &:hover{
-
-                // color:#3fb0ac;
-                // transition: color 0.25s;
-
-                &::before, &::after {
-                    // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
-                    border: 2px solid transparent;
-                    width: 0;
-                    height: 0;
-                }
-
-                // This covers the top & right borders (expands right, then down)
-                &::before {
-                    top: 0;
-                    left: 0;
-                }
-
-                // And this the bottom & left borders (expands left, then up)
-                &::after {
-                    bottom: 0;
-                    right: 0;
-                }
-                
-                // Hover styles
-                &:hover::before,
-                &:hover::after {
-                    width: 100%;
-                    height: 100%;
-                }
-
-                &:hover::before {
-                    border-top-color: #3fb0ac; // Make borders visible
-                    border-right-color: #3fb0ac;
-                    transition:width 0.25s ease-out, // Width expands first
-                    height 0.25s ease-out; // And then height
-                }
-
-                &:hover::after {
-                    border-bottom-color: #3fb0ac; // Make borders visible
-                    border-left-color: #3fb0ac;
-                    transition:border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
-                    width 0.25s ease-out 0.5s, // And then exanding width
-                    height 0.25s ease-out 0.75s; // And finally height
-                }
-            }
+            @include buildProjectButton()
         }
 
         &-second{
-            visibility:hidden;
-            background-color:black;
-            color:silver;
-            border:3px solid silver;
-            padding:10px 20px;
-            bottom:-100px;
+            @include buildProjectButton()
             z-index:6;
-            cursor:pointer;
         }
 
         &-third{
-            visibility:hidden;
-            background-color:black;
-            color:silver;
-            border:3px solid silver;
-            padding:10px 20px;
-            bottom:-100px;
+            @include buildProjectButton()
             z-index:6;
-            cursor:pointer;
         }
 
         &-project{
@@ -232,4 +178,55 @@
     z-index:5;
     bottom:0;
     
+}
+
+.modal{
+    z-index:21;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    height:30%;
+    box-sizing:border-box;
+    margin-top: 20px;
+    padding:3%;
+    width:100%;
+
+    @include tablet{
+        height:55%;
+        margin-top: 20px;
+    }
+
+    @include desktop{
+        height:80%;
+        margin-top: 0;
+    }
+
+    &__close{
+        position:absolute;
+        top:2%;
+        right:1%;
+        width:30px;
+        z-index:21;
+        filter: invert(96%) sepia(2%) saturate(1209%) hue-rotate(333deg) brightness(88%) contrast(85%);
+        @include tablet{
+            right:3%;
+        }
+    }
+    &__video{
+        width:100%;
+        @include tablet{
+            width:90%;
+            height:97%; 
+        }
+    }
+    &__container{
+        width:100vw;
+        height:100vh;
+        background-color: rgba(0,0,0,0.9);
+        color: #d2c9c2;
+        position:absolute;
+        z-index:20;
+        display:flex;
+        justify-content:center;
+    }
 }

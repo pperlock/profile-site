@@ -56,5 +56,14 @@
     }
 }
 
+.scroll-lock{
+  overflow:hidden;
+}
+
+.project-button-hover{
+	visibility:visible;
+	position:absolute;
+	animation:showArray 0.5s, dropButtons 0.5s 0.5s linear, bounce 1s 0.5s;
+}
 
 

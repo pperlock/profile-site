@@ -51,3 +51,14 @@
     animation:spinArrow 0.2s linear;
 }
 
+@mixin buildProjectButton(){
+    
+    visibility:hidden;
+    background-color:black;
+    border:3px solid silver;
+    color:silver;
+    padding:10px 20px;
+    bottom:-100px;
+    cursor:pointer;
+}
+

@@ -5,12 +5,8 @@ function SkillsOverlay({showOverlay}) {
     return (
 
         <div className="skills__overlay"> 
-            {/* <h2 className= "skills__title">SKILLS</h2> */}
             <div className="skills__list">
-                {/* <img className="skills__title" src="/images/declaration.png"/> */}
-                {/* <div className="skills__title"> */}
-                <p className="skills__title"> <span className="skills__title-keyword">let </span> pattiPerlock =  <span className="skills__title-keyword">new </span> WebDeveloper();</p>
-                {/* </div> */}
+                <p className="skills__title"> <span className="skills__title-keyword">const </span> pattiPerlock =  <span className="skills__title-keyword">new </span> WebDeveloper();</p>
                 <div className="skills__level">
                     <div className = "skills__level-title">
                         <p className="skills__level-title-name" >pattiperlock</p> 
