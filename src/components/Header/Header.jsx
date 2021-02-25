@@ -7,8 +7,6 @@ import './Header.scss';
 function Header({path}) {
 
     const [activeLink, setactiveLink] = useState("about")
-    
-    console.log(path);
     return (
         <header className="header">
             <Link to="/" className="header__logo">

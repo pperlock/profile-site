@@ -14,7 +14,7 @@ function Overlay({section, showOverlay, toggleOverlay}) {
              style={section !== "skills" ? {backgroundImage:"url('/images/white1.jpg')"} : {backgroundImage:"url('')"}}>
             
             <div className = "full-text__title">
-                {(section === "about" && showOverlay) &&  <h1 className="full-text__title-text"> PATTI PERLOCK</h1>}
+                {/* {(section === "about" && showOverlay) &&  <h1 className="full-text__title-text"> PATTI PERLOCK</h1>} */}
                 {showOverlay && 
                     <button className="overlay-arrow-wrapper">
                         <div className={section !== "skills" ? "overlay-arrow" : "overlay-arrow overlay-arrow-skills"} onClick={()=>toggleOverlay(section)}></div>

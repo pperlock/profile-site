@@ -49,6 +49,37 @@
             justify-content:center;
         }
 
+        &-description{
+            visibility:hidden;
+            position:absolute;
+            font-size:14px;
+            color:#3fb0ac;
+            color:silver;
+            background: rgba(0,0,0,0.8);
+            top:0;
+            bottom:0;
+            padding:3%;
+
+            @include tablet{
+                font-size:16px;
+            }
+
+            @include desktop{
+                font-size:24px;
+            }
+
+            &-pitch{
+                text-align:center;
+                margin-bottom:10px;
+                @include tablet{
+                    margin-bottom:15px;
+                }
+                @include tablet{
+                    margin-bottom:30px;
+                }
+            }
+        }
+
         &-img{
             height:100%;
             &--brainflix{
@@ -59,27 +90,35 @@
         }
 
         &-first{
-            @include buildProjectButton()
+            @include buildProjectButton();
+            z-index:7;
         }
         
         &-first--brainflix{
-            @include buildProjectButton()
+            @include buildProjectButton();
+            z-index:7;
         }
 
         &-second{
-            @include buildProjectButton()
-            z-index:6;
+            @include buildProjectButton();
+            z-index:7;
         }
 
         &-third{
-            @include buildProjectButton()
-            z-index:6;
+            @include buildProjectButton();
+            z-index:7;
         }
 
         &-project{
             &--p2t{
                 position:relative;
                 z-index:6;
+
+                &:hover .projects__list-description{
+                    visibility:visible;
+                    animation:showArray 0.5s;
+                    z-index:6;
+                }
 
                 &:hover .projects__list-first{
                     visibility:visible;

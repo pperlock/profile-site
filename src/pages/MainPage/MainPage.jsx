@@ -8,8 +8,6 @@ import Section from '../../components/Section/Section';
 
 function MainPage({match}) {
 
-    console.log(match);
-
     const sections=[
         {name:"about", title:"ABOUT ME", background: '/images/about-background2.jpg', scrollAnimation: {animation:"fade-up", anchor:"", anchorPlacement:""}, overlay:true},
         {name:"skills", title:"SKILLS", background: false, scrollAnimation: {animation:"", anchor:"", anchorPlacement:""}, overlay:true},
