@@ -16,7 +16,6 @@ function Section({section, reachedBottom}) {
 
     const toggleOverlay = () =>{
         setShowOverlay(!showOverlay);
-        console.log(showOverlay);
     }
 
     return (

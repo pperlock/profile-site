@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, HashRouter, Route, Switch} from 'react-router-dom';
 import {HTML5Backend} from 'react-dnd-html5-backend';
 import {DndProvider} from 'react-dnd';
 

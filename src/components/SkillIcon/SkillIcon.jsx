@@ -19,8 +19,6 @@ const SkillIcon = props => {
             isDragging: !!monitor.isDragging(),
         })
     });
-
-console.log(skill.id);
     return( 
         <img 
             ref={drag} 

@@ -6,9 +6,11 @@ import "./MainPage.scss";
 import Header from '../../components/Header/Header';
 import Section from '../../components/Section/Section';
 
-function MainPage() {
+function MainPage({match}) {
 
-    let sections=[
+    console.log(match);
+
+    const sections=[
         {name:"about", title:"ABOUT ME", background: '/images/about-background2.jpg', scrollAnimation: {animation:"fade-up", anchor:"", anchorPlacement:""}, overlay:true},
         {name:"skills", title:"SKILLS", background: false, scrollAnimation: {animation:"", anchor:"", anchorPlacement:""}, overlay:true},
         {name:"experience", title:"EXPERIENCE", background: '/images/home-background2-2.jpg', scrollAnimation: {animation:"zoom-in-up", anchor:".experience", anchorPlacement:"top-center"}, overlay:true},
@@ -29,7 +31,7 @@ function MainPage() {
 
     return (
         <>
-            <Header />
+            <Header path={match.path}/>
             <main>
                 <aside className = {reachedBottom ? "main__contacts main__contacts--bottom" : "main__contacts"}>
                     <a href="https://github.com/pperlock"><img className={reachedBottom ? "main__contacts-icon main__contacts-icon--bottom-first" : "main__contacts-icon"} src="/icons/github-icon.svg" alt="github" /></a>

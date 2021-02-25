@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {NavHashLink} from 'react-router-hash-link';
 import {Link} from 'react-router-dom';
 import './Header.scss';
 
 
 function Header({path}) {
+
+    const [activeLink, setactiveLink] = useState("about")
     
-    path = "About";
+    console.log(path);
     return (
         <header className="header">
             <Link to="/" className="header__logo">
@@ -18,16 +21,11 @@ function Header({path}) {
 
             <nav className="nav">
                 <ul className="nav__list">
-                    <a className="nav__link nav__link--active" href="#about">About</a>
-                    <a className="nav__link nav__link" href="#skills">Skills</a>
-                    <a className="nav__link nav__link" href="#experience">Experience</a>
-                    <a className="nav__link nav__link" href="#projects">Projects</a>
-                    <a className="nav__link nav__link" href="#contact">Contact</a>
-
-                    {/* {path === "/experience" ? <li><Link className="nav__link nav__link--active" to="/experience">Experience</Link></li>:<li><Link className="nav__link nav__link" to="/experience">Experience</Link></li>}      
-                    {path === "/skills" ? <li><Link className="nav__link nav__link--active" to="/skills">Skills</Link></li>:<li><Link className="nav__link nav__link" to="/skills">Skills</Link></li>}
-                    {path === "/projects" ? <li><Link className="nav__link nav__link--active" to="/projects">Projects</Link></li>:<li><Link className="nav__link nav__link" to="/projects">Projects</Link></li>}      
-                    {path === "/contact" ? <li><Link className="nav__link nav__link--active" to="/contact">Contact</Link></li>:<li><Link className="nav__link nav__link" to="/contact">Contact</Link></li>}       */}
+                    <NavHashLink smooth to="/main#about" activeClassName="nav__link--active" className="nav__link nav__link">About</NavHashLink>
+                    <NavHashLink smooth to="/main#skills" activeClassName="nav__link--active" className="nav__link nav__link">Skills</NavHashLink>
+                    <NavHashLink smooth to="/main#experience" activeClassName="nav__link--active" className="nav__link nav__link">Experience</NavHashLink>
+                    <NavHashLink smooth to="/main#projects" activeClassName="nav__link--active" className="nav__link nav__link">Projects</NavHashLink>
+                    <NavHashLink smooth to="/main#contact" activeClassName="nav__link--active" className="nav__link nav__link">Contact</NavHashLink>
                 </ul>
             </nav>
         </header>
