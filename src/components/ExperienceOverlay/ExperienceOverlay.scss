@@ -1,11 +1,8 @@
-@keyframes slide-in {
-    0%{transform: translateX(-100%);}
-    100% { transform: translateX(0%); }
-}
+ @import '../../styles/globalimports.scss';
 
 
 .education, .professional{
-    padding:5%;
+    padding:5% 5% 0 5%;
     box-sizing:border-box;
     width:100%;
 
@@ -18,14 +15,44 @@
     }
     
     &__list{
+        display:flex;
+        flex-direction:column;
         text-align:center;
         width:100%;
+        @include tablet{
+            flex-direction:row;
+            justify-content:space-around;
+        }
         &-item{
             margin:10px 0;
             background-size:contain;
             background-repeat:no-repeat;
             background-position:center;
-            animation: slide-in 4s forwards;
+            &--professional{
+                @include tablet{
+                    width:45%;
+                }
+                
+            }
+            @include tablet{
+                width:32%;
+            }
+
+            // &--animate{
+            //     animation: slide-in 1s 0.3s ease-in;
+            // }
+            // &--animate2{
+            //     animation: slide-in 1s 0.5s ease-in;
+            // }
+            // &--animate3{
+            //     animation: slide-in 1s 0.7s ease-in;
+            // }
+            // &--animate4{
+            //     animation: slide-in 1s 0.9s ease-in;
+            // }
+            // &--animate5{
+            //     animation: slide-in 1s 1.1s ease-in;
+            // }
         }
         &-title{
             background-color:rgba(0,0,0,0.25);

@@ -9,6 +9,12 @@
     100% {height:86vh}
 }
 
+//experience overlay
+@keyframes slide-in {
+    0%{transform: translateX(-100%);}
+    100% { transform: translateX(0%); }
+}
+
 @keyframes slide-up{
     0% {height:86vh}
     100% {height:0}
@@ -90,4 +96,3 @@
 @keyframes dropButtons {
     0%  {bottom: 100%;}
 }
-

@@ -9,7 +9,7 @@ export const CardContext = createContext({
     markAsDone:null
 })
 
-const Skills = ({match, text}) => {
+const Skills = ({match, text, showOverlay}) => {
     const [skillList, setSkillList] = useState([
         {id: "0", status:"out", name:'skills__html-css', image:'/icons/html5-css3.png', title:"", alt:"html 5", animation:"fade-up", },
         {id: "1", status:"out", name:'skills__js', image:'/icons/js-icon2.png', title:"", alt:"javascript",  animation:"fade-left"},
@@ -33,8 +33,8 @@ const Skills = ({match, text}) => {
             
             {skillList.filter(skill => skill.status === "out").length === 0 && <a className="skills__packed" href="#experience"> All Packed - Let's Go!</a>}
                 
-            {skillList.filter(skill => skill.status === "out").length === 8 && <p className="skills__packed-start"> Pack Your Bag </p>}
-            {skillList.filter(skill => skill.status === "out").length === 8 && <img className="skills__hand" src="/icons/hand.png" alt="hand dropping item"/>}
+            {(skillList.filter(skill => skill.status === "out").length === 8 && !showOverlay) && <p className="skills__packed-start"> Pack Your Bag </p>}
+            {(skillList.filter(skill => skill.status === "out").length === 8 && !showOverlay) && <img className="skills__hand" src="/icons/hand.png" alt="hand dropping item"/>}
             <div className="skills__main">
                 <BackPack/>
                 {skillList

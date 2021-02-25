@@ -21,6 +21,7 @@
         // max-width:480px;
         min-height:289px;
         // max-height:289px;
+        z-index:6;
 
         @include tablet{
             left:51%;

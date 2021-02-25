@@ -44,15 +44,15 @@
 
         &-head{
             // @include buildTrailDiv(-2.5%, 5%, 0, 0);
-             @include buildTrailDiv(-2.5%, 5%, 0, 6%);
+             @include buildTrailDiv(-2.5%, 5%, 0, 6%, 0, 0);
         }
 
         &-hiker{
-            @include buildTrailDiv(9%, 29%, 9%, 29%);
+            @include buildTrailDiv(9%, 29%, 9%, 29%, 9%, 29%);
         }
             
         &-detour{        
-            @include buildTrailDiv(38%, 42%, 38%, 44%);
+            @include buildTrailDiv(38%, 42%, 38%, 44%, 38%, 44%);
             &::before{
                 left:62px;
                 top:32px;
@@ -72,7 +72,7 @@
         
         &-db{
             // @include buildTrailDiv(61%, 10%, 60%, 5%);
-            @include buildTrailDiv(61%, 10%, 60%, 10%);
+            @include buildTrailDiv(61%, 10%, 60%, 10%, 60%, 6%);
             &::before{
                 right:5px;
                 top:70px;
@@ -80,7 +80,7 @@
         }
 
         &-end{
-            @include buildTrailDiv(82%, 39%, 82%, 39%);
+            @include buildTrailDiv(82%, 39%, 82%, 39%, 82%, 39%);
             &::before{
                 right:-84px;
                 bottom:103px;
@@ -89,7 +89,7 @@
 
         &-dog{
             // @include buildTrailDiv(43%, 75%, 43%, 82%);
-            @include buildTrailDiv(43%, 75%, 43%, 77%);
+            @include buildTrailDiv(43%, 75%, 43%, 77%, 43%, 82%);
             &::before{
                 left:24px;
                 top:78px;

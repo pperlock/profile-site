@@ -106,13 +106,14 @@
         left:50%;
     }
 
-    //rotate the arrow for the skills section
+
     &-skills{
         border-right: 2px white solid;
         border-bottom: 2px white solid;
-    }
-    &:before{
-        border-right: 2px white solid;
-        border-bottom: 2px white solid;
+    
+        &:before{
+            border-right: 2px white solid;
+            border-bottom: 2px white solid;
+        }
     }
 }

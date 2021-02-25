@@ -4,7 +4,7 @@
     padding:0px;
     margin:0px;
     scroll-behavior: smooth;
-  }
+}
 
   a{
       text-decoration:none;
@@ -33,6 +33,12 @@
   #about__full-text, #skills__full-text, #experience__full-text{
     padding-top:230px;
     box-sizing:border-box;
+}
+
+#experience__full-text{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
 }
 
 .emphasize{

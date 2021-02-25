@@ -14,7 +14,7 @@
     }
 }
 
-@mixin buildTrailDiv($top-mobile, $left-mobile, $top-tablet, $left-tablet){
+@mixin buildTrailDiv($top-mobile, $left-mobile, $top-tablet, $left-tablet, $top-desktop, $left-desktop){
         // border:1px solid black;
         top:$top-mobile;
         left:$left-mobile;
@@ -26,6 +26,11 @@
             left:$left-tablet;
             width:18%;
             height:18%;
+        }
+        @include desktop{
+            top:$top-desktop;
+            left:$left-desktop;
+
         }
 }
 
