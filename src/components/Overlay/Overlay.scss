@@ -72,10 +72,12 @@
         margin-top:30px;
         cursor:pointer;
         z-index:2;
+        border:none;
         &:focus{
             outline:none;
             // @include rotateArrow(0, -180deg);
         }
+        
     }
     width: 15px;
     height: 15px;
@@ -102,5 +104,15 @@
         animation-name: arrow;
         position:absolute;
         left:50%;
+    }
+
+    //rotate the arrow for the skills section
+    &-skills{
+        border-right: 2px white solid;
+        border-bottom: 2px white solid;
+    }
+    &:before{
+        border-right: 2px white solid;
+        border-bottom: 2px white solid;
     }
 }

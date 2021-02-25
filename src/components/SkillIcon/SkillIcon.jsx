@@ -20,10 +20,11 @@ const SkillIcon = props => {
         })
     });
 
+console.log(skill.id);
     return( 
         <img 
             ref={drag} 
-            className= {`skills__icon ${skill.name}`} 
+            className= {(skill.id === "3" && true) ? `skills__icon ${skill.name} animate-skill` : `skills__icon ${skill.name}`}
             src={skill.image} 
             alt={skill.alt}  
             opacity={isDragging ? '0.5' : '1'} 

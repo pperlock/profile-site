@@ -12,17 +12,6 @@ import Contact from '../../pages/Contact/Contact';
 function Section({section, reachedBottom}) {
     let {name, title, background, scrollAnimation, overlay} = section;
 
-    const displayHand = () => {
-        if(name === "skills") {
-            return( 
-            <div className="skills__pack"> 
-                <p className="skills__unpacked"> Pack Your Bag </p>
-                <img className="skills__hand" src="/icons/hand.png" alt="hand dropping item"/>
-            </div>
-            )
-        }
-    };
-
     const [showOverlay, setShowOverlay] = useState(false);
 
     const toggleOverlay = () =>{
@@ -34,7 +23,6 @@ function Section({section, reachedBottom}) {
         <section id={name} className={`section ${name}`} style={{backgroundImage: `url(${background})`}}>
             {name==="experience" && <div className="transition2"></div>}
             <PageTitle title={title} section={name} toggleOverlay={toggleOverlay} showOverlay={showOverlay}/>
-            {displayHand()}
             <div className= {`${name}__content`} data-aos={scrollAnimation.animation} data-aos-anchor={scrollAnimation.anchor} data-aos-anchor-placement={scrollAnimation.anchorPlacement} >
                 {name==="about" && <About />}
                 {name==="skills" && <Skills />}

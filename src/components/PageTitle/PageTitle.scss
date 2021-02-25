@@ -16,11 +16,14 @@
         display:none;
     }
 
-
     &-text{
+        font-size:28px;
+        margin-bottom:10px;
         @include tablet{
-            font-size:28px;
             top:3%;
+        }
+        @include desktop{
+            font-size:35px;
         }
         
         &--contact{
@@ -48,7 +51,6 @@
         border:none;
         &:focus{
             outline:none;
-            // @include rotateArrow(0, 180deg);
         }
     }
     width: 15px;
@@ -77,5 +79,6 @@
         position:absolute;
         left:50%;
     }
+   
 }
   

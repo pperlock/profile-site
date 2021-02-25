@@ -39,15 +39,15 @@
             }
             &--first{
                 visibility: visible;
-                animation: showArray 2s linear;
+                animation: showArray 1.5s linear;
             }
             &--second{
                 visibility: visible;
-                animation: showArray 4.4s linear;
+                animation: showArray 3.2s linear;
             }
             &--third{
                 visibility: visible;
-                animation: showArray 6.4s linear;
+                animation: showArray 4.7s linear;
             }
         }
         &-title{

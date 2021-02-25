@@ -44,15 +44,15 @@
     animation: type 3.5s 0.25s steps(60, end); 
     &--first{
       visibility:visible;
-      animation: type 1.5s 0.25s steps(60, end); 
+      animation: type 1s 0.25s steps(60, end); 
     }
     &--second{
       visibility:visible;
-      animation: showArray 2.7s linear, type 1.5s 2.5s steps(60, end); 
+      animation: showArray 2s linear, type 1s 1.8s steps(60, end); 
     }
     &--third{
       visibility:visible;
-      animation: showArray 4.7s linear, type 1.5s 4.5s steps(60, end); 
+      animation: showArray 3.5s linear, type 1s 3.4s steps(60, end); 
     }
 }
 

@@ -30,12 +30,13 @@ const Skills = ({match, text}) => {
 
     return (
         <CardContext.Provider value={{markAsDone}}>
+            
             {skillList.filter(skill => skill.status === "out").length === 0 && <a className="skills__packed" href="#experience"> All Packed - Let's Go!</a>}
+                
+            {skillList.filter(skill => skill.status === "out").length === 8 && <p className="skills__packed-start"> Pack Your Bag </p>}
+            {skillList.filter(skill => skill.status === "out").length === 8 && <img className="skills__hand" src="/icons/hand.png" alt="hand dropping item"/>}
             <div className="skills__main">
-                    
                 <BackPack/>
-
-
                 {skillList
                 .filter((skill,i)=> skill.status === "out")
                     .map((skill,index) => 

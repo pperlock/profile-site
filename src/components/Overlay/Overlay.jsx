@@ -17,7 +17,7 @@ function Overlay({section, showOverlay, toggleOverlay}) {
                 {(section === "about" && showOverlay) &&  <h1 className="full-text__title-text"> PATTI PERLOCK</h1>}
                 {showOverlay && 
                     <button className="overlay-arrow-wrapper">
-                        <div className="overlay-arrow" onClick={()=>toggleOverlay(section)}></div>
+                        <div className={section !== "skills" ? "overlay-arrow" : "overlay-arrow overlay-arrow-skills"} onClick={()=>toggleOverlay(section)}></div>
                     </button>
                 }
             </div>

@@ -72,3 +72,8 @@
         }
     }
 }
+
+.animate-skill{
+    animation:moveHand 2s 5s linear;
+    offset-path: path('M0,0 C100, 0 50, 70 300, 20');
+}

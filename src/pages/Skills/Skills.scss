@@ -44,21 +44,43 @@
     }
 
     &__packed{
-        width:50%;
+        position:absolute;
+        top:70%;
+        width:100%;
         text-align:center;
-        color:white;
         font-size:32px;
-        margin-left:58px;
-        margin-bottom:12px;
-        animation:text-on 1s ease-in;
+        z-index:20;
+        background-color:rgba(0,0,0,0.5);
+        animation:text-on 1s ease-in, pulsate 2s ease-out, colorChange 2s linear infinite;
+
+        &-start{
+            @extend .skills__packed;
+            animation:colorChange 2s linear infinite;
+        }
+
+        @include tablet{
+            top:50%;
+            left:35%;
+            width:40%;
+            font-size:40px;
+        }
+        @include desktop{
+            left:38%;
+            width:30%;
+        }
     }
 
     &__hand{
         width:40px;
         height:30px;
         position:absolute;
-        top:23px;
-        left:138px;
+        top:24%;
+        left:36%;;
+        z-index:20;
+        animation:moveHand 2s 5s linear infinite;
+        offset-path: path('M0,0 C100, 0 0,  0, 20');
     }
 }
+
+
 

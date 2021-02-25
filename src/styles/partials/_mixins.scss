@@ -60,5 +60,9 @@
     padding:10px 20px;
     bottom:-100px;
     cursor:pointer;
+
+    &:focus{
+        outline:none;
+    }
 }
 

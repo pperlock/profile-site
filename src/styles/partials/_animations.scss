@@ -50,19 +50,6 @@
     100% {visibility:visible;}
 }
 
-// @keyframes colorWave {
-//     from, to { color: hsl(324, 70%, 45%); }
-//     10%      { color: hsl(360, 65%, 45%); }
-//     // 20%      { color: hsl( 36, 80%, 45%); }
-//     // 30%      { color: hsl( 72, 75%, 35%); }
-//     // 40%      { color: hsl(108, 65%, 35%); }
-//     // 50%      { color: hsl(144, 75%, 35%); }
-//     // 60%      { color: hsl(180, 75%, 35%); }
-//     // 70%      { color: hsl(216, 60%, 45%); }
-//     // 80%      { color: hsl(252, 65%, 50%); }
-//     90%      { color: hsl(288, 60%, 40%); }
-// }
-
 @keyframes colorWave {
     to {
       // background-position: 200% center;
@@ -80,4 +67,27 @@
     100% {background-color:transparent;}
 }
 
+@keyframes pulsate {
+    0% {transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@keyframes colorChange {
+  from, to {
+    color: silver;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@keyframes moveHand{
+    0% {offset-distance:0%;}
+    100% {offset-distance:100%}
+}
+
+@keyframes dropButtons {
+    0%  {bottom: 100%;}
+}
 
