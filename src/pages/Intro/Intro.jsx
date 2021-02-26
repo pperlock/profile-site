@@ -5,14 +5,6 @@ import './Intro.scss';
 
 function Intro() {
 
-    const [loadState, setLoadState] = useState(false);
-
-    window.onload = (event) => {
-        setLoadState(true);
-        console.log('page is fully loaded');
-    };
-
-    if (loadState) {
     return (
         <main className="intro"> 
             <div className="logo">
@@ -32,11 +24,6 @@ function Intro() {
             </Link>
         </main>
     )
-    }else{
-        return(
-            <h1>loading</h1>
-        )
-    }
 }
 
 export default Intro
