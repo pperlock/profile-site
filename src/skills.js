@@ -5,5 +5,5 @@
         {skillLevel: "Experienced", skillList: ["Authentication", "Deployment", "MongoDB", "jquery", "bootstrap"]},
     ];
 
-console.log(skills[2].skillList[0]);
+console.log(skills[0].skillList);
 

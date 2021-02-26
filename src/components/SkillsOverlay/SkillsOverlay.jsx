@@ -14,8 +14,8 @@ function SkillsOverlay({showOverlay}) {
                         <p className = "skills__cursor">|</p>
                     </div>
                     <div className="skills__level-terminal">
-                        <img src="/images/output-terminal.png"/>
-                        <img className={showOverlay ? "skills__level-output skills__level-output--first" : "skills__level-output"} src="/images/proficient-list.png"/>
+                        <p className={showOverlay && "skills__level-terminal-text"}> PROBLEMS <span className="terminal--underline">OUTPUT</span> DEBUG CONSOLE TERMINAL</p>
+                        <p className={showOverlay && "skills__level-output--proficient"}> ['React, 'HTML5', 'CSS3, 'SASS, 'Javascript', 'SQL']</p>
                     </div>
                 </div>
                 <div className="skills__level">
@@ -25,8 +25,8 @@ function SkillsOverlay({showOverlay}) {
                         <p className = "skills__cursor">|</p>
                     </div>
                     <div className="skills__level-terminal">
-                        <img src="/images/output-terminal.png"/>
-                        <img className={showOverlay ? "skills__level-output skills__level-output--second" : "skills__level-output"} src="/images/competent-list.png"/>
+                        <p className={showOverlay && "skills__level-terminal-text"}> PROBLEMS <span className="terminal--underline">OUTPUT</span> DEBUG CONSOLE TERMINAL</p>
+                        <p className={showOverlay && "skills__level-output--competent"}> ['RESTful APIs', 'Node.js', 'Express', 'Git', 'VBA']</p>
                     </div>
                 </div>
 
@@ -37,8 +37,8 @@ function SkillsOverlay({showOverlay}) {
                         <p className = "skills__cursor">|</p>
                     </div>
                     <div className="skills__level-terminal">
-                        <img src="/images/output-terminal.png"/>
-                        <img className={showOverlay ? "skills__level-output skills__level-output--third" : "skills__level-output"} src="/images/introduced-list.png"/>
+                        <p className={showOverlay && "skills__level-terminal-text"}> PROBLEMS <span className="terminal--underline">OUTPUT</span> DEBUG CONSOLE TERMINAL</p>
+                        <p className={showOverlay && "skills__level-output--introduced"}> ['Authentication', 'Deployment', 'MongoDB', 'jquery', 'bootstrap']</p>
                     </div>
                 </div>
            
