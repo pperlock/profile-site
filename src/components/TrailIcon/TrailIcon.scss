@@ -11,7 +11,31 @@
             max-height:72px;
             max-width:72px;
         } 
+        &-modal{
+            width: 100vw;
+            background-color: rgba(0,0,0,0.5);
+            padding: 5%;
+            box-sizing: border-box;
+            position:absolute;
+            top:50vw;
+            left:0;
+            z-index:5;
 
+            @include tablet{
+                top:32vw;
+                width: 80vw;
+                font-size:20px;
+            }
+
+            @include desktop{
+                top:22vw;
+                font-size:24px;
+            }
+            
+            @include wide-screen{
+                top:14vw;
+            }
+        }
     }
 
     &__div{
@@ -21,29 +45,7 @@
         justify-content:center;
         align-items:center;
 
-        &::before{
-            display:none;
-            content: attr(data-content);
-            width:270px;
-            height:100px;
-            font-size: 12px;
-            padding: 1px 5px;
-            color: black;
-            // border-radius:4px;
-            background: silver;
-            opacity:0.75;
-            z-index:1;
-            bottom:0;
-            left:0;
-         }
-        // only show the tool tip when you hover over the delete button
-        &:hover::before {
-            position:absolute;
-            display: block;
-        }
-
         &-head{
-            // @include buildTrailDiv(-2.5%, 5%, 0, 0);
              @include buildTrailDiv(-2.5%, 5%, 0, 6%, 0, 0);
         }
 

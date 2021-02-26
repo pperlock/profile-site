@@ -12,14 +12,6 @@ function AboutOverlay({showOverlay}) {
                 <img className="about__overlay-who-image"src="/images/climbing-patti.jpg"/>
             </div>
 
-            {/* <h2 className="about__overlay-title">Where Did She Come From?</h2>
-            <div>
-                <p className="about__overlay-text">My time in science and research studying geophysics taught me that I wanted to move at a faster pace in a malleable, exciting field.  </p>
-                <p className="about__overlay-text">Dog training allowed me to explore a passion project type career working with animals outdoors but it left me lonely and mentally unstimulated, longing for a team environment.</p>
-                <p className="about__overlay-text">As a Database Administrator I found myself constantly reaching for ways to learn new skills and searching for projects that allowed me to use my object-oriented programming knowledge.</p>
-                <p className="about__overlay-text">So here you find me, in an exciting, fast-paced, changing field that pushes my imagination to its limits, and challenges my brain daily through constant learning and problem solving.</p>
-            </div> */}
-
             <h2 className={showOverlay ? "about__overlay-title animate-type" : "about__overlay-title"}>What Can You Expect From Her?</h2>
             <p className="about__overlay-text">My work style is extremely <span className="about__overlay-text--emphasize">flexible</span>. Owing to my <span className="about__overlay-text--emphasize">organization skills </span> and <span className="about__overlay-text--emphasize">efficiency</span>, I have a track record of successfully juggling multiple projects at once on tight deadlines.  
             Left to my own devices, I have the ability to push myself to produce <span className="about__overlay-text--emphasize"> top quality work with limited direction</span>.  

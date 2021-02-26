@@ -14,6 +14,13 @@
     }
 }
 
+// Changes to desktop format >=1200px
+@mixin wide-screen{
+    @media (min-width:1700px){
+        @content;
+    }
+}
+
 @mixin buildTrailDiv($top-mobile, $left-mobile, $top-tablet, $left-tablet, $top-desktop, $left-desktop){
         // border:1px solid black;
         top:$top-mobile;
