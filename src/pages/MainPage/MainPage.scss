@@ -38,7 +38,7 @@
             // top:-40vw;
 			top:-120px;
             left:-74vw;
-            animation: growIcon 1s linear;
+            animation: growIcon 1s linear, bounce 2s;
             offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
           
 			@include tablet{
@@ -53,6 +53,9 @@
 				left:-85vw;
 				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
 			}
+			@include wide-screen{
+				offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
+			}
 		  }
         &-second{
 			position:absolute;
@@ -60,7 +63,7 @@
 			// top:-12.75vh;
 			top:-70px;
 			left:-74vw;
-			animation: growIcon 1s linear;
+			animation: growIcon 1s linear, bounce 2s;
 			offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
 			@include tablet{
 				width:50px;
@@ -75,6 +78,9 @@
 				left:-85vw;
 				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
 			}
+			@include wide-screen{
+				offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
+			}
 		}
           
         &-third{
@@ -83,13 +89,12 @@
 			// top:-7.5vh;
 			top:-23px;
 			left:-74vw;
-			animation: growIcon 1s linear;
+			animation: growIcon 1s linear, bounce 2s;
 			offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
 			
 			@include tablet{
 				width:50px;
 				top:0px;
-				// top:-3vh;
 				left:-85vw;
 				offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
 			}
@@ -97,6 +102,9 @@
 				top:8px;
 				left:-85vw;
 				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
+			}
+			@include wide-screen{
+				offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
 			}
         }
 
@@ -110,6 +118,52 @@
           // animation: growIcon 2s linear, bounce 2s 1.8ss linear;
         }
     }
-}
+	&-list{
+		position:fixed;
+		display:flex;
+		flex-direction:column;
+		align-items:flex-start;
+		bottom:12%;
+		left:6%;
 
+		@include tablet{
+			width:50%;
+			bottom:8%;
+			left:12%;
+		}
+
+		@include desktop{
+			bottom:10.5%;
+			left:12%;
+		}
+		
+		&-item{
+			display:flex;
+			align-items:center;
+			margin-bottom:20px;
+		}
+
+		&-icon{
+			width:50px;
+			margin-right:10px;
+			animation: growIcon 2s linear;
+			@include tablet{
+				margin-right:20px;
+			}
+		}
+		&-text{
+			font-size:18px;
+			color:#d2c9c2;
+			margin-left:60px;
+			margin-top:25px;
+			@include tablet{
+				font-size:40px;
+				margin-left:40px;
+			}
+			@include desktop{
+				margin-left:60px;
+			}
+		}
+	}
+}
 

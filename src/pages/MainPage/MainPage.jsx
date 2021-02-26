@@ -38,7 +38,14 @@ function MainPage({match}) {
                 </aside>
 
                 {sections.map((section,i) => <Section key={i} section={section} reachedBottom={reachedBottom}/>)}
-                
+
+                {reachedBottom && 
+                <div className = "main__contacts-list">
+                    <a className="main__contacts-list-text" href="https://github.com/pperlock" data-aos-anchor=".contact" data-aos-delay="900" data-aos="fade-left" data-aos-offset="500" data-aos-duration="500">github.com/pperlock</a>
+                    <a className="main__contacts-list-text" href="https://www.linkedin.com/in/pattiperlock" data-aos-anchor=".contact" data-aos-delay="950" data-aos="fade-left" data-aos-offset="500" data-aos-duration="500">linkedin.com/in/pattiperlock</a>
+                    <a className="main__contacts-list-text" href="mailto:pattiperlock@gmail.com" data-aos-anchor=".contact" data-aos-delay="1000" data-aos="fade-left" data-aos-offset="500" data-aos-duration="500">pattiperlock@gmail.com</a>
+                </div>
+            }
             </main>
 
         </>
