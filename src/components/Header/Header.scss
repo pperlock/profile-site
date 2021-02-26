@@ -76,13 +76,16 @@
             }
 
             &--active{
+                @extend .nav__link;
+                background-color:rgba(250,250,250,0.2);
+                border-radius:4px;
                 color:#3fb0ac;
-                text-transform:uppercase;
+                font-weight:bold;
             }
         
             &:hover{
-                // color:white;
-                @extend .nav__link--active
+                @extend .nav__link--active;
+                color:white;
             }
 
 

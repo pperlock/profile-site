@@ -69,48 +69,6 @@
                 font-size:40px;
             }
         }
-
-        //this is rendered on the main page
-        // &-list{
-        //     position:absolute;
-        //     display:flex;
-        //     flex-direction:column;
-        //     align-items:flex-start;
-        //     margin: 20px 1%;
-
-        //     @include tablet{
-        //         width:50%;
-        //         margin: 20px 5%;
-        //     }
-            
-        //     &-item{
-        //         display:flex;
-        //         align-items:center;
-        //         margin-bottom:20px;
-        //     }
-
-        //     &-icon{
-        //         width:50px;
-        //         margin-right:10px;
-        //         animation: growIcon 2s linear;
-        //         @include tablet{
-        //             margin-right:20px;
-        //         }
-        //     }
-        //     &-text{
-        //         font-size:18px;
-        //         color:#d2c9c2;
-        //         margin-left:60px;
-        //         margin-top:25px;
-        //         @include tablet{
-        //             font-size:40px;
-        //             margin-left:40px;
-        //         }
-        //         @include desktop{
-        //             margin-left:60px;
-        //         }
-        //     }
-        // }
     }
 }
 

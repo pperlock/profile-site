@@ -27,7 +27,7 @@ const Skills = ({match, text, showOverlay}) => {
         setSkillList(skillList.filter((skill,i) => skill.id !== id).concat(skill[0]));
         console.log(skillList);
     }
-
+    console.log(showOverlay)
     return (
         <CardContext.Provider value={{markAsDone}}>
             

@@ -24,7 +24,7 @@ function Section({section, reachedBottom}) {
             <PageTitle title={title} section={name} toggleOverlay={toggleOverlay} showOverlay={showOverlay}/>
             <div className= {`${name}__content`} data-aos={scrollAnimation.animation} data-aos-anchor={scrollAnimation.anchor} data-aos-anchor-placement={scrollAnimation.anchorPlacement} >
                 {name==="about" && <About />}
-                {name==="skills" && <Skills/>}
+                {name==="skills" && <Skills showOverlay={showOverlay}/>}
                 {name==="experience" && <Experience showOverlay={showOverlay}/>}
                 {name==="projects" && <Projects/>} 
                 {name==="contact" && <Contact reachedBottom={reachedBottom}/>}  
