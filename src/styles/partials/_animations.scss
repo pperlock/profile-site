@@ -41,15 +41,6 @@
   0% {width: 0; visibility:hidden;}
 } 
 
-@keyframes blink {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: white;
-  }
-}
-
 @keyframes showArray {
     0% {visibility:hidden;}
     99% {visibility:hidden;}
@@ -58,7 +49,6 @@
 
 @keyframes colorWave {
     to {
-      // background-position: 200% center;
       background-position: 200%;
     }
   }
@@ -74,9 +64,9 @@
 }
 
 @keyframes pulsate {
-    0% {transform: scale(0.1, 0.1); opacity: 0.0;}
+    0% {transform: scale(0.1, 0.1); opacity: 0;}
     50% {opacity: 1.0;}
-    100% {transform: scale(1.2, 1.2); opacity: 0.0;}
+    100% {transform: scale(1.2, 1.2); opacity: 0;}
 }
 
 @keyframes colorChange {
@@ -95,4 +85,28 @@
 
 @keyframes dropButtons {
     0%  {bottom: 100%;}
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-8px);}
+  80% {transform: translateY(-5px);}
+}
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+}
+
+@keyframes fade-out {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
 }

@@ -33,7 +33,8 @@
             }
             
             @include wide-screen{
-                top:14vw;
+                top:13vw;
+                width:56vw;
             }
         }
     }
@@ -44,13 +45,21 @@
         flex-direction:column;
         justify-content:center;
         align-items:center;
+        &:hover{
+            transform:scale(1.1);
+            filter:grayscale(1);
+        }
 
         &-head{
              @include buildTrailDiv(-2.5%, 5%, 0, 6%, 0, 0);
+             z-index:1;
         }
 
         &-hiker{
             @include buildTrailDiv(9%, 29%, 9%, 29%, 9%, 29%);
+            &:hover{
+                filter:invert(90%) sepia(3%) saturate(22%) hue-rotate(322deg) brightness(85%) contrast(93%);
+            }
         }
             
         &-detour{        
@@ -69,6 +78,9 @@
                 background: black;
                 opacity:1;
                 z-index:1;
+            }
+            &:hover{
+                filter:invert(90%) sepia(3%) saturate(22%) hue-rotate(322deg) brightness(85%) contrast(93%);
             }
         }
         

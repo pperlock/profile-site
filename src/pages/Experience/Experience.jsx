@@ -5,7 +5,7 @@ import TrailIcon from '../../components/TrailIcon/TrailIcon';
 
 function Experience ({match}){
     const mapIcons=[
-        {id: 0, name:'head', image:'/icons/trail-head.svg', title:'Trail Head', alt:"trail head", content: "An introduction to coding in highschool ignited the spark and sent me on a journey into computer science"},
+        {id: 0, name:'head', image:'/icons/trail-head.svg', title:'Trail Head', alt:"trail head", content: "An introduction to coding in highschool ignited a spark and started me on a journey into computer science"},
         {id: 1, name:'hiker', image:'/icons/hiking-solid.svg', title:'Computer Science & Geophysics', alt:"hiker icon", content: "My time in science and research studying geophysics taught me that I wanted to move at a faster pace in a malleable, exciting field."},
         {id: 2, name:'detour', image:'/icons/map-signs-solid.svg', title:'', alt:"trail sign icon",content: "My other passion for the outdoors and animals lead me to try a career as a dog trainer"},
         {id: 3, name:'db', image:'/icons/database.svg', title:'Database Administration', alt:"database icon",content: "As a Database Administrator I found myself constantly reaching for ways to learn new skills and searching for projects that allowed me to use my object-oriented programming knowledge."},

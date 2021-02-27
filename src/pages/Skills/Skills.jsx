@@ -27,11 +27,11 @@ const Skills = ({match, text, showOverlay}) => {
         setSkillList(skillList.filter((skill,i) => skill.id !== id).concat(skill[0]));
         console.log(skillList);
     }
-    console.log(showOverlay)
+
     return (
         <CardContext.Provider value={{markAsDone}}>
             
-            {skillList.filter(skill => skill.status === "out").length === 0 && <a className="skills__packed" href="#experience"> All Packed - Let's Go!</a>}
+            {(skillList.filter(skill => skill.status === "out").length === 0 && !showOverlay) && <a className="skills__packed" href="#experience"> All Packed - Let's Go!</a>}
                 
             {(skillList.filter(skill => skill.status === "out").length === 8 && !showOverlay) && <p className="skills__packed-start"> Pack Your Bag </p>}
             {(skillList.filter(skill => skill.status === "out").length === 8 && !showOverlay) && <img className="skills__hand" src="/icons/hand.png" alt="hand dropping item"/>}

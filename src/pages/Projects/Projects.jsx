@@ -16,15 +16,16 @@ function Projects({match}) {
             <div className = "projects__content"> 
                 <div className = "projects__list">
                     <div className="projects__list-project--p2t"  data-aos-anchor=".projects" data-aos="flip-up" data-aos-offset="500" data-aos-duration="2000">
-                        <img className="projects__list-img" src="/images/plan2train.png"/>
-                        <button className="projects__list-first" onClick={()=>{toggleVideo(true)}}> DEMO </button>
-                        <a href="https://plan2train.herokuapp.com" target="_blank"> <button className="projects__list-second"> VISIT </button> </a>
-                        <a href="https://github.com/pperlock/plan2train" target="_blank"> <button className="projects__list-third"> GITHUB </button> </a>
                         <div className = "projects__list-description">
                             <p className = "projects__list-description-pitch">An organizational app focused on helping small businesses in the personal training space.</p>
                             <p><span className="emphasize">Ideation to Submission:</span> 10 days </p>
                             <p><span className="emphasize">Tech Stack:</span> React, Node, Express, MongoDB, Passport, SASS</p>
                         </div>
+                        <img className="projects__list-img" src="/images/plan2train.png"/>
+                        <button className="projects__list-first" onClick={()=>{toggleVideo(true)}}> DEMO </button>
+                        <a href="https://plan2train.herokuapp.com" target="_blank"> <button className="projects__list-second"> VISIT </button> </a>
+                        <a href="https://github.com/pperlock/plan2train" target="_blank"> <button className="projects__list-third"> GITHUB </button> </a>
+
                     </div>
                     <div className="projects__list-project--brainflix" data-aos-anchor=".projects" data-aos="flip-down" data-aos-delay="300" data-aos-offset="500" data-aos-duration="2000">
                         <img className="projects__list-img--brainflix" src="/images/brainflix.png"/>

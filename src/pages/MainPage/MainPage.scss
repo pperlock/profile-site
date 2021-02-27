@@ -1,17 +1,11 @@
 @import '../../styles/globalstyles.scss';
 
-
-@keyframes bounce {
-  0%, 20%, 60%, 100% {transform: translateY(0);}
-  40% {transform: translateY(-8px);}
-  80% {transform: translateY(-5px);}
-}
 .main__contacts{
     position:sticky;
     padding:10px;
     background-color:silver;
     opacity:0.5;
-    top:89.5vh;
+    top:85.5vh;
     margin-left:auto;
 
     width:20px;
@@ -23,7 +17,7 @@
     
     @include desktop{
         width:30px;
-        top:86.5vh;        
+        top:81.5vh;        
     }
 
     &-icon{
@@ -49,7 +43,7 @@
 				offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
 			}
 			@include desktop{
-				top:-147px;
+				top:-168px;
 				left:-85vw;
 				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
 			}
@@ -74,7 +68,7 @@
 			}
 			@include desktop{
 				// top:-20vh;
-				top:-70px;
+				top:-98px;
 				left:-85vw;
 				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
 			}
@@ -99,7 +93,33 @@
 				offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
 			}
 			@include desktop{
-				top:8px;
+				// top:8px;
+				top:-23px;
+				left:-85vw;
+				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
+			}
+			@include wide-screen{
+				offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
+			}
+        }
+
+		&-fourth{
+			position:absolute;
+			width:50px;
+			// top:-7.5vh;
+			top:-23px;
+			left:-74vw;
+			animation: growIcon 1s linear, bounce 2s;
+			offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
+			
+			@include tablet{
+				width:50px;
+				top:0px;
+				left:-85vw;
+				offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
+			}
+			@include desktop{
+				top:53px;
 				left:-85vw;
 				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
 			}

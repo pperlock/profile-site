@@ -111,7 +111,7 @@
         }
     }
     &__cursor{
-        animation: 1s blink step-end infinite;
+        animation: blink 1s step-end infinite;
     }
 }
 

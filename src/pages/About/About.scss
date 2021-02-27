@@ -25,20 +25,28 @@
     &__tagline{
         color:silver;
         text-align:center;
-        margin-top:80px;
-        margin-bottom:80px;
+        margin:80px 0;
         padding:10px;
+        @include desktop{
+            font-size:40px;
+            margin-top:32px;
+        }
     }
 
     &__journey{
-        color:silver;
-        text-align:center;
-        margin-top:50px;
-        margin-bottom:157px;
-
+        margin-top:50px 0 157px 0;
         &:hover{
             color:white;
             font-style:italic;
+        }
+        @include desktop{
+            margin-top:190px;
+            font-size:25px;
+            font-size:40px;
+            text-align:center;
+        }
+        &-link{
+            animation: colorChange 2s step-end infinite;
         }
     }
 }
