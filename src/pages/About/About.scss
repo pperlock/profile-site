@@ -2,7 +2,6 @@
 
 .about{
     height:89.5vh;
-    // padding-top:151px;
     background-size:cover;
     background-position:center;
     @include tablet{
@@ -35,18 +34,32 @@
 
     &__journey{
         margin-top:50px 0 157px 0;
-        &:hover{
-            color:white;
-            font-style:italic;
+        text-align:center;
+        font-size:20px;
+         @include tablet{
+            font-size:25px;
         }
         @include desktop{
-            margin-top:190px;
+            margin-top:262px;
             font-size:25px;
             font-size:40px;
-            text-align:center;
         }
         &-link{
-            animation: colorChange 2s step-end infinite;
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            background: linear-gradient(to right, #3fb0ac, #3fb0ac 50%, white 50%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            background-position: 100%;
+            transition: background-position 275ms ease;
+
+            &:hover{
+                background-position: 0 100%;
+
+            }
         }
     }
 }

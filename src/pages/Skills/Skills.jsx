@@ -33,8 +33,14 @@ const Skills = ({match, text, showOverlay}) => {
             
             {(skillList.filter(skill => skill.status === "out").length === 0 && !showOverlay) && <a className="skills__packed" href="#experience"> All Packed - Let's Go!</a>}
                 
-            {(skillList.filter(skill => skill.status === "out").length === 8 && !showOverlay) && <p className="skills__packed-start"> Pack Your Bag </p>}
-            {(skillList.filter(skill => skill.status === "out").length === 8 && !showOverlay) && <img className="skills__hand" src="/icons/hand.png" alt="hand dropping item"/>}
+            {(skillList.filter(skill => skill.status === "out").length === 8 && !showOverlay) && 
+                <div className="skills__packed-start">
+                    <p> Pack Your Bag </p>
+                    <p className="skills__packed-start--dnd"> Drag and Drop </p>
+                </div>
+            }
+            
+            {/* {(skillList.filter(skill => skill.status === "out").length === 8 && !showOverlay) && <img className="skills__hand" src="/icons/hand.png" alt="hand dropping item"/>} */}
             <div className="skills__main">
                 <BackPack/>
                 {skillList
