@@ -5,7 +5,7 @@
     padding:10px;
     background-color:silver;
     opacity:0.5;
-    top:85.5vh;
+    top:81.5vh;
     margin-left:auto;
 
     width:20px;
@@ -13,6 +13,11 @@
 
     &--bottom{
       background-color:transparent;
+    }
+
+	@include tablet{
+        width:30px;
+        top:82.5vh;        
     }
     
     @include desktop{
