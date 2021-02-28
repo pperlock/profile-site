@@ -26,125 +26,109 @@
     }
 
     &-icon{
-         &:hover{
-           animation: bounce 1s; 
+        &:hover{
+        	animation: bounce 1s; 
         }
 
         &--bottom{
-          &-first{
-            position:absolute;
-            width:40px;
-            // top:-40vw;
-			top:-18vw;
-            left:-74vw;
-            animation: growIcon 1s linear, bounce 2s;
-            offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
-          
-			@include tablet{
-				width:50px;
-				// top:-21vh;
-				top:-150px;
-				left:-85vw;
-				offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
-			}
-			@include desktop{
-				width:60px;
-				top:-168px;
-				left:-85vw;
-				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
-			}
-			@include wide-screen{
-				offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
-			}
-		  }
-        &-second{
-			position:absolute;
-			width:35px;
-			// top:-12.75vh;
-			top:-20px;
-			left:-74vw;
-			animation: growIcon 1s linear, bounce 2s;
-			offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
-			@include tablet{
-				width:50px;
-				// top:-12.5vh;
-				top:-80px;
-				left:-85vw;
-				offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
-			}
-			@include desktop{
-				// top:-20vh;
-				width:55px;
-				top:-88px;
-				left:-85vw;
-				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
-			}
-			@include wide-screen{
-				offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
-			}
-		}
-          
-        &-third{
-			position:absolute;
-			width:35px;
-			// top:-7.5vh;
-			top:31px;
-			left:-74vw;
-			animation: growIcon 1s linear, bounce 2s;
-			offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
+			&-first{
+				position:absolute;
+				width:40px;
+				top:-18vw;
+				left:-74vw;
+				animation: growIcon 1s linear, bounce 2s;
+				offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
 			
-			@include tablet{
-				width:50px;
-				top:0px;
-				left:-85vw;
-				offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
+				@include tablet{
+					width:50px;
+					top:-150px;
+					left:-85vw;
+					offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
+				}
+				@include desktop{
+					width:60px;
+					top:-168px;
+					left:-85vw;
+					offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
+				}
+				@include wide-screen{
+					offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
+				}
 			}
-			@include desktop{
-				// top:8px;
-				width:55px;
-				top:-1px;
-				left:-85vw;
-				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
+			&-second{
+				position:absolute;
+				width:35px;
+				top:-20px;
+				left:-74vw;
+				animation: growIcon 1s linear, bounce 2s;
+				offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
+				@include tablet{
+					width:50px;
+					top:-80px;
+					left:-85vw;
+					offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
+				}
+				@include desktop{
+					width:55px;
+					top:-88px;
+					left:-85vw;
+					offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
+				}
+				@include wide-screen{
+					offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
+				}
 			}
-			@include wide-screen{
-				offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
-			}
-        }
-
-		&-fourth{
-			position:absolute;
-			width:35px;
-			// top:-7.5vh;
-			top:80px;
-			left:-74vw;
-			animation: growIcon 1s linear, bounce 2s;
-			offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
 			
-			@include tablet{
-				width:50px;
-				top:81px;
-				left:-85vw;
-				offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
+			&-third{
+				position:absolute;
+				width:35px;
+				top:31px;
+				left:-74vw;
+				animation: growIcon 1s linear, bounce 2s;
+				offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
+				
+				@include tablet{
+					width:50px;
+					top:0px;
+					left:-85vw;
+					offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
+				}
+				@include desktop{
+					width:55px;
+					top:-1px;
+					left:-85vw;
+					offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
+				}
+				@include wide-screen{
+					offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
+				}
 			}
-			@include desktop{
-				width:55px;
-				top:77px;
-				left:-85vw;
-				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
-			}
-			@include wide-screen{
-				offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
-			}
-        }
 
-          // offset-path: path('M20,20 C20,100 200,0 200,100');
-          //M0,0 - move to - where to start
-
-          // c x1 y1,  x2 y2, x y
-          //x y -->where line should end
-          //x1, y1 - control point - start of curve
-          //x2, y2 - control point - end of curve
-          }
+			&-fourth{
+				position:absolute;
+				width:35px;
+				top:80px;
+				left:-74vw;
+				animation: growIcon 1s linear, bounce 2s;
+				offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
+				
+				@include tablet{
+					width:50px;
+					top:81px;
+					left:-85vw;
+					offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
+				}
+				@include desktop{
+					width:55px;
+					top:77px;
+					left:-85vw;
+					offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
+				}
+				@include wide-screen{
+					offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
+				}
+			}
+    	}
     }
 	&-list{
 		position:fixed;
