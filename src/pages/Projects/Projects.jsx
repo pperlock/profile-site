@@ -5,36 +5,48 @@ import './Projects.scss';
 function Projects({match}) {
 
     const [showVideo, setShowVideo] = useState(false);
+    const [activeProject, setActiveProject] = useState("p2t")
 
     const toggleVideo = (action) =>{
         setShowVideo(action);
         document.querySelector('html').classList.toggle('scroll-lock');
     }
 
+    const makeActive = (project)=>{
+        setActiveProject(project);
+    }
+
     return (
         <>
             <div className = "projects__content"> 
+                <ul className="projects__nav"> 
+                    <li onClick={()=>{makeActive("p2t")}} className={activeProject === "p2t" ? "projects__nav-link--active" : "projects__nav-link"}> Plan2Train </li>
+                    <li onClick={()=>{makeActive("brainflix")}} className={activeProject === "brainflix" ? "projects__nav-link--active" : "projects__nav-link"}> BrainFlix </li>
+                </ul>
                 <div className = "projects__list">
-                    <div className="projects__list-project--p2t"  data-aos-anchor=".projects" data-aos="flip-up" data-aos-offset="500" data-aos-duration="2000">
-                        <div className = "projects__list-description">
-                            <p className = "projects__list-description-pitch">An organizational app focused on helping small businesses in the personal training space.</p>
-                            <p><span className="emphasize">Ideation to Submission:</span> 10 days </p>
-                            <p><span className="emphasize">Tech Stack:</span> React, Node, Express, MongoDB, Passport, SASS</p>
+                    {(window.innerWidth>=768 || activeProject==="p2t") && 
+                        <div className="projects__list-project--p2t"  data-aos-anchor=".projects" data-aos="flip-up" data-aos-offset="500" data-aos-duration="2000">
+                            <div className = "projects__list-description">
+                                <p className = "projects__list-description-pitch">An organizational app focused on helping small businesses in the personal training space.</p>
+                                <p><span className="emphasize">Ideation to Submission:</span> 10 days </p>
+                                <p><span className="emphasize">Tech Stack:</span> React, Node, Express, MongoDB, Passport, SASS</p>
+                            </div>
+                            <img className="projects__list-img" src="/images/plan2train.png"/>
+                            <button className="projects__list-first" onClick={()=>{toggleVideo(true)}}> DEMO </button>
+                            <a href="https://plan2train.herokuapp.com" target="_blank"> <button className="projects__list-second"> VISIT </button> </a>
+                            <a href="https://github.com/pperlock/plan2train" target="_blank"> <button className="projects__list-third"> GITHUB </button> </a>
                         </div>
-                        <img className="projects__list-img" src="/images/plan2train.png"/>
-                        <button className="projects__list-first" onClick={()=>{toggleVideo(true)}}> DEMO </button>
-                        <a href="https://plan2train.herokuapp.com" target="_blank"> <button className="projects__list-second"> VISIT </button> </a>
-                        <a href="https://github.com/pperlock/plan2train" target="_blank"> <button className="projects__list-third"> GITHUB </button> </a>
-
-                    </div>
-                    <div className="projects__list-project--brainflix" data-aos-anchor=".projects" data-aos="flip-down" data-aos-delay="300" data-aos-offset="500" data-aos-duration="2000">
-                        <img className="projects__list-img--brainflix" src="/images/brainflix.png"/>
-                        <a href="https://github.com/pperlock/patti-perlock-brainflix" target="_blank"><button className="projects__list-first--brainflix" target="_blank"> GITHUB </button> </a>
-                        <div className = "projects__list-description">
-                            <p className = "projects__list-description-pitch"> A video-streaming type website built based on a provided mockup.</p>
-                            <p><span className="emphasize">Tech Stack:</span> React, Node, Express, SASS</p>
+                    }
+                    {(window.innerWidth>=768 || activeProject==="brainflix") && 
+                        <div className="projects__list-project--brainflix" data-aos-anchor=".projects" data-aos="flip-down" data-aos-delay="300" data-aos-offset="500" data-aos-duration="2000">
+                            <img className="projects__list-img--brainflix" src="/images/brainflix.png"/>
+                            <a href="https://github.com/pperlock/patti-perlock-brainflix" target="_blank"><button className="projects__list-first--brainflix" target="_blank"> GITHUB </button> </a>
+                            <div className = "projects__list-description">
+                                <p className = "projects__list-description-pitch"> A video-streaming type website built based on a provided mockup.</p>
+                                <p><span className="emphasize">Tech Stack:</span> React, Node, Express, SASS</p>
+                            </div>
                         </div>
-                    </div>
+                    }
                 </div>
             </div>
             {showVideo &&

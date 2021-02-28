@@ -15,7 +15,7 @@
     &__mountain{
         position:absolute;
         bottom:0;
-        width:100%;
+        // width:100%;
         left:10%;
         min-width:480px;
         // max-width:480px;
@@ -31,6 +31,27 @@
         @include desktop{
             left:60%;
             width:50%;
+        }
+    }
+
+    &__nav{
+        color:white;
+        display:flex;
+        justify-content:space-between;
+        padding:7px 20% 0 20%;;
+
+        @include tablet{
+            display:none;
+        }
+        &-link{
+            padding:5px;
+            &--active{
+                background-color:rgba(250,250,250,0.2);
+                border-radius:4px;
+                color:#3fb0ac;
+                font-weight:bold;            
+                padding:5px;
+            }
         }
     }
     
