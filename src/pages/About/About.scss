@@ -24,8 +24,11 @@
     &__tagline{
         color:silver;
         text-align:center;
-        margin:80px 0;
+        margin-bottom:40px;
         padding:10px;
+        @include tablet{
+            margin:80px 0;
+        }
         @include desktop{
             font-size:40px;
             margin-top:32px;
