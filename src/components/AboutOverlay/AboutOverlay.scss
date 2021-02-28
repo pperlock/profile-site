@@ -14,8 +14,6 @@
     &-title{
         font-size:16px;
         margin-bottom:16px;
-        // color:#517384;
-        // color:#1A151B;
         white-space: nowrap;
         overflow: hidden;
         width:100%;
@@ -31,6 +29,8 @@
         margin-bottom:25px;
         line-height:1.5;
         color:#242321;
+
+        float:left;
         @include tablet{
             font-size:16px;
         }
@@ -39,19 +39,18 @@
         }
         &--emphasize{
             font-weight:bold;
-            // color:#173e43;
             color:#3fb0ac;
         }
     }
     &-who{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
+
+        @include tablet{}
+            display:flex;
+            flex-direction:column;
+            align-items:center;
 
         &-image{
-            width:100%;
             margin-bottom:25px;
-
             @include tablet{
                 width:60%;
             }

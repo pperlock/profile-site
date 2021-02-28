@@ -11,7 +11,6 @@
     flex-direction:column;
     justify-content:space-between;
     background-size:cover;
-    position:bottom right;
 
     &--skills{
         background-color:#1e1e1e;
@@ -20,6 +19,8 @@
     &--on{
         height:100%;
         animation: slide-down 0.5s ease-in;
+        overflow-y:auto;
+        z-index:1;
     }
     &--off{
         height:0;

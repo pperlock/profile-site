@@ -9,7 +9,7 @@ function AboutOverlay({showOverlay}) {
             <div className="about__overlay-who">
                 <p className="about__overlay-text">I am a newly minted <span className="about__overlay-text--emphasize"> Full Stack Web Developer </span> looking to make her mark in the <span className="about__overlay-text--emphasize"> Web Development </span> world.  
                 I proudly embrace my diverse background and the lessons I have learned from it.  My path may seem disjointed to some, but it has created the <span className="about__overlay-text--emphasize">adaptable, multi-talented, well-rounded individual </span> I am today.</p>
-                <img className="about__overlay-who-image"src="/images/climbing-patti.jpg"/>
+                <img className="about__overlay-who-image"src="/images/climbing-patti.jpg" alt="patti"/>
             </div>
 
             <h2 className={showOverlay ? "about__overlay-title animate-type" : "about__overlay-title"}>What Can You Expect From Her?</h2>

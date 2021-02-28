@@ -19,7 +19,7 @@ function Intro() {
 
     return (
         <main className="intro"> 
-            {displayReplay ? <img onClick={replayVideo} className="intro__replay" src="/icons/replay-icon.svg"/> : <Link to="/main"><p className="intro__skip"> Skip Intro </p></Link>}
+            {displayReplay ? <img onClick={replayVideo} className="intro__replay" src="/icons/replay-icon.svg" alt="replay"/> : <Link to="/main"><p className="intro__skip"> Skip Intro </p></Link>}
             
             <div className="logo">
                 <Link to="/main" className="logo-text">

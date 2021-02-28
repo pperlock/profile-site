@@ -1,8 +1,6 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 import './PageTitle.scss';
-
-import {toggleStory} from '../../functions.jsx';
 
 function PageTitle({title, section, toggleOverlay, showOverlay}) {
 

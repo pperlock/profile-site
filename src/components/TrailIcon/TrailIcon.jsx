@@ -20,13 +20,12 @@ function TrailIcon({icon}) {
             {showModal && 
                 <div className={`trail-icon__modal-${icon.modal}`}> 
                     <div onClick={closeModal} className="trail-icon__modal-experience">
-                    {/* <div onClick={closeModal}> x </div> */}
                         {!!icon.experience && 
                             icon.experience.map(item =>
                             <div className="trail-icon__modal-experience__experience">
                                     <div className="trail-icon__modal-experience__place">
                                         <div className="trail-icon__modal-experience__place-circle">
-                                            <img src={item.background} className="trail-icon__modal-experience__place-img"/>
+                                            <img src={item.background} className="trail-icon__modal-experience__place-img" alt={icon.alt}/>
                                         </div>
                                     </div>
                                     <div className="trail-icon__modal-experience__description">
