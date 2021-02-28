@@ -24,7 +24,7 @@
     &__main{
         display:flex;
         flex-direction:column;
-        margin-top:209px;
+        margin-top:90px;
         margin-right:40px;
         justify-content:center;
         align-items:center;
@@ -45,7 +45,7 @@
 
     &__packed{
         position:absolute;
-        top:70%;
+        top:528px;
         width:100%;
         text-align:center;
         font-size:32px;
@@ -53,24 +53,24 @@
         background-color:rgba(0,0,0,0.5);
         animation:text-on 1s ease-in, pulsate 2s ease-out, colorChange 2s linear infinite;
 
+        @include tablet{
+            top:59%;
+            left:35%;
+            width:40%;
+            font-size:40px;
+        }
+        @include desktop{
+            top:613px;
+            left:38%;
+            width:30%;
+        }
         &-start{
             @extend .skills__packed;
             animation:colorChange 2s linear infinite;
             &--dnd{
                 font-size:18px;
             }
-        }
-
-        @include tablet{
-            top:50%;
-            left:35%;
-            width:40%;
-            font-size:40px;
-        }
-        @include desktop{
-            left:38%;
-            width:30%;
-        }
+        }        
     }
 
     &__hand{

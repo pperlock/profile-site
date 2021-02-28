@@ -41,7 +41,7 @@
         }
 }
 
-@mixin buildSkillsIcon($top-mobile, $left-mobile, $top-tablet, $left-tablet){
+@mixin buildSkillsIcon($top-mobile, $left-mobile, $top-tablet, $left-tablet, $top-wide, $left-wide){
         position:absolute;
      
         top:$top-mobile;
@@ -50,6 +50,11 @@
         @include tablet{
             top:$top-tablet;
             left:$left-tablet;
+
+        }
+        @include wide-screen{
+            top:$top-wide;
+            left:$left-wide;
 
         }
 }

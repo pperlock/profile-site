@@ -1,15 +1,12 @@
 @import '../../styles/globalstyles.scss';
 
 .backpack{
-    width:100%;
-    // margin-top:63px;
-
     max-height:410px;
     max-width:410px;
+    width:70%;
 
     @include tablet{
-        // margin-top:100px;
-
+        width:100%;
         max-height:410px;
         max-width:410px;
     }

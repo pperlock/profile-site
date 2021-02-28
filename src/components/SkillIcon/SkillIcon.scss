@@ -16,59 +16,60 @@
     }
     
     &__html-css{
-        @include buildSkillsIcon(25%, 63%, 33%, 79%);
+        @include buildSkillsIcon(33%, 72%, 33%, 79%, 39%, 75%);
     }
 
     &__js{
-        @include buildSkillsIcon(30%, 10%, 22%, 66%);
+        @include buildSkillsIcon(30%, 10%, 22%, 66%, 26%, 66%);
         width:20%;
         @include tablet{
             width:10%;
         }
         @include desktop{
             width:8%;
+        }
+        @include wide-screen{
+            width:5%;
         }
     }
         
     &__node{        
-        @include buildSkillsIcon(85%, 10%, 40%, 14%);
+        @include buildSkillsIcon(615px, 10%, 40%, 14%, 37%, 16%);
         
     }
     
     &__react{
-        @include buildSkillsIcon(35%, 42%, 23%, 29%);
+        @include buildSkillsIcon(290px, 42%, 23%, 29%, 28%, 37%);
         width:20%;
         @include tablet{
             width:10%;
         }
         @include desktop{
             width:8%;
-            top:25%;
-            left:33%;
+        }
+         @include wide-screen{
+            width:6%;
         }
     }
 
     &__sass{
-        @include buildSkillsIcon(44%, 67%, 52%, 73%);
+        // @include buildSkillsIcon(44%, 67%, 52%, 73%);
+        @include buildSkillsIcon(44%, 67%, 52%, 73%, 52%, 63%);
     }
 
     &__databases{
-        @include buildSkillsIcon(47%, 6%, 57%, 8%);
+        @include buildSkillsIcon(47%, 6%, 57%, 8%, 66%, 21%);
     }
 
     &__axios{
-        @include buildSkillsIcon(88%, 61%, 71%, 78%);
+        @include buildSkillsIcon(637px, 61%, 752px, 78%, 68%, 72%);//71%
     }
     
     &__git{
-        @include buildSkillsIcon(58%, 78%, 72%, 36%);
+        @include buildSkillsIcon(58%, 78%, 775px, 36%, 49%, 29%); //72
         width:25%;
         @include tablet{
             width:12%;
-        }
-        @include desktop{
-            top:49%;
-            left:29%;
         }
     }
 }
