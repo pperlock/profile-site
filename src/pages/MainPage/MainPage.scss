@@ -35,7 +35,7 @@
             position:absolute;
             width:40px;
             // top:-40vw;
-			top:-120px;
+			top:-18vw;
             left:-74vw;
             animation: growIcon 1s linear, bounce 2s;
             offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
@@ -48,6 +48,7 @@
 				offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
 			}
 			@include desktop{
+				width:60px;
 				top:-168px;
 				left:-85vw;
 				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
@@ -60,7 +61,7 @@
 			position:absolute;
 			width:35px;
 			// top:-12.75vh;
-			top:-70px;
+			top:-20px;
 			left:-74vw;
 			animation: growIcon 1s linear, bounce 2s;
 			offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
@@ -73,7 +74,8 @@
 			}
 			@include desktop{
 				// top:-20vh;
-				top:-98px;
+				width:55px;
+				top:-88px;
 				left:-85vw;
 				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
 			}
@@ -86,7 +88,7 @@
 			position:absolute;
 			width:35px;
 			// top:-7.5vh;
-			top:-23px;
+			top:31px;
 			left:-74vw;
 			animation: growIcon 1s linear, bounce 2s;
 			offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
@@ -99,7 +101,8 @@
 			}
 			@include desktop{
 				// top:8px;
-				top:-23px;
+				width:55px;
+				top:-1px;
 				left:-85vw;
 				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
 			}
@@ -110,21 +113,22 @@
 
 		&-fourth{
 			position:absolute;
-			width:50px;
+			width:35px;
 			// top:-7.5vh;
-			top:-23px;
+			top:80px;
 			left:-74vw;
 			animation: growIcon 1s linear, bounce 2s;
 			offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
 			
 			@include tablet{
 				width:50px;
-				top:0px;
+				top:81px;
 				left:-85vw;
 				offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
 			}
 			@include desktop{
-				top:53px;
+				width:55px;
+				top:77px;
 				left:-85vw;
 				offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
 			}
@@ -140,25 +144,24 @@
           //x y -->where line should end
           //x1, y1 - control point - start of curve
           //x2, y2 - control point - end of curve
-          // animation: growIcon 2s linear, bounce 2s 1.8ss linear;
-        }
+          }
     }
 	&-list{
 		position:fixed;
 		display:flex;
 		flex-direction:column;
 		align-items:flex-start;
-		bottom:12%;
+		top:66%;
 		left:6%;
 
 		@include tablet{
 			width:50%;
-			bottom:8%;
+			top:62%;
 			left:12%;
 		}
 
 		@include desktop{
-			bottom:10.5%;
+			top:57%;
 			left:12%;
 		}
 		
@@ -179,11 +182,12 @@
 		&-text{
 			font-size:18px;
 			color:#d2c9c2;
-			margin-left:60px;
+			margin-left:70px;
 			margin-top:25px;
 			@include tablet{
 				font-size:40px;
 				margin-left:40px;
+				margin-top:31px;
 			}
 			@include desktop{
 				margin-left:60px;

@@ -50,15 +50,15 @@
     animation: type 3.5s 0.25s steps(60, end); 
     &--first{
       visibility:visible;
-      animation: type 1s 0.25s steps(60, end); 
+      animation: type 0.8s 0.25s steps(60, end); 
     }
     &--second{
       visibility:visible;
-      animation: showArray 2s linear, type 1s 1.8s steps(60, end); 
+      animation: showArray 1.7s linear, type 0.8s 1.6s steps(60, end); 
     }
     &--third{
       visibility:visible;
-      animation: showArray 3.5s linear, type 1s 3.4s steps(60, end); 
+      animation: showArray 3.3s linear, type 0.8s 3.2s steps(60, end); 
     }
 }
 

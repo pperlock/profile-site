@@ -23,13 +23,10 @@
 
         &-quote{
             font-family:"Montserrat";
-            margin:40px 0 20px 0;
+            margin:10px 0;
             color:silver;
-            font-size:20px;
+            font-size:16px;
             text-align: center;
-            
-            // background: linear-gradient(to right, #FFF 20%, #FF0 40%, #FF0 60%, #FFF 80%);
-            // background: linear-gradient(45deg, #FFF 20%, #d2c9c2 40%, #3fb0ac 60%, #FFF 80%);
             background: linear-gradient(315deg, #FFF 20%, #d2c9c2 40%, #3fb0ac 60%, #FFF 80%);
             background-size: 200% auto;
             
@@ -42,6 +39,7 @@
             animation: colorWave 5s linear infinite;
 
             @include tablet{
+                margin-top:40px 0;
                 font-size:23px;
                 line-height:1.5;
             }
@@ -53,9 +51,10 @@
         &-author{
             color:grey;
             text-align:right;
-            margin-bottom:40px;
+            margin-bottom:13px;
             width:100%;
             @include tablet{
+                margin-bottom:40px;
                 font-size:20px;
             }
         }

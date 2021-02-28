@@ -68,17 +68,17 @@
             &--proficient{
                 @extend .skills__level-output;
                 visibility: visible;
-                animation: showArray 1.5s linear;
+                animation: showArray 1.3s linear;
             }
             &--competent{
                 @extend .skills__level-output;
                 visibility: visible;
-                animation: showArray 3.2s linear;
+                animation: showArray 2.8s linear;
             }
             &--introduced{
                 @extend .skills__level-output;
                 visibility: visible;
-                animation: showArray 4.7s linear;
+                animation: showArray 4.3s linear;
             }
         }
         &-title{

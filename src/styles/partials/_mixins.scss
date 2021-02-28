@@ -68,8 +68,8 @@
     animation:spinArrow 0.2s linear;
 }
 
+//builds buttons for project overlays
 @mixin buildProjectButton(){
-    
     visibility:hidden;
     background-color:black;
     border:3px solid silver;
