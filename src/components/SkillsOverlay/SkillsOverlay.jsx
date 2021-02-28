@@ -15,7 +15,7 @@ function SkillsOverlay({showOverlay}) {
                     </div>
                     <div className="skills__level-terminal">
                         <p className={showOverlay && "skills__level-terminal-text"}> PROBLEMS <span className="terminal--underline">OUTPUT</span> DEBUG CONSOLE TERMINAL</p>
-                        <p className={showOverlay && "skills__level-output--proficient"}> ['React, 'HTML5', 'CSS3, 'SASS, 'Javascript', 'SQL']</p>
+                        <p className={showOverlay && "skills__level-output--proficient"}> ['React, 'HTML5', 'CSS3, 'SASS, 'Javascript', 'SQL', 'React Hooks']</p>
                     </div>
                 </div>
                 <div className="skills__level">
@@ -38,7 +38,7 @@ function SkillsOverlay({showOverlay}) {
                     </div>
                     <div className="skills__level-terminal">
                         <p className={showOverlay && "skills__level-terminal-text"}> PROBLEMS <span className="terminal--underline">OUTPUT</span> DEBUG CONSOLE TERMINAL</p>
-                        <p className={showOverlay && "skills__level-output--introduced"}> ['Authentication', 'Deployment', 'MongoDB', 'jquery', 'bootstrap']</p>
+                        <p className={showOverlay && "skills__level-output--introduced"}> ['Authentication', 'Deployment', 'MongoDB', 'Cloud Storage', 'Jira', 'jquery', 'bootstrap']</p>
                     </div>
                 </div>
            

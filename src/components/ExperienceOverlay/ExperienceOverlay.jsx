@@ -33,8 +33,8 @@ Informatics Technique </li>
                             <li className="education__list__place-title">  University of Western Ontario</li>
                         </div>
                         <li className="education__list-focus"> <span className="emphasize">Focus:</span> computer programming, optimization algorithms</li>
-                        <li className="education__list-description"><span className="emphasize"> Thesis:</span>  Modeling of the July 1998 Northridge Aftershock
-Using a Linear Inversion and Genetic Algorithm </li>
+                        <li className="education__list-description"><span className="emphasize"> Thesis:</span>  "Modeling of the July 1998 Northridge Aftershock
+Using a Linear Inversion and Genetic Algorithm" </li>
                     </ul>
                 </div>
             </div>

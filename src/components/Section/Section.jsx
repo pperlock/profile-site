@@ -21,7 +21,7 @@ function Section({section, reachedBottom}) {
     return (
         <section id={name} className={`section ${name}`} style={{backgroundImage: `url(${background})`}}>
             {name==="experience" && <div className="transition2"></div>}
-            <PageTitle title={title} section={name} toggleOverlay={toggleOverlay} showOverlay={showOverlay}/>
+            <PageTitle title={title} section={section} toggleOverlay={toggleOverlay} showOverlay={showOverlay}/>
             <div className= {`${name}__content`} data-aos={scrollAnimation.animation} data-aos-anchor={scrollAnimation.anchor} data-aos-anchor-placement={scrollAnimation.anchorPlacement} >
                 {name==="about" && <About />}
                 {name==="skills" && <Skills showOverlay={showOverlay}/>}

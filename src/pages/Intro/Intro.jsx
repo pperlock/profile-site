@@ -20,6 +20,7 @@ function Intro() {
     return (
         <main className="intro"> 
             {displayReplay ? <img onClick={replayVideo} className="intro__replay" src="/icons/replay-icon.svg"/> : <Link to="/main"><p className="intro__skip"> Skip Intro </p></Link>}
+            
             <div className="logo">
                 <Link to="/main" className="logo-text">
                     <p className="logo__name"> PATTI PERLOCK </p>
@@ -29,10 +30,14 @@ function Intro() {
                     <img className="logo__image" src='/icons/silhouette3.png' alt="mountain-logo" />
                 </div>
             </div>
-                {displayReplay && <Link  to="/main" className="enter">ENTER</Link>}
-                <video className="video" autoPlay muted>
-                    <source src="/images/Final-50mm.mp4" type="video/mp4"></source>
-                </video>
+
+            {displayReplay && <Link  to="/main" className="enter">ENTER</Link>}
+            
+            <video className="video" autoPlay muted>
+                <source src="/images/Final-50mm.mp4" type="video/mp4"></source>
+            </video>
+
+            
         </main>
     )
 }

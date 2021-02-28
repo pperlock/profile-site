@@ -8,8 +8,8 @@ function PageTitle({title, section, toggleOverlay, showOverlay}) {
 
     return (
         <div className={showOverlay ? "title title-hide" : "title"}>
-            <h1 className={section !=="contact" ? "title-text" : "title-text title-text--contact"}>{title}</h1>
-            {(section === "about" || section === "experience" || section ==="skills") &&
+            <h1 className={section.name !=="contact" ? "title-text" : "title-text title-text--contact"}>{title}</h1>
+            {section.overlay &&
                 <button className="arrow-wrapper">
                     <div className="arrow" onClick={()=>toggleOverlay(section)}></div>
                 </button>}
