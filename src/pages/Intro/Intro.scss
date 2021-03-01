@@ -15,7 +15,7 @@ img{
         width:30px;
         top:0;
         right:0;
-        color:#3fb0ac;
+        color:$text-accent;
         z-index:1;
         animation: fade-in 1s ease-in;
         margin: 5%;
@@ -33,7 +33,7 @@ img{
         position:absolute;
         top:0;
         right:0;
-        color:#3fb0ac;
+        color:$text-accent;
         margin: 2%;;
         z-index:1;
         animation: fade-out 1s 5s ease-out;
@@ -70,7 +70,6 @@ img{
 
     &-text{
         color:white;
-        animation: letterColor 6s ease-in;
     }
 
     &__name{
@@ -81,7 +80,7 @@ img{
         width:100%;
         font-weight:bold;
 
-        background: linear-gradient(190deg, #FFF 20%, #3fb0ac 40%, #3fb0ac 60%, #FFF 80%);
+        background: linear-gradient(190deg, #FFF 20%, $text-accent 40%, $text-accent 60%, #FFF 80%);
         background-size: 200% auto;
 
         color: #000;
@@ -128,7 +127,7 @@ img{
 .enter{
     position:absolute;
     text-align:center;
-    color:#3fb0ac;
+    color:$text-accent;
     font-size:34px;
     font-family: "Montserrat";
     font-weight:600;

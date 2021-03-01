@@ -14,61 +14,52 @@
     }
 }
 
-// Changes to desktop format >=1200px
+// Changes to desktop format >=1700px
 @mixin wide-screen{
     @media (min-width:1700px){
         @content;
     }
 }
 
+//Creates a div with default styling for a trail icon with specific top and left positioning for each device size
 @mixin buildTrailDiv($top-mobile, $left-mobile, $top-tablet, $left-tablet, $top-desktop, $left-desktop){
-        // border:1px solid black;
-        top:$top-mobile;
-        left:$left-mobile;
+    // border:1px solid black;
+    top:$top-mobile;
+    left:$left-mobile;
+    width:18%;
+    height:18%;
+
+    @include tablet{
+        top:$top-tablet;
+        left:$left-tablet;
         width:18%;
         height:18%;
-
-        @include tablet{
-            top:$top-tablet;
-            left:$left-tablet;
-            width:18%;
-            height:18%;
-        }
-        @include desktop{
-            top:$top-desktop;
-            left:$left-desktop;
-
-        }
-}
-
-@mixin buildSkillsIcon($top-mobile, $left-mobile, $top-tablet, $left-tablet, $top-wide, $left-wide){
-        position:absolute;
-     
-        top:$top-mobile;
-        left:$left-mobile;
-
-        @include tablet{
-            top:$top-tablet;
-            left:$left-tablet;
-
-        }
-        @include wide-screen{
-            top:$top-wide;
-            left:$left-wide;
-
-        }
-}
-
-@mixin rotateArrow($start-angle, $end-angle){
-    @keyframes spinArrow {
-        0% {transform: rotate($start-angle);}
-        100% {transform: rotate($end-angle);}
     }
-
-    animation:spinArrow 0.2s linear;
+    @include desktop{
+        top:$top-desktop;
+        left:$left-desktop;
+    }
 }
 
-//builds buttons for project overlays
+//Creates a div with default styling for each of the skills icon with a specified top and left position for each device
+@mixin buildSkillsIcon($top-mobile, $left-mobile, $top-tablet, $left-tablet, $top-wide, $left-wide){
+    position:absolute;
+    top:$top-mobile;
+    left:$left-mobile;
+
+    @include tablet{
+        top:$top-tablet;
+        left:$left-tablet;
+
+    }
+    @include wide-screen{
+        top:$top-wide;
+        left:$left-wide;
+
+    }
+}
+
+//Builds buttons with consisten styling for project overlays
 @mixin buildProjectButton(){
     visibility:hidden;
     background-color:black;

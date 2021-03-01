@@ -51,7 +51,7 @@
             position: relative;
             display: inline-block;
             overflow: hidden;
-            background: linear-gradient(to right, #3fb0ac, #3fb0ac 50%, white 50%);
+            background: linear-gradient(to right, $text-accent, $text-accent 50%, white 50%);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

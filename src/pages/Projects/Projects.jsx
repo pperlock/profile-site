@@ -2,16 +2,25 @@ import React, {useState} from 'react'
 
 import './Projects.scss';
 
+/**
+ * Props Passed in from Section
+ * @param {Object} match
+*/
+
 function Projects({match}) {
 
+    //set state to control the video modal
     const [showVideo, setShowVideo] = useState(false);
-    const [activeProject, setActiveProject] = useState("p2t")
+    //set state to control project selection on mobile devices
+    const [activeProject, setActiveProject] = useState("p2t");
 
+    //hide or show the video based on the boolean value passed in
     const toggleVideo = (action) =>{
         setShowVideo(action);
         document.querySelector('html').classList.toggle('scroll-lock');
     }
 
+    //control which project is being rendered on mobile devices
     const makeActive = (project)=>{
         setActiveProject(project);
     }
@@ -19,10 +28,14 @@ function Projects({match}) {
     return (
         <>
             <div className = "projects__content"> 
+                
+                {/* Navigation for mobile devices */}
                 <ul className="projects__nav"> 
                     <li onClick={()=>{makeActive("p2t")}} className={activeProject === "p2t" ? "projects__nav-link--active" : "projects__nav-link"}> Plan2Train </li>
                     <li onClick={()=>{makeActive("brainflix")}} className={activeProject === "brainflix" ? "projects__nav-link--active" : "projects__nav-link"}> BrainFlix </li>
                 </ul>
+                
+                {/* Projects rendered based on device size and state */}
                 <div className = "projects__list">
                     {(window.innerWidth>=768 || activeProject==="p2t") && 
                         <div className="projects__list-project--p2t"  data-aos-anchor=".projects" data-aos="flip-up" data-aos-offset="500" data-aos-duration="800">
@@ -49,6 +62,8 @@ function Projects({match}) {
                     }
                 </div>
             </div>
+            
+            {/* Render the video modal based on state */}
             {showVideo &&
                 <div className="modal__container">
                     <div className="modal">

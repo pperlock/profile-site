@@ -3,6 +3,11 @@ import './Experience.scss';
 
 import TrailIcon from '../../components/TrailIcon/TrailIcon';
 
+/**
+ * Props Passed in from Section
+ * @param {Object} match
+*/
+
 function Experience ({match}){
     const mapIcons=[
         {id: 0, name:'head', image:'/icons/trail-head.svg', alt:"trail head icon", title:'Trail Head', modal:"top", 
@@ -43,6 +48,7 @@ function Experience ({match}){
        
     return (
         <>
+            {/* render the trail image along with each icon using the declared mapIcons array */}
             <img className="trail__image" src='/images/trail-path2.png' alt="trail" />
             {mapIcons.map(icon =><TrailIcon key={icon.id} icon={icon} />)}                    
         </>

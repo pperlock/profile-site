@@ -1,12 +1,26 @@
-@keyframes letterColor {
-    0%  {color: #000000;}
-    50% {color: #000000;}
-    100% {color: white;}
-}
+/*================== OVERLAYS ===============*****/
 
+//Reaveals overlays
 @keyframes slide-down{
     0% {height:0}
-    // 100% {height:86vh}
+}
+
+// Hides Overlays
+@keyframes slide-up{
+    0% {height:86vh}
+    100% {height:0}
+}
+
+//Reveals overlay text
+@keyframes text-on{
+    0% {opacity:0}
+    10%{opacity:0}
+    100% {opacity:1}
+}
+//Hides overlay text
+@keyframes text-off{
+    0% {top:0; opacity:1}
+    100% {top:-100vh; opacity:0}
 }
 
 //experience overlay
@@ -14,61 +28,61 @@
     0%{transform: translateX(100%);}
     100% { transform: translateX(0%); }
 }
+/** ========================================== **/
 
-@keyframes slide-up{
-    0% {height:86vh}
-    100% {height:0}
-}
-
-@keyframes text-off{
-    0% {top:0; opacity:1}
-    100% {top:-100vh; opacity:0}
-}
-
-@keyframes text-on{
-    0% {opacity:0}
-    10%{opacity:0}
-    100% {opacity:1}
-}
-
+//Creates a fade in for the mountain logo on intro page
 @keyframes logo-in{
     0% {opacity:0;}
     50% {opacity:0;}
     100% {opacity:0.5;}
 }
 
+// Creates a typing like effect - about overlay, skills overlay
 @keyframes type{ 
   0% {width: 0; visibility:hidden;}
 } 
 
-@keyframes showArray {
+//Causes elements to remain hidden until the animation takes place
+@keyframes showElement {
     0% {visibility:hidden;}
     99% {visibility:hidden;}
     100% {visibility:visible;}
 }
 
+//Creates a color wave that moves across text - Intro Logo and Contact quote
 @keyframes colorWave {
     to {
       background-position: 200%;
     }
   }
 
+//Animates the contact icons from sticky menu to full icon - occurs on scroll
 @keyframes growIcon {
     0% {transform:rotate(360deg); left:0; width:25px; offset-distance:0%;}
     100% {left:500px; width:50px; offset-distance:100%}
 }
+
+//Bounces the contact icons on hover and when they land after animation
+@keyframes bounce {
+  0%, 20%, 60%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-8px);}
+  80% {transform: translateY(-5px);}
+}
+
 
 @keyframes fadeBackground {
     0% {background-color:silver;}
     100% {background-color:transparent;}
 }
 
+//Used to emphasise text - creates a pulsing effect - skills-packed
 @keyframes pulsate {
     0% {transform: scale(0.1, 0.1); opacity: 0;}
     50% {opacity: 1.0;}
     100% {transform: scale(1.2, 1.2); opacity: 0;}
 }
 
+//creates a less intense color pulse than pulsate - skills-unpacked
 @keyframes colorChange {
   from, to {
     color: silver;
@@ -78,21 +92,18 @@
   }
 }
 
+//moves hand image on skills page to demonstrate drag and drop
 @keyframes moveHand{
     0% {offset-distance:0%;}
     100% {offset-distance:100%}
 }
 
+//drops the buttons on a project on hover
 @keyframes dropButtons {
     0%  {bottom: 100%;}
 }
 
-@keyframes bounce {
-  0%, 20%, 60%, 100% {transform: translateY(0);}
-  40% {transform: translateY(-8px);}
-  80% {transform: translateY(-5px);}
-}
-
+//Blinking cursors on skill overlay
 @keyframes blink {
     from, to {
         color: transparent;
@@ -102,10 +113,12 @@
     }
 }
 
+//causes an element to slowly become visible - intro-replay
 @keyframes fade-in {
     0% {opacity: 0;}
 }
 
+//causes an element to slowly disappear - intro-skip
 @keyframes fade-out {
     0% {opacity: 1;}
     100% {opacity: 0;}

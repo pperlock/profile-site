@@ -1,25 +1,29 @@
 import React, {useState} from 'react'
 import './TrailIcon.scss';
 
+/**
+ * Props Passed in from Experience
+ * @param {Object} icon
+*/
+
 function TrailIcon({icon}) {
 
+    //use state to determine if the modal is visibile or not
     const [showModal, setShowModal] = useState(false);
 
-    const openModal = (event) => {
-            setShowModal(true);
-    }
-    const closeModal = (event) => {
-        setShowModal(false);
+    //hide or show the modal based on state
+    const toggleModal = (action) => {
+        setShowModal(action);
     }
     return(
         <>
             <div className={`trail__div trail__div-${icon.name}`} >
-                <img onMouseEnter={openModal} onMouseLeave={closeModal} className= "trail-icon" id={icon.id} src={icon.image} alt={icon.alt} />
+                <img onMouseEnter={()=>toggleModal(true)} onMouseLeave={()=>{toggleModal(false)}} className= "trail-icon" id={icon.id} src={icon.image} alt={icon.alt} />
                 <p className="trail-title">{icon.title}</p>
             </div>
             {showModal && 
                 <div className={`trail-icon__modal-${icon.modal}`}> 
-                    <div onClick={closeModal} className="trail-icon__modal-experience">
+                    <div className="trail-icon__modal-experience">
                         {!!icon.experience && 
                             icon.experience.map(item =>
                             <div className="trail-icon__modal-experience__experience">

@@ -7,13 +7,18 @@ const ItemTypes = {
     CARD:'card',
 };
 
-const SkillIcon = props => {
-    const {skill} = props;
+/**
+ * Props Passed in from Skills
+ * @param {Object} skill
+ * @param {String} id
+ */
+ 
+const SkillIcon = ({skill, id}) => {
 
     const [{isDragging}, drag] = useDrag({
         item:{
             type:ItemTypes.CARD,
-            id:props.id,
+            id:id,
         },
         collect: monitor=>({
             isDragging: !!monitor.isDragging(),

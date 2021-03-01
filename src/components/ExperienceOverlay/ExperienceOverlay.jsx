@@ -1,7 +1,23 @@
 import React from 'react';
 import './ExperienceOverlay.scss';
 
+/**
+ * Props Passed in from Overlay
+ * @param {Boolean} showOverlay
+ */
+
 function ExperienceOverlay({showOverlay}) {
+
+    // const experience=[
+    //     {id:'0', date: "2005-2010", background:"/icons/uwo.png", place: "University of Western Ontario", position: "MSc.Geophysics", focus: "programming & statistical physics", thesis: "Imaging Faults in 3D Using Pattern Informatics"},
+    //     {id:'1', date: "2000-2005", background:"/icons/uwo.png", place: "University of Western Ontario", position: "BSc.Geophysics", focus: "programming & optimization algorithms", thesis: "Modeling of the July 1998 Northridge Aftershock Using a Linear Inversion and Genetic Algorithm"},
+    //     {id:'2', date: "2017-2020", background:"/icons/klg.png", place: "Kirkland Lake Gold", position: "Senior Database Administrator"},
+    //     {id:'3', date: "2015-2017", background:"/icons/sas.png", place: "St. Andrew's Goldfields", position: "Database Administrator"},
+    //     {id:'4', date: "2010-2015", background:"/icons/dogs-north.png", place: "Dog's North", position: "Owner, Lead Trainer"},
+    //     {id:'5', date: "Present", background:"/icons/brainstation3.png", place: "BrainStation", position:"Teaching Assistant"},
+    //     {id:'6', date: "2020-2021", background:"/icons/brainstation3.png", place: "BrainStation", position: "Student: Full Stack Development"},
+    // ];
+    
     return (
         <>
             <div className="education"> 

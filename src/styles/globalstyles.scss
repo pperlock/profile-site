@@ -1,75 +1,78 @@
 @import 'globalimports.scss';
 
+// Remove the default padding and margins from all elements on page
 *{
-    padding:0px;
-    margin:0px;
-    scroll-behavior: smooth;
+	padding:0px;
+	margin:0px;
+	scroll-behavior: smooth;
 }
 
-  a{
-      text-decoration:none;
-      color:white;
-  }
+// Remove the underlines from all links on page and base color of white
+a{
+	text-decoration:none;
+	color:white;
+}
 
-  body{
-    //   font-family: "Montserrat";
-      font-family:"SourceSansPro";
-      font-weight:400;
-  }
+//set the default font for anything in the body
+body{
+	font-family:"SourceSansPro";
+	font-weight:400;
+}
 
-  ul{
-      list-style-type:none;
-  }
+//Remove the bullet points from all list elements
+ul{
+	list-style-type:none;	
+}
 
-  h1{
-    font-family:"Montserrat";
-    letter-spacing:1px;
-    // color:#3D4849;
-    font-size:20px;
-    text-align:center;
-    color:#d2c9c2;
-  }
+h1{
+	font-family:"Montserrat";
+	letter-spacing:1px;
+	font-size:20px;
+	text-align:center;
+	color:#d2c9c2;
+}
 
-  #about__full-text, #skills__full-text, #experience__full-text{
+//Set defaults for text for all of the overlays
+#about__full-text, #skills__full-text, #experience__full-text{
     padding-top:230px;
     box-sizing:border-box;
 }
 
+//Set extra styling for the experience overlay
 #experience__full-text{
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-start;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
 }
 
+//Used to emphasize any important text
 .emphasize{
-    color:#3fb0ac;
+    color:$text-accent;
     font-weight:bold;
 }
 
+//Applied to any element with a typing effect
 .animate-type{
+	//used for about overlay
     animation: type 3.5s 0.25s steps(60, end); 
-    &--first{
+    
+	//these three are used for the skills overlay to offset timing
+	&--first{
       visibility:visible;
       animation: type 0.8s 0.25s steps(60, end); 
     }
     &--second{
       visibility:visible;
-      animation: showArray 1.7s linear, type 0.8s 1.6s steps(60, end); 
+      animation: showElement 1.7s linear, type 0.8s 1.6s steps(60, end); 
     }
     &--third{
       visibility:visible;
-      animation: showArray 3.3s linear, type 0.8s 3.2s steps(60, end); 
+      animation: showElement 3.3s linear, type 0.8s 3.2s steps(60, end); 
     }
 }
 
+//Removes scrolling ability - video modal
 .scroll-lock{
-  overflow:hidden;
+  	overflow:hidden;
 }
-
-.project-button-hover{
-	visibility:visible;
-	position:absolute;
-	animation:showArray 0.5s, dropButtons 0.5s 0.5s linear, bounce 1s 0.5s;
-}
-
 

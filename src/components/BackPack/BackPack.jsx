@@ -6,12 +6,15 @@ import "aos/dist/aos.css";
 
 import './BackPack.scss';
 
+/**
+* Rendered from Skills
+*/
 
 const ItemTypes = {
     CARD:'card',
 };
 
-const BackPack = props => {
+const BackPack = () => {
 
     const {markAsDone} = useContext(CardContext);
 

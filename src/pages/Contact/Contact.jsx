@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.scss';
 
-function Contact({reachedBottom}) {
+function Contact() {
     return (
         <>
             <h2 className="contact__content-quote"> “Becoming isn’t about arriving somewhere or achieving a certain aim. I see it instead as forward motion, a means of evolving, a way to reach continuously toward a better self. The journey doesn’t end.”</h2>

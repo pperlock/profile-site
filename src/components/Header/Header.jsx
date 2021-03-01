@@ -3,32 +3,36 @@ import {NavHashLink} from 'react-router-hash-link';
 import {Link} from 'react-router-dom';
 import './Header.scss';
 
+/**
+ * Props Passed in from MainPage
+ * @param {String} path
+*/
 
 function Header({path}) {
 
+    // store the active link in state
     const [activeLink, setActiveLink] = useState("about-nav")
 
-    // Get all sections that have an ID defined
+    // Get all sections that have an id defined
     const sectionLocs = document.querySelectorAll("section[id]");
 
-    // Add an event listener listening for scroll
+    // List for scrolling activity
     window.addEventListener("scroll", setActive);
 
+    
+    //used to determine the location of the page and set link associated with that section to be the active link
     function setActive() {
     
-        // Get current scroll position
+        // get the current scroll position
         let scrollY = window.pageYOffset;
         
-        // loop through sections to get height, top and ID values for each
+        // loop through sections to get height, top and id values for each
         sectionLocs.forEach(current => {
             const sectionHeight = current.offsetHeight;
             const sectionTop = current.offsetTop - 50;
             const sectionId = current.getAttribute("id");
             
-            /*
-            - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
-            - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
-            */
+            //If the current scroll position enters the space where the current section on screen is, the set that section as the active section in state
             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
                 setActiveLink(sectionId + "-nav")
             }
@@ -37,6 +41,7 @@ function Header({path}) {
 
     return (
         <header className="header">
+            
             <Link to="/" className="header__logo">
                 <div className="header__logo-text">
                     <p className="header__logo-name"> PATTI PERLOCK </p>
@@ -54,6 +59,7 @@ function Header({path}) {
                     <NavHashLink smooth to="/main#contact" id="contact-nav" className={activeLink === "contact-nav" ? "nav__link--active" : "nav__link"}>Contact</NavHashLink>
                 </ul>
             </nav>
+        
         </header>
     )
 }
