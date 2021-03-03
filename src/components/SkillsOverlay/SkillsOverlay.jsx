@@ -25,8 +25,8 @@ function SkillsOverlay({showOverlay}) {
                             <p className = "skills__cursor">|</p>
                         </div>
                         <div className="skills__level-terminal">
-                            <p className={showOverlay && "skills__level-terminal-text"}> PROBLEMS <span className="terminal--underline">OUTPUT</span> DEBUG CONSOLE TERMINAL</p>
-                            <p className={showOverlay && `skills__level-output--${skill.level}`}> {skill.output}</p>
+                            <p className={"skills__level-terminal-text"}> PROBLEMS <span className="terminal--underline">OUTPUT</span> DEBUG CONSOLE TERMINAL</p>
+                            <p className={showOverlay ? `skills__level-output--${skill.level}`: `skills__level-output`}> {skill.output}</p>
                         </div>
                     </div>
                 )}

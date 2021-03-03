@@ -54,7 +54,7 @@ h1{
 //Applied to any element with a typing effect
 .animate-type{
 	//used for about overlay
-    animation: type 3.5s 0.25s steps(60, end); 
+    animation: type 1.5s 0.25s steps(60, end); 
     
 	//these three are used for the skills overlay to offset timing
 	&--first{

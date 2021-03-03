@@ -1,4 +1,4 @@
-@import '../../styles/globalstyles.scss';
+@import '../../styles/globalimports.scss';
 
 .skills{
     &__overlay{
@@ -100,7 +100,7 @@
                 white-space: nowrap;
                 overflow: hidden;
                 width:139px;
-                visibility:hidden;
+                // visibility:hidden;
                 @include tablet{
                     width:207px;
                 }
