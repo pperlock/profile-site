@@ -16,11 +16,11 @@
     }
     
     &__html-css{
-        @include buildSkillsIcon(33%, 72%, 33%, 79%, 39%, 75%);
+        @include buildSkillsIcon(37%, 72%, 33%, 79%, 39%, 75%);
     }
 
     &__js{
-        @include buildSkillsIcon(30%, 10%, 22%, 66%, 26%, 66%);
+        @include buildSkillsIcon(38%, 10%, 22%, 66%, 26%, 66%);
         width:20%;
         @include tablet{
             width:10%;
@@ -54,11 +54,11 @@
 
     &__sass{
         // @include buildSkillsIcon(44%, 67%, 52%, 73%);
-        @include buildSkillsIcon(44%, 67%, 52%, 73%, 52%, 63%);
+        @include buildSkillsIcon(52%, 67%, 52%, 73%, 52%, 63%);
     }
 
     &__databases{
-        @include buildSkillsIcon(47%, 6%, 57%, 8%, 66%, 21%);
+        @include buildSkillsIcon(57%, 3%, 57%, 8%, 66%, 21%);
     }
 
     &__axios{
@@ -66,7 +66,7 @@
     }
     
     &__git{
-        @include buildSkillsIcon(58%, 78%, 775px, 36%, 49%, 29%); //72
+        @include buildSkillsIcon(63%, 78%, 775px, 36%, 49%, 29%); //72
         width:25%;
         @include tablet{
             width:12%;
