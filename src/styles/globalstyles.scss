@@ -1,4 +1,4 @@
-@import 'globalimports.scss';
+@import './globalimports.scss';
 
 // Remove the default padding and margins from all elements on page
 *{
@@ -74,5 +74,11 @@ h1{
 //Removes scrolling ability - video modal
 .scroll-lock{
   	overflow:hidden;
+}
+
+.dnd{
+	background-color:red;
+	width:100px;
+	height:100px;
 }
 

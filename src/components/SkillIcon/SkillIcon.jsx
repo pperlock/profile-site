@@ -19,6 +19,8 @@ const SkillIcon = ({skill, id}) => {
         item:{
             type:ItemTypes.CARD,
             id:id,
+            skill:skill.name,
+            img:skill.image
         },
         collect: monitor=>({
             isDragging: !!monitor.isDragging(),
