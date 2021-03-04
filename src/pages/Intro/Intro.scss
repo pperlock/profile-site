@@ -137,6 +137,7 @@ img{
     animation: fade-in 1s ease-in;
 
     @include tablet{
+        font-size:34px;
         top:42%;
         left:36%;
         width:200px;
@@ -144,7 +145,6 @@ img{
     
     @include desktop{
         left:41%;
-        // font-size:40px;
     }
     @include wide-screen{
         left:44.5%;
