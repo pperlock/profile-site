@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {NavHashLink} from 'react-router-hash-link';
 import {Link} from 'react-router-dom';
 import './Header.scss';
@@ -13,14 +13,20 @@ function Header({path}) {
     // store the active link in state
     const [activeLink, setActiveLink] = useState("about-nav")
 
-    // Get all sections that have an id defined
-    const sectionLocs = document.querySelectorAll("section[id]");
-
     const [showMenu, setShowMenu] = useState(false);
 
-       
+    const [sectionLocs, setSectionLocs] = useState(document.querySelectorAll("section[id]"));
+
+    useEffect(()=>{
+        setSectionLocs(document.querySelectorAll("section[id]"));   
+    },[]);
+
+    // // Get all sections that have an id defined
+    // const sectionLocs = document.querySelectorAll("section[id]");
+
     //used to determine the location of the page and set link associated with that section to be the active link
     const setActive = () => {
+        // console.log("hit");
     
         // get the current scroll position
         let scrollY = window.pageYOffset;
@@ -28,9 +34,10 @@ function Header({path}) {
         // loop through sections to get height, top and id values for each
         sectionLocs.forEach(current => {
             const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 50;
+            const sectionTop = current.offsetTop - 100;
             const sectionId = current.getAttribute("id");
             
+            // console.log(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight);
             //If the current scroll position enters the space where the current section on screen is, the set that section as the active section in state
             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
                 setActiveLink(sectionId + "-nav")
