@@ -16,12 +16,11 @@ function Header({path}) {
     // Get all sections that have an id defined
     const sectionLocs = document.querySelectorAll("section[id]");
 
-    // List for scrolling activity
-    window.addEventListener("scroll", setActive);
+    const [showMenu, setShowMenu] = useState(false);
 
-    
+       
     //used to determine the location of the page and set link associated with that section to be the active link
-    function setActive() {
+    const setActive = () => {
     
         // get the current scroll position
         let scrollY = window.pageYOffset;
@@ -39,6 +38,13 @@ function Header({path}) {
         });
     }
 
+     // List for scrolling activity
+    window.addEventListener("scroll", setActive);
+
+    const toggleMenu = () =>{
+        setShowMenu(!showMenu);
+    }
+
     return (
         <header className="header">
             
@@ -51,13 +57,18 @@ function Header({path}) {
             </Link>
 
             <nav className="nav">
-                <ul className="nav__list">
-                    <NavHashLink smooth to="/main#about" id="about-nav" className={activeLink === "about-nav" ? "nav__link--active" : "nav__link"}>About</NavHashLink>
-                    <NavHashLink smooth to="/main#skills" id="skills-nav" className={activeLink === "skills-nav" ? "nav__link--active" : "nav__link"}>Skills</NavHashLink>
-                    <NavHashLink smooth to="/main#experience" id="experience-nav" className={activeLink === "experience-nav" ? "nav__link--active" : "nav__link"}>Experience</NavHashLink>
-                    <NavHashLink smooth to="/main#projects" id="projects-nav" className={activeLink === "projects-nav" ? "nav__link--active" : "nav__link"}>Projects</NavHashLink>
-                    <NavHashLink smooth to="/main#contact" id="contact-nav" className={activeLink === "contact-nav" ? "nav__link--active" : "nav__link"}>Contact</NavHashLink>
-                </ul>
+                <div className={showMenu ? "nav__hamburger nav__hamburger--open" : "nav__hamburger"}>
+                    <div className="nav__hamburger-icon" onClick={toggleMenu}></div>
+                </div>
+                {(showMenu || window.innerWidth>=768 ) &&
+                    <ul className={showMenu ? "nav__list nav__list--on" : "nav__list"}>
+                        <NavHashLink smooth to="/main#about" id="about-nav" onClick={toggleMenu} className={activeLink === "about-nav" ? "nav__link--active" : "nav__link"}>About</NavHashLink>
+                        <NavHashLink smooth to="/main#skills" id="skills-nav" onClick={toggleMenu} className={activeLink === "skills-nav" ? "nav__link--active" : "nav__link"}>Skills</NavHashLink>
+                        <NavHashLink smooth to="/main#experience" id="experience-nav" onClick={toggleMenu} className={activeLink === "experience-nav" ? "nav__link--active" : "nav__link"}>Experience</NavHashLink>
+                        <NavHashLink smooth to="/main#projects" id="projects-nav" onClick={toggleMenu} className={activeLink === "projects-nav" ? "nav__link--active" : "nav__link"}>Projects</NavHashLink>
+                        <NavHashLink smooth to="/main#contact" id="contact-nav" onClick={toggleMenu} className={activeLink === "contact-nav" ? "nav__link--active" : "nav__link"}>Contact</NavHashLink>
+                    </ul>
+                }
             </nav>
         
         </header>
