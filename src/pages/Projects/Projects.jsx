@@ -32,7 +32,7 @@ function Projects({match}) {
                 {/* Navigation for mobile devices */}
                 <ul className="projects__nav"> 
                     <li onClick={()=>{makeActive("p2t")}} className={activeProject === "p2t" ? "projects__nav-link--active" : "projects__nav-link"}> Plan2Train </li>
-                    <li onClick={()=>{makeActive("brainflix")}} className={activeProject === "brainflix" ? "projects__nav-link--active" : "projects__nav-link"}> BrainFlix </li>
+                    <li onClick={()=>{makeActive("videoStreamer")}} className={activeProject === "videoStreamer" ? "projects__nav-link--active" : "projects__nav-link"}> videoStreamer </li>
                 </ul>
                 
                 {/* Projects rendered based on device size and state */}
@@ -50,10 +50,10 @@ function Projects({match}) {
                             <a href="https://github.com/pperlock/plan2train" target="_blank" rel="noopener noreferrer"> <button className="projects__list-third"> GITHUB </button> </a>
                         </div>
                     }
-                    {(window.innerWidth>=768 || activeProject==="brainflix") && 
+                    {(window.innerWidth>=768 || activeProject==="videoStreamer") && 
                         <div className="projects__list-project--brainflix" data-aos-anchor=".projects" data-aos="flip-down" data-aos-delay="300" data-aos-offset="500" data-aos-duration="800">
-                            <img className="projects__list-img--brainflix" src="/images/brainflix.png" alt="brainflix"/>
-                            <a href="https://github.com/pperlock/patti-perlock-brainflix" target="_blank" rel="noopener noreferrer"><button className="projects__list-first--brainflix" target="_blank"> GITHUB </button> </a>
+                            <img className="projects__list-img--brainflix" src="/images/video-streamer.png" alt="brainflix"/>
+                            <a href="https://github.com/pperlock/video-streaming-clone" target="_blank" rel="noopener noreferrer"><button className="projects__list-first--brainflix" target="_blank"> GITHUB </button> </a>
                             <div className = "projects__list-description">
                                 <p className = "projects__list-description-pitch"> A video-streaming type website built based on a provided mockup.</p>
                                 <p><span className="emphasize">Tech Stack:</span> React, Node, Express, SASS</p>
