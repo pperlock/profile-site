@@ -22,7 +22,7 @@ function Intro() {
     }
 
     return (
-        <main className="intro"> 
+       <main className="intro"> 
             {/* render either the replay button or the skip control based on state */}
             {displayReplay ? <img onClick={replayVideo} className="intro__replay" src="/icons/replay-icon.svg" alt="replay"/> : <Link to="/main"><p className="intro__skip"> Skip Intro </p></Link>}
             

@@ -131,20 +131,20 @@ img{
     font-size:27px;
     font-family: "Montserrat";
     font-weight:600;
-    top:43%;
-    left:36%;
+    top:43vh;
+    left:33.5vw;
     z-index:1;
     animation: fade-in 1s ease-in;
 
     @include tablet{
         font-size:34px;
-        top:42%;
-        left:36%;
+        top:42vh;
+        left:36vw;
         width:200px;
     }
     
     @include desktop{
-        left:41%;
+        left:42.5vw;
     }
     @include wide-screen{
         left:44.5%;
