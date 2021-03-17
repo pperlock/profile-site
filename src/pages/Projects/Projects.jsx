@@ -41,8 +41,16 @@ function Projects({match}) {
                         <div className="projects__list-project--p2t"  data-aos-anchor=".projects" data-aos="flip-up" data-aos-offset="500" data-aos-duration="800">
                             <div className = "projects__list-description">
                                 <p className = "projects__list-description-pitch">An organizational app focused on helping small businesses in the personal training space.</p>
-                                <p><span className="emphasize">Ideation to Submission:</span> 10 days </p>
+                                {/* <p><span className="emphasize">Ideation to Submission:</span> 10 days </p> */}
                                 <p><span className="emphasize">Tech Stack:</span> React, Node, Express, MongoDB, Passport, SASS</p>
+                                {/* <div className="projects__tech">
+                                    <img className="projects__tech-icon" src="./icons/react-icon.png" alt=""/>
+                                    <img className="projects__tech-icon" src="./icons/nodejs-icon.svg" alt=""/>
+                                    <img className="projects__tech-icon" src="./icons/mongodb-icon.svg" alt=""/>
+                                    <img className="projects__tech-icon" src="./icons/express.png" alt=""/>
+                                    <img className="projects__tech-icon" src="./icons/passport.png" alt=""/>
+                                    <img className="projects__tech-icon--sass" src="./icons/sass-icon.png" alt=""/>
+                                </div> */}
                             </div>
                             <img className="projects__list-img" src="/images/plan2train.png" alt="plan 2 train"/>
                             <button className="projects__list-first" onClick={()=>{toggleVideo(true)}}> DEMO </button>

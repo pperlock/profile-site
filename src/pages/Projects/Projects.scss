@@ -58,6 +58,22 @@
         display:flex;
         flex-direction:column;
     }
+    
+    &__tech{
+        display:flex;
+        justify-content: space-between;
+        background-color:white;
+        border-radius:4px;
+        padding:5px;
+        margin: 10px 0;
+        &-icon{
+            width:35px;
+            &--sass{
+                @extend .projects__tech-icon;
+                width: 45px;
+            }
+        }
+    }
 
     &__list{
         display:flex;
@@ -144,7 +160,7 @@
                     position:absolute;
                     animation:showElement 0.5s, dropButtons 0.5s 0.5s linear, bounce 1s 0.5s;
                     left:1%;
-                    bottom:10%;
+                    bottom:5%;
 
                     @include tablet{
                         left:3%;
@@ -155,11 +171,12 @@
                     }
                 }
 
+                //second button for p2t hover
                 &:hover .projects__list-second{
                     visibility:visible;
                     position:absolute;
-                    right:37.5%;
-                    bottom:10%;
+                    right:38.5%;
+                    bottom:5%;
                     animation:showElement 0.6s, dropButtons 0.5s 0.6s linear, bounce 1s 0.6s;
                     @include desktop{
                         right:42%;
@@ -171,7 +188,7 @@
                     visibility:visible;
                     position:absolute;
                     right:1%;
-                    bottom:10%;
+                    bottom:5%;
                     animation:showElement 0.7s, dropButtons 0.5s 0.7s linear, bounce 1s 0.7s;
                     
                     @include tablet{
