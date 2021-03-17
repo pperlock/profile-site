@@ -20,6 +20,7 @@
         height:100%;
         animation: slide-down 0.5s ease-in;
         overflow-y:auto;
+        overflow-x:hidden;
         z-index:1;
     }
     &--off{
