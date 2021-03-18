@@ -22,8 +22,12 @@
     
     @include desktop{
         width:30px;
-        top:81.5vh;        
+        // top:81.5vh;
+		top:77.5vh;        
     }
+	@include wide-screen{
+		top:81.5vh;
+	}
 
     &-icon{
         &:hover{

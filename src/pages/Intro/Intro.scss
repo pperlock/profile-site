@@ -8,6 +8,7 @@ img{
     position:relative;
     display:flex;
     justify-content:center;
+    overflow:hidden;
 
     &__replay{
         position:absolute;
@@ -123,22 +124,19 @@ img{
     font-family: "Montserrat";
     font-weight:600;
     top:43vh;
-    left:33.5vw;
     z-index:1;
     animation: fade-in 1s ease-in;
+
+    width: 100vw;
+    text-align: center;
+    padding-right: 3%;
 
     @include tablet{
         font-size:34px;
         top:42vh;
-        left:36vw;
+        // left:36vw;
         width:200px;
-    }
-    
-    @include desktop{
-        left:42.5vw;
-    }
-    @include wide-screen{
-        left:44.5%;
+        padding-right: 1%;
     }
 }
 
