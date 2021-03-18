@@ -80,16 +80,7 @@ img{
         width:100%;
         font-weight:bold;
 
-        background: linear-gradient(190deg, #FFF 20%, $text-accent 40%, $text-accent 60%, #FFF 80%);
-        background-size: 200% auto;
-
-        color: #000;
-        background-clip: text;
-        text-fill-color: transparent;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-        animation: colorWave 2s linear infinite;
+        @include colorWaveAnimation(5s);
 
         @include tablet{
             font-size:32px;

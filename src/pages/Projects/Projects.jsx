@@ -41,8 +41,8 @@ function Projects({match}) {
                         <div className="projects__list-project--p2t"  data-aos-anchor=".projects" data-aos="flip-up" data-aos-offset="500" data-aos-duration="800">
                             <div className = "projects__list-description">
                                 <p className = "projects__list-description-pitch">An organizational app focused on helping small businesses in the personal training space.</p>
-                                {/* <p><span className="emphasize">Ideation to Submission:</span> 10 days </p> */}
-                                <p><span className="emphasize">Tech Stack:</span> React, Node, Express, MongoDB, Passport, SASS</p>
+                                <p><span className="emphasize">Ideation to Submission:</span> 10 days </p>
+                                <p><span className="emphasize">Tech Stack:</span> React, Node, Express, MongoDB, Passport, SASS, Google Maps API, Firebase Storage, React Hooks</p>
                                 {/* <div className="projects__tech">
                                     <img className="projects__tech-icon" src="./icons/react-icon.png" alt=""/>
                                     <img className="projects__tech-icon" src="./icons/nodejs-icon.svg" alt=""/>
@@ -64,7 +64,7 @@ function Projects({match}) {
                             <a href="https://github.com/pperlock/video-streaming-clone" target="_blank" rel="noopener noreferrer"><button className="projects__list-first--brainflix" target="_blank"> GITHUB </button> </a>
                             <div className = "projects__list-description">
                                 <p className = "projects__list-description-pitch"> A video-streaming type website built based on a provided mockup.</p>
-                                <p><span className="emphasize">Tech Stack:</span> React, Node, Express, SASS</p>
+                                <p><span className="emphasize">Tech Stack:</span> React, Redux, Node, Express, SASS</p>
                             </div>
                         </div>
                     }

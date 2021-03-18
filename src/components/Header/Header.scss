@@ -38,6 +38,10 @@
             top:45px;
             left:28px;
 
+            &:hover{
+                @include colorWaveAnimation(2s);
+            }
+
             @include tablet{
                 top:56px;
                 left:45px;

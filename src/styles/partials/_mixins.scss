@@ -60,7 +60,7 @@
 }
 
 //Builds buttons with consisten styling for project overlays
-@mixin buildProjectButton(){
+@mixin buildProjectButton{
     visibility:hidden;
     background-color:black;
     border:3px solid silver;
@@ -72,6 +72,14 @@
     &:focus{
         outline:none;
     }
+}
+
+@mixin colorWaveAnimation($speed){
+    background: linear-gradient(315deg, #FFF 20%, #d2c9c2 40%, $text-accent 60%, #FFF 80%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorWave $speed linear infinite;
 }
 
 

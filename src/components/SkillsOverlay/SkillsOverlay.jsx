@@ -10,7 +10,7 @@ function SkillsOverlay({showOverlay}) {
     const skills = [
         {level: "proficient", number:"first", method:".isProficient();", output:"['React, 'HTML5', 'CSS3, 'SASS, 'Javascript', 'SQL', 'React Hooks']"},
         {level: "competent", number:"second", method:".isCompetent();", output:"['RESTful APIs', 'Node.js', 'Express', 'Git', 'VBA']"},
-        {level: "introduced", number:"third", method:".isIntroduced();", output:"['Authentication', 'Deployment', 'MongoDB', 'Cloud Storage', 'Jira', 'jquery', 'bootstrap']"}
+        {level: "introduced", number:"third", method:".isIntroduced();", output:"['Redux', 'Authentication', 'Deployment', 'MongoDB', 'Cloud Storage', 'Jira', 'jquery', 'bootstrap']"}
     ]
 
     return (
