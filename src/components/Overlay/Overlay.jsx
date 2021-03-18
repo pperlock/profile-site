@@ -17,7 +17,7 @@ function Overlay({section, showOverlay, toggleOverlay}) {
     return (
         <div id={section +"__white-overlay"}
              
-             className={!showOverlay ? "white-overlay white-overlay--off full" : 
+             className={!showOverlay ? "white-overlay full" : 
              section === "skills" ? "white-overlay white-overlay--on white-overlay--skills full" : "white-overlay white-overlay--on full"}
              style={section !== "skills" ? {backgroundImage:"url('/images/white1.jpg')"} : {backgroundImage:"url('')"}}>
             
