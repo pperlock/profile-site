@@ -1,14 +1,14 @@
 @import '../../styles/globalimports.scss';
 
 .about{
-    height:89.5vh;
+    // height:89.5vh;
     background-size:cover;
     background-position:center;
     @include tablet{
         background-position:bottom;
     }
     @include desktop{
-        height:100vh;
+        // height:100vh;
     }
 
     &__content{

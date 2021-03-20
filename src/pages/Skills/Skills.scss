@@ -1,15 +1,17 @@
 @import '../../styles/globalimports.scss';
 .skills{
-    height:86vh;
+    // height:86vh;
     background: rgb(0,0,0);
-
+    padding-bottom:72vw;
+    
     @include tablet{
-        height:100vh;
+        // height:100vh;
+        padding-bottom:30vw;
         align-items:center;
     }
 
     @include desktop{
-        height:89.5vh;
+        // height:89.5vh;
     }
 
     &__pack{

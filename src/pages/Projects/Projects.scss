@@ -1,15 +1,17 @@
 @import '../../styles/globalimports.scss';
 
 .projects{
-    height:100vh;
+    // height:100vh;
     background-color:black;
- 
+    padding-bottom:50vw;
+    
     @include tablet{
-        height:88.5vh;
+        padding-bottom:30vw;
+        // height:88.5vh;
     }
 
     @include desktop{
-        height:89.5vh;
+        // height:89.5vh;
     }
 
     &__mountain{

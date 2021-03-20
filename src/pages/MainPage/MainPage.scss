@@ -135,22 +135,25 @@
     	}
     }
 	&-list{
-		position:fixed;
+		// position:fixed;
 		display:flex;
 		flex-direction:column;
 		align-items:flex-start;
-		top:66%;
-		left:6%;
+		margin:20px 0 65px 0;
+
+		// top:66%;
+		// left:6%;
 
 		@include tablet{
-			width:50%;
-			top:62%;
-			left:12%;
+			margin-left:100px;
+			// width:50%;
+			// top:62%;
+			// left:12%;
 		}
 
 		@include desktop{
-			top:57%;
-			left:12%;
+			// top:57%;
+			// left:12%;
 		}
 		
 		&-item{
