@@ -1,189 +1,39 @@
 @import '../../styles/globalimports.scss';
 
+main{
+	height:100%;
+}
 .main__contacts{
-    position:sticky;
-    padding:10px;
+    position:fixed;
+    padding: 8px;
     background-color:silver;
     opacity:0.5;
-    top:81.5vh;
-    margin-left:auto;
+	bottom: 0;
+	right:0;
 
-    width:20px;
+    width:37px;
     z-index:20;
+    box-sizing:border-box;
 
     &--bottom{
-      background-color:transparent;
+		display:none;
+      	background-color:transparent;
     }
 
 	@include tablet{
-        width:30px;
-        top:82.5vh;        
+        padding: 10px;
+        width:50px;
+    }
+
+    @include desktop{
+        width:60px;
     }
     
-    @include desktop{
-        width:30px;
-        // top:81.5vh;
-		top:77.5vh;        
-    }
-	@include wide-screen{
-		top:81.5vh;
-	}
-
     &-icon{
         &:hover{
         	animation: bounce 1s; 
         }
 
-        &--bottom{
-			&-first{
-				position:absolute;
-				width:40px;
-				top:-18vw;
-				left:-74vw;
-				animation: growIcon 1s linear, bounce 2s;
-				offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
-			
-				@include tablet{
-					width:50px;
-					top:-150px;
-					left:-85vw;
-					offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
-				}
-				@include desktop{
-					width:60px;
-					top:-168px;
-					left:-85vw;
-					offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
-				}
-				@include wide-screen{
-					offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
-				}
-			}
-			&-second{
-				position:absolute;
-				width:35px;
-				top:-20px;
-				left:-74vw;
-				animation: growIcon 1s linear, bounce 2s;
-				offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
-				@include tablet{
-					width:50px;
-					top:-80px;
-					left:-85vw;
-					offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
-				}
-				@include desktop{
-					width:55px;
-					top:-88px;
-					left:-85vw;
-					offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
-				}
-				@include wide-screen{
-					offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
-				}
-			}
-			
-			&-third{
-				position:absolute;
-				width:35px;
-				top:31px;
-				left:-74vw;
-				animation: growIcon 1s linear, bounce 2s;
-				offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
-				
-				@include tablet{
-					width:50px;
-					top:0px;
-					left:-85vw;
-					offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
-				}
-				@include desktop{
-					width:55px;
-					top:-1px;
-					left:-85vw;
-					offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
-				}
-				@include wide-screen{
-					offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
-				}
-			}
-
-			&-fourth{
-				position:absolute;
-				width:35px;
-				top:80px;
-				left:-74vw;
-				animation: growIcon 1s linear, bounce 2s;
-				offset-path: path('M0,0 C100, 0 -180,-200 -730,0');
-				
-				@include tablet{
-					width:50px;
-					top:81px;
-					left:-85vw;
-					offset-path: path('M0,0 C100, 0 -180,-200 -1170,0');
-				}
-				@include desktop{
-					width:55px;
-					top:77px;
-					left:-85vw;
-					offset-path: path('M0,0 C100, 0 -180,-210 -1500,0');
-				}
-				@include wide-screen{
-					offset-path: path('M0,0 C100, 0 -180,-210 -1900,0');
-				}
-			}
-    	}
     }
-	&-list{
-		// position:fixed;
-		display:flex;
-		flex-direction:column;
-		align-items:flex-start;
-		margin:20px 0 65px 0;
-
-		// top:66%;
-		// left:6%;
-
-		@include tablet{
-			margin-left:100px;
-			// width:50%;
-			// top:62%;
-			// left:12%;
-		}
-
-		@include desktop{
-			// top:57%;
-			// left:12%;
-		}
-		
-		&-item{
-			display:flex;
-			align-items:center;
-			margin-bottom:20px;
-		}
-
-		&-icon{
-			width:50px;
-			margin-right:10px;
-			animation: growIcon 2s linear;
-			@include tablet{
-				margin-right:20px;
-			}
-		}
-		&-text{
-			font-size:18px;
-			color:#d2c9c2;
-			margin-left:70px;
-			margin-top:25px;
-			@include tablet{
-				font-size:40px;
-				margin-left:40px;
-				margin-top:31px;
-			}
-			@include desktop{
-				margin-left:60px;
-			}
-		}
-	}
 }
 

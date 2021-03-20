@@ -1,14 +1,13 @@
 @import '../../styles/globalimports.scss';
 
 .about{
-    // height:89.5vh;
+    display:flex;
     background-size:cover;
     background-position:center;
+    // padding-bottom:60vw;
     @include tablet{
+        padding-bottom:0;
         background-position:bottom;
-    }
-    @include desktop{
-        // height:100vh;
     }
 
     &__content{
@@ -36,16 +35,18 @@
     }
 
     &__journey{
-        margin-top:50px 0 157px 0;
+        margin:50px 0 407px 0;
         text-align:center;
         font-size:20px;
-         @include tablet{
+        @include tablet{
             font-size:25px;
+            margin-bottom:312px;
         }
         @include desktop{
             margin-top:26vh;
             font-size:25px;
             font-size:40px;
+            margin-bottom:290px;
         }
         &-link{
             position: relative;
@@ -69,8 +70,11 @@
 
 .transition1{
     background: linear-gradient(rgba(31, 24, 27,0), rgba(0,0,0,1));
-    height:60vh;
+    height:208px;
+    @include tablet{
+        height:200px;
+    }
     @include desktop{
-        height:58vh;
+        height:120px;
     }
 }

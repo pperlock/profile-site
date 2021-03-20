@@ -40,7 +40,7 @@ function Section({section, reachedBottom}) {
                 {name==="skills" && <Skills showOverlay={showOverlay}/>}
                 {name==="experience" && <Experience showOverlay={showOverlay}/>}
                 {name==="projects" && <Projects/>} 
-                {name==="contact" && <Contact/>}  
+                {name==="contact" && <Contact reachedBottom={reachedBottom}/>}  
                 {name==="projects" &&  <img className="projects__mountain" src="/images/mountain4.png" alt="top of mountain" data-aos-anchor=".projects" data-aos="fade-left" data-aos-offset="500" data-aos-duration="3000"/>}    
             </div>
             

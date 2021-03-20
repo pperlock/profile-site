@@ -19,7 +19,7 @@
         flex-direction:column;
         text-align:center;
         width:100%;
-        @include tablet{
+        @include desktop{
             flex-direction:row;
             justify-content:space-around;
         }
@@ -28,14 +28,14 @@
             background-size:contain;
             background-repeat:no-repeat;
             background-position:center;
+            @include desktop{
+               width:30%;
+            }
+
             &--professional{
-                @include tablet{
+                @include desktop{
                     width:45%;
                 }
-                
-            }
-            @include tablet{
-                width:32%;
             }
         }
         &-title{

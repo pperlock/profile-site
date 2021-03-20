@@ -1,27 +1,15 @@
 @import '../../styles/globalimports.scss';
 
 .contact{
-    // height:86vh;
     background-color:black;
     color:white;
     background-size:cover;
     background-position:bottom right;
-    // padding-bottom:30vw;
-
-    @include tablet{
-        // height:88.5vh;
-        align-items:center;
-    }
-
-    @include desktop{
-        // height:89.5vh;
-    }
-
-        &__content{
-            padding:0 5%;
-            text-align:center;
-        
-
+    box-sizing:border-box;
+  
+    &__content{
+        padding:0 5%;
+        text-align:center;
         &-quote{
             font-family:"Montserrat";
             margin:10px 0;
@@ -32,11 +20,12 @@
             @include colorWaveAnimation(5s);
             
             @include tablet{
-                margin-top:40px 0;
                 font-size:23px;
                 line-height:1.5;
             }
             @include desktop{
+                width:70%;
+                margin:40px auto;
                 font-size:28px;
             }
         }
@@ -44,23 +33,57 @@
         &-author{
             color:grey;
             text-align:right;
-            margin-bottom:13px;
+            margin-bottom:45px;
             width:100%;
             @include tablet{
                 margin-bottom:40px;
                 font-size:20px;
             }
+            @include desktop{
+                margin-top:20px;
+                width:85%;
+            }
         }
 
         &-cta{
             font-size:27px;
+            margin-bottom:45px;
             
             @include tablet{
                 font-size:40px;
+                margin-bottom:75px;
+            }
+
+            @include tablet{
+                margin-bottom:100px;
             }
         }
     }
+    &__links{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom:150px;
+        
+        @include tablet{
+            margin-left:20px;
+        }
+        @include desktop{
+            justify-content:center;
+            margin-bottom:57px;
+        }
+        
+        &-icon{
+            width:50px;
+            @include tablet{
+				width:100px;
+			}
+            @include desktop{
+                margin:50px;
+            }
+            &:hover{
+                animation: bounce 1s; 
+            }
+        } 
+    }
 }
-
-
-
