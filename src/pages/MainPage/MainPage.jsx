@@ -38,11 +38,22 @@ function MainPage({match}) {
         <>
             <Header path={match.path}/>
             <main>
-                <aside className = {reachedBottom ? "main__contacts main__contacts--bottom" : "main__contacts"}>
+                {/* <aside className = {reachedBottom ? "main__contacts main__contacts--bottom" : "main__contacts"}>
                     <a href="https://github.com/pperlock" target="_blank" rel="noopener noreferrer"><img className="main__contacts-icon" src="/icons/github-icon.svg" alt="github" /></a>
                     <a href="https://www.linkedin.com/in/pattiperlock" target="_blank" rel="noopener noreferrer"><img className="main__contacts-icon" src="/icons/linkedin-icon.svg" alt="linked in" /></a>
                     <a href="mailto:pattiperlock@gmail.com"><img className="main__contacts-icon" src="/icons/email-icon.svg" alt="email"/></a>
                     <a href="/files/patti-perlock-resume-revised.pdf" target="_blank" rel="noopener noreferrer"><img className="main__contacts-icon" src="/icons/user-profile-circle.svg" alt="resume"/></a>
+                </aside> */}
+
+                <aside className = {reachedBottom ? "main__contacts main__contacts--bottom" : "main__contacts"}>
+                    <a href="https://github.com/pperlock" target="_blank" rel="noopener noreferrer">
+                        <img className={reachedBottom ? "main__contacts-icon main__contacts-icon--bottom1"  : "main__contacts-icon"} src="/icons/github-icon.svg" alt="github" /></a>
+                    <a href="https://www.linkedin.com/in/pattiperlock" target="_blank" rel="noopener noreferrer">
+                        <img className={reachedBottom ? "main__contacts-icon main__contacts-icon--bottom2"  : "main__contacts-icon"} src="/icons/linkedin-icon.svg" alt="linked in" /></a>
+                    <a href="mailto:pattiperlock@gmail.com">
+                        <img className={reachedBottom ? "main__contacts-icon main__contacts-icon--bottom3"  : "main__contacts-icon"} src="/icons/email-icon.svg" alt="email"/></a>
+                    <a href="/files/patti-perlock-resume-revised.pdf" target="_blank" rel="noopener noreferrer">
+                    <img className={reachedBottom ? "main__contacts-icon main__contacts-icon--bottom4"  : "main__contacts-icon"} src="/icons/user-profile-circle.svg" alt="resume"/></a>
                 </aside>
 
                 {/* renders a Section component for each individual section */}

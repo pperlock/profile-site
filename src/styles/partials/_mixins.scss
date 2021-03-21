@@ -82,5 +82,21 @@
     animation: colorWave $speed linear infinite;
 }
 
+@mixin growIcon ($width){
+    //Animates the contact icons from sticky menu to full icon - occurs on scroll
+    @keyframes growIcon {
+        0% {transform:rotate(360deg); left:0; width:25px; offset-distance:0%;}
+        100% {left:500px; width:$width; offset-distance:100%}
+    }
+
+    animation: growIcon 1s linear, bounce 2s;
+}
 
 
+@mixin bottomIcon($width, $bottom, $left){
+    position:absolute;
+    width:$width;
+    bottom:$bottom;
+    left:$left;
+    @include growIcon($width);
+}

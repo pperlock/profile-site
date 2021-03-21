@@ -18,7 +18,6 @@ function Intro() {
         setTimeout(()=>{setShowLoading(true);},1000);
     },[]);
 
-
     useEffect(() => {
         // once the video 6s video is over replace the skip control with the replay
         if(!isLoading){
