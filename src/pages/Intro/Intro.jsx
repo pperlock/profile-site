@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react'
 import {Link} from 'react-router-dom';
-import ReactAwesomePlayer from 'react-awesome-player';
+import Sparkles from '../../components/Sparkles/Sparkles';
 
 
 import './Intro.scss';
@@ -20,27 +20,37 @@ function Intro() {
         }
     },[isLoading]);
 
-
-
-    const playLoadedVideo = () =>{
-        
-        // console.log("playLodadedVideo");
-        // setTimeout(()=>{
-        //     setIsLoading(false);
-        // },3000);
-
-        setIsLoading(false);
-    }
-
     // reload the page if the replay button is selected
     const replayVideo = () =>{
        window.location.reload(true);
     }
-    
-    console.log(playerRef.current);
+
+    const playLoadedVideo = () =>{
+        setTimeout(()=>{setIsLoading(false)},3000);
+    }
+
     return (
         <>
-        {isLoading && <h1> Loading ...</h1>}
+        {isLoading && 
+            
+            <div className="intro__loading">
+                <div className="intro__loading-logo">
+                    <Sparkles>
+                        <Link to="/main" className="logo-text">
+                            <p className="logo__name"> PATTI PERLOCK </p>
+                            <p className="logo__title"> WEB DEVELOPER </p>
+                        </Link>   
+                    </Sparkles>
+                </div>
+                {/* <Sparkles>  */}
+                    <div className="intro__loading-container">
+                        {/* <h1 className="intro__loading-text"> Loading </h1> */}
+                        <img className="intro__loading-img" src="/icons/loader.gif"/>
+                    </div>
+                {/* </Sparkles> */}
+            </div>
+
+        }
         <main className={isLoading ? "intro--off" : "intro"}> 
             
             {/* render either the replay button or the skip control based on state */}
@@ -60,20 +70,9 @@ function Intro() {
             {/* if the replay button is showing then add the abilit to enter the site */}
             {(!isLoading && displayReplay) && <Link  to="/main" className="enter">ENTER</Link>}
 
-            {/* <video className="video" ref={playerRef} src="/videos/Final-50mm.mp4" type='video/mp4' onCanPlayThrough = {playLoadedVideo}></video> */}
 
-            {/* {isLoading ? 
-            <video className="video--off" muted onCanPlayThrough = {playLoadedVideo}>
-                <source src="/videos/Final-50mm.mp4" type="video/mp4"/>Your browser does not support the video tag.
-            </video>
-            :
-            <>
-            <video className="video" autoPlay muted>
-                <source src="/videos/Final-50mm.mp4" type="video/mp4"/>Your browser does not support the video tag.
-            </video>
-            </>} */}
-
-            <video ref={playerRef} className="video" autoPlay muted onCanPlayThrough = {()=>setIsLoading(false)}>
+            {/* <video ref={playerRef} className="video" autoPlay muted onCanPlayThrough = {()=>setIsLoading(false)}> */}
+            <video ref={playerRef} className="video" autoPlay muted onCanPlayThrough = {playLoadedVideo}>
                 <source src="/videos/Final-50mm.mp4" type="video/mp4"/>Your browser does not support the video tag.
             </video>
         </main>

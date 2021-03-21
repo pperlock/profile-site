@@ -14,6 +14,32 @@ img{
         visibility:hidden;
     }
 
+    &__loading{
+        position:absolute;
+        top:0;
+        right:0;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        height:100vh;
+        width:100vw;
+        background-color:rgba(0,0,0,1);
+        overflow:hidden;
+
+        &-container{
+            display:flex;
+            align-items:center;
+        }
+
+        &-logo{
+            // margin-bottom:30px;
+        }
+        &-img{
+            width:100px;
+        }
+    }
+
     &__replay{
         position:absolute;
         filter: invert(61%) sepia(72%) saturate(335%) hue-rotate(129deg) brightness(86%) contrast(91%);
