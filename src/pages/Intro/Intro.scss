@@ -10,6 +10,10 @@ img{
     justify-content:center;
     overflow:hidden;
 
+    &--off{
+        visibility:hidden;
+    }
+
     &__replay{
         position:absolute;
         filter: invert(61%) sepia(72%) saturate(335%) hue-rotate(129deg) brightness(86%) contrast(91%);
