@@ -26,7 +26,8 @@ function Intro() {
     }
 
     const playLoadedVideo = () =>{
-        setTimeout(()=>{setIsLoading(false)},3000);
+        // setTimeout(()=>{setIsLoading(false)},3000);
+        setIsLoading(false);
     }
 
     return (
@@ -42,12 +43,10 @@ function Intro() {
                         </Link>   
                     </Sparkles>
                 </div>
-                {/* <Sparkles>  */}
                     <div className="intro__loading-container">
                         {/* <h1 className="intro__loading-text"> Loading </h1> */}
                         <img className="intro__loading-img" src="/icons/loader.gif"/>
                     </div>
-                {/* </Sparkles> */}
             </div>
 
         }

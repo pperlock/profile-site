@@ -82,6 +82,7 @@
                 margin:50px;
             }
             &:hover{
+                filter:$accent-filter;
                 animation: bounce 1s; 
             }
         } 
