@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom';
 import Sparkles from '../../components/Sparkles/Sparkles';
 
@@ -11,9 +11,8 @@ function Intro() {
     const [displayReplay, setDisplayReplay] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const [showLoading, setShowLoading] = useState(false);
+    const [gifSrc, setGifSrc] = useState("/videos/intro-video-noloop.gif?"+new Date().getTime());
 
-    const playerRef=useRef();
-    
     useEffect(() => {
         setTimeout(()=>{setShowLoading(true);},1000);
     },[]);
@@ -56,7 +55,7 @@ function Intro() {
         <main className={isLoading ? "intro--off" : "intro"}> 
             
             {/* render either the replay button or the skip control based on state */}
-            {(!isLoading && displayReplay) ? <img onClick={replayVideo} className="intro__replay" src="/icons/replay-icon.svg" alt="replay"/> : <Link to="/main"><p className="intro__skip"> Skip Intro </p></Link>}
+            {!isLoading && (displayReplay ? <img onClick={replayVideo} className="intro__replay" src="/icons/replay-icon.svg" alt="replay"/> : <Link to="/main"><p className="intro__skip"> Skip Intro </p></Link>)}
             
             {!isLoading && <div className="logo">
                 <Link to="/main" className="logo-text">
@@ -72,11 +71,11 @@ function Intro() {
             {/* if the replay button is showing then add the abilit to enter the site */}
             {(!isLoading && displayReplay) && <Link  to="/main" className="enter">ENTER</Link>}
 
-
-            {/* <video ref={playerRef} className="video" autoPlay muted onCanPlayThrough = {()=>setIsLoading(false)}> */}
-            <video ref={playerRef} className="video" autoPlay muted onCanPlayThrough = {playLoadedVideo}>
+            <video className="video" autoPlay muted onCanPlayThrough = {playLoadedVideo}>
                 <source src="/videos/Final-50mm.mp4" type="video/mp4"/>Your browser does not support the video tag.
             </video>
+
+            <img className='video-gif' src={gifSrc}/>
         </main>
         </>
     )
