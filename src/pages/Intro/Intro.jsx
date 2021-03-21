@@ -32,6 +32,7 @@ function Intro() {
     const playLoadedVideo = () =>{
         // setTimeout(()=>{setIsLoading(false)},3000);
         setIsLoading(false);
+        console.log('reached');
     }
 
     return (
@@ -75,7 +76,7 @@ function Intro() {
                 <source src="/videos/Final-50mm.mp4" type="video/mp4"/>Your browser does not support the video tag.
             </video>
 
-            <img className='video-gif' src={gifSrc}/>
+            <img className='video-gif' src={gifSrc} canPlayThrough = {playLoadedVideo}/>
         </main>
         </>
     )
