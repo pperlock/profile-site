@@ -83,7 +83,7 @@
             }
             &:hover{
                 filter:$accent-filter;
-                animation: bounce 1s; 
+                animation: bounce 0.5s infinite; 
             }
         } 
     }

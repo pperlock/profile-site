@@ -10,8 +10,14 @@ function Intro() {
     //set state to determine if replay or skip controls are shown
     const [displayReplay, setDisplayReplay] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
+    const [showLoading, setShowLoading] = useState(false);
 
     const playerRef=useRef();
+    
+    useEffect(() => {
+        setTimeout(()=>{setShowLoading(true);},1000);
+    },[]);
+
 
     useEffect(() => {
         // once the video 6s video is over replace the skip control with the replay
@@ -32,8 +38,7 @@ function Intro() {
 
     return (
         <>
-        {isLoading && 
-            
+        {(isLoading && showLoading) &&
             <div className="intro__loading">
                 <div className="intro__loading-logo">
                     <Sparkles>
@@ -48,7 +53,6 @@ function Intro() {
                         <img className="intro__loading-img" src="/icons/loader.gif"/>
                     </div>
             </div>
-
         }
         <main className={isLoading ? "intro--off" : "intro"}> 
             
