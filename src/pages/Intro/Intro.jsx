@@ -62,20 +62,20 @@ function Intro() {
 
             {/* <video className="video" ref={playerRef} src="/videos/Final-50mm.mp4" type='video/mp4' onCanPlayThrough = {playLoadedVideo}></video> */}
 
-            {isLoading ? 
+            {/* {isLoading ? 
             <video className="video--off" muted onCanPlayThrough = {playLoadedVideo}>
                 <source src="/videos/Final-50mm.mp4" type="video/mp4"/>Your browser does not support the video tag.
             </video>
             :
             <>
-                <video className="video" autoPlay muted>
-                    <source src="/videos/Final-50mm.mp4" type="video/mp4"/>Your browser does not support the video tag.
-                </video>
-            </>}
-
-            {/* <video ref={playerRef} className="video" autoPlay={isLoading ? false : true} muted controls onCanPlayThrough = {playLoadedVideo}>
+            <video className="video" autoPlay muted>
                 <source src="/videos/Final-50mm.mp4" type="video/mp4"/>Your browser does not support the video tag.
-            </video> */}
+            </video>
+            </>} */}
+
+            <video ref={playerRef} className="video" autoPlay muted onCanPlayThrough = {()=>setIsLoading(false)}>
+                <source src="/videos/Final-50mm.mp4" type="video/mp4"/>Your browser does not support the video tag.
+            </video>
         </main>
         </>
     )
