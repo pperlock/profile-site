@@ -36,7 +36,7 @@ const SkillIcon = ({skill, id}) => {
             data-aos-anchor=".skills"
             data-aos={skill.animation}
             data-aos-offset="500"
-            data-aos-duration="3000"
+            data-aos-duration="1000"
         />
     )
 }

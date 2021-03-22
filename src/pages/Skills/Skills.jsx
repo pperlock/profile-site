@@ -18,7 +18,7 @@ export const CardContext = createContext({
 const Skills = ({match, showOverlay}) => {
     
     const [skillList, setSkillList] = useState([
-        {id: "0", status:"out", name:'skills__html-css', image:'/icons/html5-css3.png', title:"", alt:"html 5", animation:"fade-up", },
+        {id: "0", status:"out", name:'skills__html-css', image:'/icons/html5-css3.png', title:"", alt:"html 5", animation:"fade-up"},
         {id: "1", status:"out", name:'skills__js', image:'/icons/js-icon2.png', title:"", alt:"javascript",  animation:"fade-left"},
         {id: "2", status:"out", name:'skills__node', image:'/icons/nodejs-icon.svg', title:"", alt:"nodejs",  animation:"fade-down"},
         {id: "3", status:"out", name:'skills__react', image:'/icons/react-icon.png', title:"", alt:"react",  animation:"fade-right"},

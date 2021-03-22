@@ -59,15 +59,15 @@ h1{
 	//these three are used for the skills overlay to offset timing
 	&--first{
       visibility:visible;
-      animation: type 0.8s 0.25s steps(60, end); 
+      animation: type 0.6s 0.25s steps(60, end); 
     }
     &--second{
       visibility:visible;
-      animation: showElement 1.7s linear, type 0.8s 1.6s steps(60, end); 
+      animation: showElement 1.4s linear, type 0.6s 1.3s steps(60, end); 
     }
     &--third{
       visibility:visible;
-      animation: showElement 3.3s linear, type 0.8s 3.2s steps(60, end); 
+      animation: showElement 2.4s linear, type 0.6s 2.3s steps(60, end); 
     }
 }
 

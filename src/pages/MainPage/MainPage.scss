@@ -39,6 +39,9 @@ main{
     }
     
     &-icon{
+        &:hover{
+            animation:bounce 0.5s linear;
+        }
         &--bottom1{
             position:absolute;
             width:50px;
