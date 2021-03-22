@@ -58,8 +58,10 @@ function Intro() {
                     </div>
             </div>
         }
-        <main className={isLoading ? "intro--off" : "intro"}> 
-            
+
+        {/* Added about background image to intro to preload for rest of site */}
+        <main id="intro" className={isLoading ? "intro--off" : "intro"} style={{backgroundImage: `url('/images/about-background.jpg')`}}> 
+          
             {/* render either the replay button or the skip control based on state */}
             {!isLoading && (displayReplay ? <img onClick={replayVideo} className="intro__replay" src="/icons/replay-icon.svg" alt="replay"/> : <Link to="/main"><p className="intro__skip"> Skip Intro </p></Link>)}
             
