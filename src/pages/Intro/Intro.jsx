@@ -32,6 +32,11 @@ function Intro() {
     const playLoadedVideo = () =>{
         // setTimeout(()=>{setIsLoading(false)},3000);
         setIsLoading(false);
+    }
+
+    const playLoadedGif = () =>{
+        // setTimeout(()=>{setIsLoading(false)},3000);
+        setIsLoading(false);
         console.log('reached');
     }
 
@@ -72,11 +77,11 @@ function Intro() {
             {/* if the replay button is showing then add the abilit to enter the site */}
             {(!isLoading && displayReplay) && <Link  to="/main" className="enter">ENTER</Link>}
 
-            <video className="video" autoPlay muted onCanPlayThrough = {playLoadedVideo}>
+            {window.innerWidth >= 768 && <video className="video" autoPlay muted onCanPlayThrough = {playLoadedVideo}>
                 <source src="/videos/Final-50mm.mp4" type="video/mp4"/>Your browser does not support the video tag.
-            </video>
+            </video>}
 
-            <img className='video-gif' src={gifSrc} canPlayThrough = {playLoadedVideo}/>
+            {window.innerWidth < 768 && <img className='video-gif' src={gifSrc} onLoad = {playLoadedVideo}/>}
         </main>
         </>
     )
