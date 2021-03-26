@@ -34,12 +34,6 @@ function Intro() {
         setIsLoading(false);
     }
 
-    const playLoadedGif = () =>{
-        // setTimeout(()=>{setIsLoading(false)},3000);
-        setIsLoading(false);
-        console.log('reached');
-    }
-
     return (
         <>
         {(isLoading && showLoading) &&

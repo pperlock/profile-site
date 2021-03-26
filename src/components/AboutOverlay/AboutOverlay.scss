@@ -1,6 +1,10 @@
 @import '../../styles/globalimports.scss';
 
 .about__overlay{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top:20px;
     height:120vh;
     padding:20px 4% 0 4%;
@@ -30,7 +34,6 @@
         line-height:1.5;
         color:#242321;
 
-        float:left;
         @include tablet{
             font-size:16px;
         }
@@ -42,23 +45,28 @@
             color:$text-accent;
         }
     }
-    &-who{
 
-        @include tablet{}
-            display:flex;
-            flex-direction:column;
-            align-items:center;
-
-        &-image{
-            margin-bottom:25px;
-            @include tablet{
-                width:60%;
-            }
-            @include desktop{
-                width:50%;
-            }
+    &-image{
+        margin-bottom:25px;
+        @include tablet{
+            width:60%;
+        }
+        @include desktop{
+            width:40%;
         }
     }
+
+    // &-what{
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items:center;
+    //     justify-content:center;
+
+    //     @include desktop{
+    //         flex-direction: row-reverse;
+    //     }
+      
+    // }
 }
 
 
