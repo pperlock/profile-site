@@ -2,9 +2,11 @@ import React, {useEffect, useState} from 'react';
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import "./MainPage.scss";
+import {disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks} from 'body-scroll-lock';
 
 import Header from '../../components/Header/Header';
 import Section from '../../components/Section/Section';
+import Overlay from '../../components/Overlay/Overlay';
 
 /**
  * Props Passed in from App.js
@@ -34,6 +36,25 @@ function MainPage({match}) {
         setReachedBottom((window.innerHeight + window.pageYOffset+200) >= document.body.offsetHeight);
     };
 
+    const [showOverlay, setShowOverlay] = useState(false);
+    const [overlayToShow, setOverlayToShow] = useState("about");
+
+    //Use state to hide/show overlays for a section
+    const toggleOverlay = (sectionName) =>{
+        setShowOverlay(!showOverlay);
+        // document.querySelector('html').classList.toggle('scroll-lock');
+        setOverlayToShow(sectionName);
+        const headerOffset = window.innerWidth >= 768 ? 240 : 145;
+        const overLayElement = document.getElementById(`${sectionName}__white-overlay`);
+        console.log(headerOffset);
+        // disableBodyScroll(overLayElement);
+        !showOverlay ? disableBodyScroll(overLayElement) : enableBodyScroll(overLayElement);
+        console.log(`${document.documentElement.scrollTop + headerOffset}px`);
+        overLayElement.style.top = `${document.documentElement.scrollTop + headerOffset}px`; //176 - 145
+        overLayElement.style.bottom = `${document.documentElement.scrollBottom}px`;
+        console.log(document.documentElement.scrollTop);
+    }
+
     return (
         <>
             <Header path={match.path}/>
@@ -49,8 +70,9 @@ function MainPage({match}) {
                     <img className={reachedBottom ? "main__contacts-icon--bottom4"  : "main__contacts-icon"} src="/icons/user-profile-circle.svg" alt="resume"/></a>
                 </aside>
 
+                {sections.map((section,i) => section.overlay && <Overlay key={i} section={section.name} toggleOverlay={toggleOverlay} showOverlay={showOverlay} overlayToShow={overlayToShow}/>)}
                 {/* renders a Section component for each individual section */}
-                {sections.map((section,i) => <Section key={i} section={section} reachedBottom={reachedBottom}/>)}
+                {sections.map((section,i) => <Section key={i} section={section} reachedBottom={reachedBottom} toggleOverlay={toggleOverlay} showOverlay={showOverlay}/>)}
             </main>
 
         </>

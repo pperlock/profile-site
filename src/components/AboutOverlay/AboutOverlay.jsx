@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import './AboutOverlay.scss';
 
 /**
@@ -7,10 +7,11 @@ import './AboutOverlay.scss';
  */
 
 function AboutOverlay({showOverlay}) {
+
+
     return (
 
         <div className="about__overlay"> 
-
             <div className="about__overlay-who">
                 <h2 className={showOverlay ? "about__overlay-title animate-type" : "about__overlay-title"}>Who is She?</h2>
                 <p className="about__overlay-text">I am a newly minted <span className="about__overlay-text--emphasize"> Full Stack Web Developer </span> looking to make her mark in the <span className="about__overlay-text--emphasize"> Web Development </span> world.  

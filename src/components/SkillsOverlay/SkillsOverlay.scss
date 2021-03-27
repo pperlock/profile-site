@@ -1,4 +1,9 @@
 @import '../../styles/globalimports.scss';
+@import '../../styles/globalstyles.scss';
+
+.white-overlay__skills--on{
+    @extend .white-overlay--on
+}
 
 .skills{
     &__overlay{

@@ -10,22 +10,15 @@ import Sparkles from '../Sparkles/Sparkles';
  * @param {Boolean} showOverlay
  */
 
-function PageTitle({section, toggleOverlay, showOverlay}) {
+function PageTitle({section, showOverlay}) {
 
     return (
         <div className={showOverlay ? "title title-hide" : "title"}>
             <h1 className={section.name !=="contact" ? "title-text" : "title-text title-text--contact"}>{section.title}</h1>
-            
-            {section.overlay &&
-                <>
-                <div className="arrow-wrapper">
-                   <div className="arrow" onClick={()=>toggleOverlay(section)}></div>
-                </div>
-                {/* <p>LEARN MORE</p> */}
-                </>}
-        </div>
+         </div>
 
     )
 }
 
 export default PageTitle
+

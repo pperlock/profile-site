@@ -4,6 +4,7 @@ import './Skills.scss';
 
 import SkillIcon from '../../components/SkillIcon/SkillIcon';
 import BackPack from '../../components/BackPack/BackPack';
+import Sparkles from '../../components/Sparkles/Sparkles';
 
 export const CardContext = createContext({
     markAsDone:null
@@ -15,7 +16,7 @@ export const CardContext = createContext({
  * @param {Boolean} showOverlay
  */
 
-const Skills = ({match, showOverlay}) => {
+const Skills = ({match, showOverlay, toggleOverlay}) => {
     
     const [skillList, setSkillList] = useState([
         {id: "0", status:"out", name:'skills__html-css', image:'/icons/html5-css3.png', title:"", alt:"html 5", animation:"fade-up"},
@@ -36,8 +37,8 @@ const Skills = ({match, showOverlay}) => {
     }
 
     return (
+        <>
         <CardContext.Provider value={{markAsDone}}>
-           
             {/* Show the appropriate text when the bag is packed */}
             {(skillList.filter(skill => skill.status === "out").length === 0 && !showOverlay) && <a className="skills__packed" href="#experience"> All Packed - Let's Go!</a>}
                 
@@ -62,7 +63,9 @@ const Skills = ({match, showOverlay}) => {
                         type="skills"
                     />)}
             </div>
+
         </CardContext.Provider>
+        </>
        
     )
 }

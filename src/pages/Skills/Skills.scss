@@ -1,4 +1,6 @@
 @import '../../styles/globalimports.scss';
+@import '../../styles/globalstyles.scss';
+
 .skills{
     background: rgb(0,0,0);
     padding-bottom:100vw;
@@ -9,7 +11,7 @@
     }
 
     @include desktop{
-        padding-bottom:35vw;
+        padding-bottom:18vw;
     }
     
     @include wide-screen{
@@ -32,6 +34,7 @@
         margin-right:40px;
         justify-content:center;
         align-items:center;
+        // position:relative;
 
         @include tablet{
             margin-top:100px;
@@ -89,5 +92,42 @@
     }
 }
 
+.trail-marker{
+    &__container--skills{
+        position:absolute;
+        bottom:30px;
+        right:26px;  
+    }
 
+    @include desktop{
+        right:88px;  
+    }
 
+    &--skills{
+        @extend .trail-marker;
+    }
+
+    &__image--skills{
+        @extend .trail-marker__image;
+        transform:scale(-1);
+        transform:skewX(-15deg);
+        transform:skewY(-15deg);
+    }
+
+    &__text-skills{
+
+        &--bottom{
+            @extend .trail-marker__text--top;
+            transform:skewX(-15deg);
+            transform:skewY(-15deg);
+            animation:none;
+        }
+        &--top{
+            @extend .trail-marker__text--bottom;
+            transform:skewX(-15deg);
+            transform:skewY(-15deg);
+            animation: pulsate-skew-skills 1.2s linear infinite;
+        }
+    }
+
+}

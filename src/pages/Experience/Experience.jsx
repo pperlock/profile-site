@@ -3,12 +3,8 @@ import './Experience.scss';
 
 import TrailIcon from '../../components/TrailIcon/TrailIcon';
 
-/**
- * Props Passed in from Section
- * @param {Object} match
-*/
 
-function Experience ({match}){
+function Experience (){
     const mapIcons=[
         {id: 0, name:'head', image:'/icons/trail-head.svg', alt:"trail head icon", title:'Trail Head', modal:"top", 
         contentTitle: "It All Started When ...",
@@ -20,7 +16,7 @@ function Experience ({match}){
             {date: "2005-2010", background:"/icons/uwo.png", place: "University of Western Ontario", position: "MSc.Geophysics", focus: "programming & statistical physics", thesis: "Imaging Faults in 3D Using Pattern Informatics"},
             {date: "2000-2005", background:"/icons/uwo.png", place: "University of Western Ontario", position: "BSc.Geophysics", focus: "programming & optimization algorithms", thesis: "Modeling of the July 1998 Northridge Aftershock Using a Linear Inversion and Genetic Algorithm"}
         ]},
-        {id: 2, name:'detour', image:'/icons/map-signs-solid.svg', alt:"detour icon", title:'', 
+        {id: 2, name:'detour', image:'/icons/map-signs-solid.svg', alt:"detour icon", title:'Detour', 
         contentTitle: "I Detoured From my Path...",
         content: "When my passion for the outdoors and animals lead me to explore a career as a Dog Trainer.", modal:"middle",},
         
