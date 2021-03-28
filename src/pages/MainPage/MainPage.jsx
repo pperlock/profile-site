@@ -24,35 +24,47 @@ function MainPage({match}) {
 
     //state used to determine of the bottom of the page has been reached
     const [reachedBottom, setReachedBottom] = useState(false);
+    const [showOverlay, setShowOverlay] = useState(false);
+    const [overlayToShow, setOverlayToShow] = useState("about");
+    const [overlayTop, setOverlayTop] = useState(0);
+
 
     useEffect(() => {
-        //ensure that the about section renders at the appropirate spot when page initially loads
+        //ensure that the about section renders at the appropriate spot when page initially loads
         document.getElementById("about").scrollIntoView({behavior: 'smooth'});
         Aos.init({duration:3000});
     },[]);
 
+
+    useEffect(()=>{
+        //accounts for the space the header will take up past the scrolltop
+        const headerOffset = window.innerWidth >= 768 ? 176 : 145;
+        
+        //every time the scrolling changes set the top of all the overlays to the correct top position to display - this accounts for any scrolling that takes place when overlay is toggled on
+        sections.forEach((section,i)=>{
+            if(i <= 2){
+                const overLayElement = document.getElementById(`${section.name}__white-overlay`);
+                overLayElement.style.top = `${overlayTop + headerOffset}px`;    
+            }
+        })
+    },[overlayTop])
+
     //Determines if the bottom of the page has been reached and sets the state
-    window.onscroll = event=> {
+    window.onscroll = event => {
         setReachedBottom((window.innerHeight + window.pageYOffset+200) >= document.body.offsetHeight);
+        setOverlayTop(document.documentElement.scrollTop);
     };
 
-    const [showOverlay, setShowOverlay] = useState(false);
-    const [overlayToShow, setOverlayToShow] = useState("about");
 
     //Use state to hide/show overlays for a section
     const toggleOverlay = (sectionName) =>{
         setShowOverlay(!showOverlay);
-        // document.querySelector('html').classList.toggle('scroll-lock');
         setOverlayToShow(sectionName);
-        const headerOffset = window.innerWidth >= 768 ? 240 : 145;
+        
+        //disable scrolling for body but keep scrolling for overlay - mostly for mobile
         const overLayElement = document.getElementById(`${sectionName}__white-overlay`);
-        console.log(headerOffset);
-        // disableBodyScroll(overLayElement);
         !showOverlay ? disableBodyScroll(overLayElement) : enableBodyScroll(overLayElement);
-        console.log(`${document.documentElement.scrollTop + headerOffset}px`);
-        overLayElement.style.top = `${document.documentElement.scrollTop + headerOffset}px`; //176 - 145
-        overLayElement.style.bottom = `${document.documentElement.scrollBottom}px`;
-        console.log(document.documentElement.scrollTop);
+
     }
 
     return (
@@ -71,6 +83,7 @@ function MainPage({match}) {
                 </aside>
 
                 {sections.map((section,i) => section.overlay && <Overlay key={i} section={section.name} toggleOverlay={toggleOverlay} showOverlay={showOverlay} overlayToShow={overlayToShow}/>)}
+                
                 {/* renders a Section component for each individual section */}
                 {sections.map((section,i) => <Section key={i} section={section} reachedBottom={reachedBottom} toggleOverlay={toggleOverlay} showOverlay={showOverlay}/>)}
             </main>

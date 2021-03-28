@@ -14,7 +14,6 @@ import SkillsOverlay from '../../components/SkillsOverlay/SkillsOverlay';
 
 function Overlay({section, showOverlay, toggleOverlay, overlayToShow}) {
 
-    console.log(overlayToShow);
         return (
             <div id={section +"__white-overlay"}
                 className={!showOverlay  ? "white-overlay--off full" : 

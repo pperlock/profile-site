@@ -74,8 +74,6 @@ h1{
 
 //Removes scrolling ability - video modal
 .scroll-lock{
-
-	// overscroll-behavior: contain;
   	overflow:hidden;
 }
 
@@ -90,6 +88,7 @@ h1{
     position:relative;
 	display:flex;
 	flex-direction: column;
+    cursor:pointer;
     &__image{
         width:100px;
         transform:skewX(15deg);
@@ -217,14 +216,14 @@ h1{
 		}
         // min-height:100vh;
         width:100%;
-        animation: slide-down 0.5s ease-in;
+        animation: slide-down 0.2s ease-in;
 		overflow:scroll;
         // overflow-x:hidden;
         z-index:100;
     }
     &--off{
         height:0;
-        animation: slide-up 0.5s ease-out;
+        animation: slide-up 0.2s ease-out;
 		overflow:hidden;
     }
 }

@@ -86,7 +86,10 @@
     &__container--experience{
         position:absolute;
         bottom:50px;
-        left:26px;  
+        left:26px;
+        @include desktop{
+            left:163px;
+        }  
     }
 
     &--experience{

@@ -35,7 +35,7 @@ function Section({section, reachedBottom, toggleOverlay, showOverlay}) {
                 {name==="experience" && <Experience showOverlay={showOverlay}/>}
                 {name==="projects" && <Projects/>} 
                 {name==="contact" && <Contact reachedBottom={reachedBottom}/>}  
-                {/* {name==="projects" &&  <img className="projects__mountain" src="/images/mountain4.png" alt="top of mountain" data-aos-anchor=".projects" data-aos="fade-left" data-aos-offset="500" data-aos-duration="3000"/>}     */}
+                {name==="projects" &&  <img className="projects__mountain" src="/images/mountain4.png" alt="top of mountain" data-aos-anchor=".projects" data-aos="fade-left" data-aos-offset="500" data-aos-duration="3000"/>}    
             </div>
 
             {(name !== "projects" && name !== "contact") &&
@@ -43,7 +43,7 @@ function Section({section, reachedBottom, toggleOverlay, showOverlay}) {
                     <div className={`trail-marker--${name}`}>
                         <img className={`trail-marker__image--${name}`} src= "/icons/trail-marker-3.png"/>
                         {/* <p className="trail-marker__text--top" onClick={()=>toggleOverlay(name)}> {`${name[0].toUpperCase() + name.slice(1)} Side Trail`}</p> */}
-                        <p className={name==="skills" ? "trail-marker__text-skills--top" : "trail-marker__text--top"} onClick={()=>toggleOverlay(name)}> Side Trail</p>
+                        <p className={name==="skills" ? "trail-marker__text-skills--top" : "trail-marker__text--top"} onClick={()=>toggleOverlay(name)}> {`${name[0].toUpperCase() + name.slice(1)}`} Trail</p>
                         <a href="#skills"><p className={name==="skills" ? "trail-marker__text-skills--bottom" : "trail-marker__text--bottom"}>Main Trail</p></a>
                         <Sparkles><div className="trail-marker__base" onClick={()=>toggleOverlay(name)}></div></Sparkles>
                     </div>

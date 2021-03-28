@@ -4,13 +4,15 @@
     // height:100vh;
     background-color:black;
     padding-bottom:50vw;
+    overflow:hidden;
     
     @include tablet{
-        padding-bottom:30vw;
+        // padding-bottom:30vw;
         // height:88.5vh;
     }
 
     @include desktop{
+        padding-bottom:25vw;
         // height:89.5vh;
     }
 
