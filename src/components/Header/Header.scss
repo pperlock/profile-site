@@ -138,7 +138,7 @@
             background-color:black;
             width:50%;
             height:180px;
-            position:absolute;
+            position:fixed;
             top:145px;
             right:0;
             
@@ -153,7 +153,7 @@
             }
             &--on{
                 @extend .nav__list;
-                animation: slide-down 0.1s linear;    
+                animation: menu-down 0.1s ease-in;    
             }
             &--off{
                 height:0;

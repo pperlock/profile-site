@@ -106,4 +106,7 @@
     &__image--about{
         @extend .trail-marker__image;
     }
+    &__text-about--top{
+        @extend .trail-marker__text--top;
+    }
 }

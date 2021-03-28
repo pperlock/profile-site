@@ -39,21 +39,18 @@ function Section({section, reachedBottom, toggleOverlay, showOverlay}) {
             </div>
 
             {(name !== "projects" && name !== "contact") &&
-                <div className={`trail-marker__container--${name}`}>
+                <div className={`trail-marker__container--${name}`} onClick={()=>toggleOverlay(name)}>
                     <div className={`trail-marker--${name}`}>
                         <img className={`trail-marker__image--${name}`} src= "/icons/trail-marker-3.png"/>
-                        {/* <p className="trail-marker__text--top" onClick={()=>toggleOverlay(name)}> {`${name[0].toUpperCase() + name.slice(1)} Side Trail`}</p> */}
-                        <p className={name==="skills" ? "trail-marker__text-skills--top" : "trail-marker__text--top"} onClick={()=>toggleOverlay(name)}> {`${name[0].toUpperCase() + name.slice(1)}`} Trail</p>
-                        <a href="#skills"><p className={name==="skills" ? "trail-marker__text-skills--bottom" : "trail-marker__text--bottom"}>Main Trail</p></a>
-                        <Sparkles><div className="trail-marker__base" onClick={()=>toggleOverlay(name)}></div></Sparkles>
+                        <p className={`trail-marker__text-${name}--top`}> {`${name[0].toUpperCase() + name.slice(1)}`}</p>
+                        <p className={"trail-marker__text--bottom"}>Trail</p>
+                        <Sparkles><div className="trail-marker__base"></div></Sparkles>
                     </div>
                 </div>
             }
 
-
-            {/* {overlay && <Overlay section={name} toggleOverlay={toggleOverlay} showOverlay={showOverlay}/>} */}
-            
-            {/* apply the proper "transition" divs to make a smooth color transition between sections */}
+          
+            {/* apply the appropriate "transition" divs to make a smooth color transition between sections */}
             {name==="about" && <div className="transition1"></div>} 
             {name==="experience" && <div className="transition3"></div>}
             {name==="projects" && <div className="transition4"></div>}

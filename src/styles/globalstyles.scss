@@ -88,11 +88,15 @@ h1{
     position:relative;
 	display:flex;
 	flex-direction: column;
-    cursor:pointer;
+
     &__image{
         width:100px;
+        cursor:pointer;
         transform:skewX(15deg);
         transform:skewY(15deg);
+
+        animation:shake-marker 2s linear infinite;
+
         @include tablet{
 			width:120px;
 		}
@@ -102,16 +106,30 @@ h1{
 		@include wide-screen{
         	width:200px;
         }
+
     }
     &__text{
         cursor:pointer;
         text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
         color:black;
         opacity: 0.6;
-        font: 14px 'Museo700';
+        font: 18px 'Museo700';
         position:absolute;
         transform:skewX(15deg);
         transform:skewY(15deg);
+        animation:shake-marker 2s linear infinite;
+
+        @include tablet{
+            font-size:20px;
+        }
+
+        @include desktop{
+            font-size:25px;
+        }
+
+        @include wide-screen{
+            font-size:30px;
+        }
 
         &:hover{
             color:white;
@@ -120,51 +138,43 @@ h1{
 
         &--top{
             @extend .trail-marker__text;
-            top:20px;
-            left:20px;
-            animation: pulsate-skew 1.2s linear infinite;
+            top:16px;
+            left:23px;
 			
 			@include tablet{
-				font-size:16px;
-				top:21px;
-				left:24px;
+				top:20px;
+				left:32px;
 			}
 			
             @include desktop{
-                font-size:22px;
-                top:31px;
-                left:35px;
+                top:28px;
+                left:44px;
             }
 
             @include wide-screen{
-                font-size:25px;
-                top:38px;
-                left:45px;
+                top:36px;
+                left:58px;
             }
             
         }
         &--bottom{
             @extend .trail-marker__text;
-            font-size:13px;
-            top:44px;
-            left:24px;
-
+            top:40px;
+            left:30px;
+ 
 			@include tablet{
-				font-size:16px;
-				top:52px;
-				left:28px;
+				top:49px;
+				left:38px;
 			}
 
 			@include desktop{
-                font-size:22px;
-                top:71px;
-                left:36px;
+                top:67px;
+                left:53px;
             }
             
             @include wide-screen{
-                font-size:25px;
-                top:89px;
-                left:47px;
+                top:85px;
+                left:67px;
             }
         }
     }
@@ -194,7 +204,7 @@ h1{
     }
 }
 
-
+//global styling for all 3 overlays
 .white-overlay{
     position:absolute;
     display:block;

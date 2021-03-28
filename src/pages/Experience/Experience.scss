@@ -99,4 +99,29 @@
     &__image--experience{
         @extend .trail-marker__image;
     }
+
+    &__text-experience--top{
+        @extend .trail-marker__text--top;
+        font-size:13px;
+        top:19px;
+        left:18px;
+
+        @include tablet{
+            font-size:16px;
+            top:23px;
+            left:21px;
+        }
+
+        @include desktop{
+            font-size:20px;
+            top:31px;
+            left:31px;
+        }
+
+        @include wide-screen{
+            font-size:25px;
+            top:38px;
+            left:43px;
+        }
+    }
 }

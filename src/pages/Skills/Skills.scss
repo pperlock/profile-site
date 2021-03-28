@@ -106,28 +106,10 @@
     &--skills{
         @extend .trail-marker;
     }
-
     &__image--skills{
         @extend .trail-marker__image;
-        transform:scale(-1);
-        transform:skewX(-15deg);
-        transform:skewY(-15deg);
     }
-
-    &__text-skills{
-
-        &--bottom{
-            @extend .trail-marker__text--top;
-            transform:skewX(-15deg);
-            transform:skewY(-15deg);
-            animation:none;
-        }
-        &--top{
-            @extend .trail-marker__text--bottom;
-            transform:skewX(-15deg);
-            transform:skewY(-15deg);
-            animation: pulsate-skew-skills 1.2s linear infinite;
-        }
+    &__text-skills--top{
+        @extend .trail-marker__text--top;
     }
-
 }
