@@ -27,13 +27,9 @@ function Overlay({section, showOverlay, toggleOverlay, overlayToShow}) {
                     {(section ==="experience" && overlayToShow === "experience") &&  <ExperienceOverlay showOverlay={showOverlay}/>}
                     {(section ==="about"  && overlayToShow === "about") && <AboutOverlay showOverlay={showOverlay}/>}
                     {(section ==="skills"  && overlayToShow === "skills") &&  <SkillsOverlay showOverlay={showOverlay}/>}
+
                 </div>
-            
-                {showOverlay && 
-
-                    <img className="full-text__close" onClick={()=>toggleOverlay(section)} src="/icons/down-triangle.svg"/>
-
-                }
+                <img className="full-text__close" onClick={()=>toggleOverlay(section)} src="/icons/down-triangle.svg"/>
             </div> 
             
         )

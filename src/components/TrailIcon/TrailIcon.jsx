@@ -59,7 +59,7 @@ function TrailIcon({icon}) {
     }
 
     useEffect(()=>{
-        const modal = document.querySelector(`.trail__modal-${icon.name}`);
+        const modal = document.querySelector(`.trail-modal-${icon.name}`);
         console.log(modal);
         if(showModal){
             modal.style.top = `${modalPosition.top}px`;

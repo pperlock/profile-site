@@ -40,29 +40,30 @@ function TrailModal({icon, onCloseRequest}) {
 
 
     return (
-        <div ref={modal} className={`trail__modal trail__modal-${icon.name}`}> 
-        {/* <div ref={modal} className={`trail__modal`}>  */}
-            <div className="trail__modal-experience">
+        <div ref={modal} className={`trail-modal trail-modal-${icon.name}`}> 
+            <div className="trail-modal__container">
                 {!!icon.experience && 
                     icon.experience.map(item =>
-                    <div className="trail__modal-experience__experience">
-                            <div className="trail__modal-experience__place">
-                                <div className="trail__modal-experience__place-circle">
-                                    <img src={item.background} className="trail__modal-experience__place-img" alt={icon.alt}/>
-                                </div>
-                            </div>
-                            <div className="trail__modal-experience__description">
-                                <p className="trail__modal-experience__description-date">{item.date}</p>
-                                <p className="trail__modal-experience__description-place">{item.place}</p>
-                                <p className="trail__modal-experience__description-position">{item.position}</p>
-                                {item.focus && <p className="trail__modal-experience__description-position"><span className="emphasize">Focus:</span> {item.focus}</p>}
-                                {item.thesis && <p className="trail__modal-experience__description-position"><span className="emphasize">Thesis:</span> {item.thesis}</p>}
-                            </div>
-                        </div>
+                    <div className="trail-modal__experience">
+                      <div className="trail-modal__place">
+                          <div className="trail-modal__place-circle">
+                              <img src={item.background} className="trail-modal__place-img" alt={icon.alt}/>
+                          </div>
+													<div className = "trail-modal__place-text">
+														<p className="trail-modal__place-date">{item.date}</p>
+                          	<p className="trail-modal__place-place">{item.place}</p>
+														<p className="trail-modal__place-position">{item.position}</p>
+													</div>
+                      </div>
+                      <div className="trail-modal__description">
+                          {item.focus && <p className="trail-modal__description-position"><span className="emphasize">Focus:</span> {item.focus}</p>}
+                          {item.thesis && <p className="trail-modal__description-position"><span className="emphasize">Thesis:</span> {item.thesis}</p>}
+                      </div>
+                    </div>
                 )}
             </div>
-            <p className="trail-icon__modal-experience-lesson">{icon.contentTitle}</p>
-            <p className="trail-icon__modal-experience-content">{icon.content}</p>
+            <p className="trail-modal-lesson">{icon.contentTitle}</p>
+            <p className="trail-modal-content">{icon.content}</p>
         </div>
     )
 }
