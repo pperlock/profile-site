@@ -1,0 +1,175 @@
+@import '../../styles/globalimports.scss';
+
+.trail__modal{
+    // width: 100%;
+    background-color: white;
+    border-radius:20px;
+    padding: 5%;
+    box-sizing: border-box;
+    position:fixed;
+    z-index:102;
+    // right:-65px;
+    // margin-left:auto;
+    width:98%;
+    @include tablet{
+        width:64%;
+    }
+
+    // &-top{
+    //     @extend .trail__modal; 
+    //     @include tablet{
+    //         top:5%;
+    //         right:-65px;
+    //         margin-left:auto;
+    //         width:64%;
+    //     }
+    //     @include wide-screen{
+    //         top:5%;
+    //         right:-100px;
+    //         margin-left:auto;
+    //         width:64%;
+    //     }
+    // }
+    // &-middle{
+    //     @extend .trail__modal;
+    //     @include tablet{
+    //         width:50%;
+    //         top:250px;
+    //         left:0;
+    //     }     
+    // }
+    // &-bottom{
+    //     @extend .trail__modal;
+    //     top:-10vw;
+    //     @include tablet{
+    //         margin-left:auto;
+    //         top:30%;
+    //         right:-20px;
+    //         width:60%;
+    //     }
+    //     @include desktop{
+    //         top:100px;
+    //         width:60%;
+    //     }
+    //     @include wide-screen{
+    //         top:30%;
+    //         right:-100px;
+    //         margin-left:auto;
+    //         width:64%;
+    //     }    
+    // }
+    &-experience{
+        border-radius:20px;
+        color:black;
+        @include tablet{
+            // display:flex;
+        }
+        
+        &__experience{
+            display:flex;
+            position:relative;
+            margin-bottom: 30px;
+            @include tablet{
+                // display:block;
+                width:100%;
+                margin-bottom:0;
+            }
+        }
+        &-content{
+            font-size:14px;
+            color:black;
+            @include tablet{
+                font-size:16px;
+            }
+            @include tablet{
+                font-size:18px;
+            }
+        }
+        &-lesson{
+            font-size:16px;
+            font-weight:bold;
+            color:$text-accent;
+            margin:7px 0;
+            @include tablet{
+                font-size:18px;
+            }
+            @include desktop{
+                font-size:20px;
+                margin-top:12px;
+            }                    
+        }
+        &__place{
+            width:35%;
+            margin-right:35px;
+            box-sizing:border-box;
+            @include tablet{
+                display:flex;
+                align-items:center;
+                width:47%;
+            }
+            @include desktop{
+                margin-right:0;
+            }
+            &-circle{
+                position:relative;
+                width:100px;
+                height:100px;
+                border-radius:50%;
+                border: 4px solid $text-accent;
+                box-shadow: 2px 11px 32px  black;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                background-color:white;
+
+                @include tablet{
+                    margin: 20px 0 20px 20px;
+                }
+            }
+            &-img{
+                width:60px;
+            }
+            &-divider{
+                border-left:2px solid black;
+                width:10px;
+                height:20px;
+                margin-left:58%;
+                @include tablet{
+                    display:none;
+                    height:44px;
+                    margin-left:0;
+                    transform:rotate(90deg);
+                }
+            }
+        }
+        &__description{
+            margin-top:15px;
+            width:90%;
+            font-size:16px;
+            text-align:left;
+            @include tablet{
+                // margin-top:40px;
+                font-size:18px;
+            }
+            &-date{
+                font-weight:bold;
+            }
+            &-place{
+                color:$text-accent;
+                font-weight:bold;
+                @include desktop{
+                    font-size:20px;
+                } 
+            }
+            &-position{
+                font-size:14px;
+                margin-bottom:5px;
+                @include desktop{
+                    font-size:18px;
+                }                         
+            }
+        }
+    }
+}
+
+   

@@ -1,5 +1,9 @@
  @import '../../styles/globalimports.scss';
+ @import '../../styles/globalstyles.scss';
 
+ .white-overlay__experience--on{
+    @extend .white-overlay--on
+}
 
 .education, .professional{
     padding:5% 5% 0 5%;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import './AboutOverlay.scss';
 
 /**
@@ -7,10 +7,11 @@ import './AboutOverlay.scss';
  */
 
 function AboutOverlay({showOverlay}) {
+
+
     return (
 
         <div className="about__overlay"> 
-
             <div className="about__overlay-who">
                 <h2 className={showOverlay ? "about__overlay-title animate-type" : "about__overlay-title"}>Who is She?</h2>
                 <p className="about__overlay-text">I am a newly minted <span className="about__overlay-text--emphasize"> Full Stack Web Developer </span> looking to make her mark in the <span className="about__overlay-text--emphasize"> Web Development </span> world.  
@@ -18,7 +19,7 @@ function AboutOverlay({showOverlay}) {
             </div>
             
             <img className="about__overlay-image"src="/images/climbing-patti.jpg" alt="patti"/>
-            
+
             <div className="about__overlay-what">
                 <h2 className={showOverlay ? "about__overlay-title animate-type" : "about__overlay-title"}>What Can You Expect From Her?</h2>    
                 <p className="about__overlay-text">My work style is extremely <span className="about__overlay-text--emphasize">flexible</span>. Owing to my <span className="about__overlay-text--emphasize">organization skills </span> and <span className="about__overlay-text--emphasize">efficiency</span>, I have a track record of successfully juggling multiple projects at once on tight deadlines.  

@@ -11,6 +11,14 @@
             max-height:72px;
             max-width:72px;
         } 
+
+        
+        @include desktop{
+            min-width:96px;
+            max-height:96px;
+            max-width:96px;
+        } 
+
         &__modal{
             width: 100%;
             background-color: white;
@@ -190,67 +198,39 @@
         }
 
         &-head{
-             @include buildTrailDiv(-2.5%, 5%, 0, 6%, 0, 0);
+             @include buildTrailDiv(-2.5%, 5%, 0, 6%, -3%, 18%);
              z-index:1;
         }
 
         &-hiker{
-            @include buildTrailDiv(9%, 29%, 9%, 29%, 9%, 29%);
+            @include buildTrailDiv(9%, 29%, 9%, 29%, 6.5%, 34%);
             &:hover{
                 filter:invert(90%) sepia(3%) saturate(22%) hue-rotate(322deg) brightness(85%) contrast(93%);
             }
         }
             
         &-detour{        
-            @include buildTrailDiv(38%, 42%, 38%, 44%, 38%, 44%);
-            &::before{
-                left:62px;
-                top:32px;
-
-                display:none;
-                content: attr(data-content);
-                width:27px;
-                height:14px;
-                font-size: 10px;
-                color: white;
-                // border-radius:4px;
-                background: black;
-                opacity:1;
-                z-index:1;
-            }
+            @include buildTrailDiv(38%, 42%, 38%, 44%, 37%, 43%);
             &:hover{
                 filter:invert(90%) sepia(3%) saturate(22%) hue-rotate(322deg) brightness(85%) contrast(93%);
             }
         }
         
         &-db{
-            // @include buildTrailDiv(61%, 10%, 60%, 5%);
-            @include buildTrailDiv(61%, 10%, 60%, 10%, 60%, 6%);
-            &::before{
-                right:5px;
-                top:70px;
-            }
+            @include buildTrailDiv(61%, 10%, 60%, 10%, 60%, 21%);
+        }
+        
+        &-dog{
+            @include buildTrailDiv(43%, 75%, 43%, 77%, 43%, 64%);
         }
 
         &-end{
-            @include buildTrailDiv(82%, 39%, 82%, 39%, 82%, 39%);
-            &::before{
-                right:-84px;
-                bottom:103px;
-            }
-             &:hover{
+            @include buildTrailDiv(82%, 39%, 82%, 39%, 84%, 40%);
+            &:hover{
                 filter:invert(90%) sepia(3%) saturate(22%) hue-rotate(322deg) brightness(85%) contrast(93%);
             }
         }
 
-        &-dog{
-            // @include buildTrailDiv(43%, 75%, 43%, 82%);
-            @include buildTrailDiv(43%, 75%, 43%, 77%, 43%, 82%);
-            &::before{
-                left:24px;
-                top:78px;
-            }
-        }
     }
 }
 
@@ -258,4 +238,16 @@
     padding-top:5px;
     width:96px;
     font-size:12px;
+
+    @include tablet{
+        padding-top: 5px;
+        width: 162px;
+        font-size: 18px;
+    }
+
+    @include desktop{
+        padding-top: 5px;
+        width: 162px;
+        font-size: 20px;
+    }
 }

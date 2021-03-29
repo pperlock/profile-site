@@ -1,10 +1,10 @@
 @import '../../styles/globalimports.scss';
+@import '../../styles/globalstyles.scss';
 
 .about{
     display:flex;
     background-size:cover;
     background-position:center;
-    // padding-bottom:60vw;
     @include tablet{
         padding-bottom:0;
         background-position:bottom;
@@ -23,19 +23,21 @@
     &__tagline{
         color:silver;
         text-align:center;
-        margin-bottom:40px;
+        margin:40px 0;
         padding:10px;
         @include tablet{
             margin:80px 0;
         }
         @include desktop{
             font-size:40px;
-            margin-top:32px;
+            margin-top:75px;
         }
     }
 
     &__journey{
-        margin:50px 0 407px 0;
+        // margin-top:50px 0 407px 0;
+        margin-top:50px;
+        margin-bottom: 140px;
         text-align:center;
         font-size:20px;
         @include tablet{
@@ -70,11 +72,41 @@
 
 .transition1{
     background: linear-gradient(rgba(31, 24, 27,0), rgba(0,0,0,1));
-    height:208px;
+    // height:208px;
+    height:84px;
     @include tablet{
         height:200px;
     }
     @include desktop{
-        height:120px;
+        // height:120px;
+    }
+}
+
+
+.trail-marker{
+    &__container--about{
+        position:absolute;
+        bottom:60px;
+        left:26px;
+        
+        @include tablet{
+            bottom:60px;
+            left:15vw;
+        }
+
+        @include desktop{
+            bottom:120px;
+            left:10vw;
+        }
+    }
+
+    &--about{
+        @extend .trail-marker;
+    }
+    &__image--about{
+        @extend .trail-marker__image;
+    }
+    &__text-about--top{
+        @extend .trail-marker__text--top;
     }
 }

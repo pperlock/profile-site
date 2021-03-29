@@ -1,8 +1,21 @@
 @import '../../styles/globalimports.scss';
+@import '../../styles/globalstyles.scss';
+
 
 .experience{
-    height:136vh;
+    // height:136vh;
     background-size:cover;
+    padding-bottom:40vw;
+
+    @include desktop{
+        padding-bottom:6vw;
+
+    }
+    
+    @include wide-screen{
+        padding-bottom:6vw;
+
+    }
 
     &__content{
         width:100%;
@@ -12,7 +25,6 @@
         max-width:1000px;
         
         position:relative;
-        // overflow:hidden;
         max-width:414px;
         display:flex;
         justify-content:center;
@@ -39,6 +51,16 @@
         @include tablet{
             padding:75px;
         }
+        @include desktop{
+            // padding:162px;
+        }
+    }
+
+}
+
+.trail__image{
+    @include desktop{
+        width:55%;
     }
 }
 
@@ -57,4 +79,49 @@
     width:100%;
     bottom:0;
     height:10vh;
+}
+
+
+.trail-marker{
+    &__container--experience{
+        position:absolute;
+        bottom:50px;
+        left:26px;
+        @include desktop{
+            left:163px;
+        }  
+    }
+
+    &--experience{
+        @extend .trail-marker;
+    }
+
+    &__image--experience{
+        @extend .trail-marker__image;
+    }
+
+    &__text-experience--top{
+        @extend .trail-marker__text--top;
+        font-size:13px;
+        top:19px;
+        left:18px;
+
+        @include tablet{
+            font-size:16px;
+            top:23px;
+            left:21px;
+        }
+
+        @include desktop{
+            font-size:20px;
+            top:31px;
+            left:31px;
+        }
+
+        @include wide-screen{
+            font-size:25px;
+            top:38px;
+            left:43px;
+        }
+    }
 }

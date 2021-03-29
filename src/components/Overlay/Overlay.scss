@@ -1,72 +1,37 @@
  @import '../../styles/globalimports.scss';
 
-.white-overlay{
-    position:absolute;
-    display:block;
-    top:0;
-    left:0;
-    width: 100%; 
-    background-color:white;   
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    background-size:cover;
-    height:0;
-
-    &--skills{
-        background-color:#1e1e1e;
-    }
-        
-    &--on{
-        height:100%;
-        animation: slide-down 0.5s ease-in;
-        overflow-y:auto;
-        overflow-x:hidden;
-        z-index:1;
-    }
-    &--off{
-        height:0;
-        animation: slide-up 0.5s ease-out;
-    }
-}
-
 .full-text{
-    position:absolute;
+    // position:absolute;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:space-between;
     z-index:-5;
     padding:16px;
-    top:-600vh;
-    width:100%;
-    height:100%;
+
     box-sizing:border-box;
 
     &--on{
-        top:0;
-        height:90%;
+
         z-index:1;
         animation: text-on 0.5s ease-in;
     }
 
     &--off{
-        top:-600vh;
-        left:0;
-        height:0;
-        z-index:1;
         animation: text-off 0.75s ease-out;
     }
-    &__title{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        margin-top:187px;
-        &-text{
-            color:$text-accent;
-        }
+    &__close{
+        position:absolute;
+        top:0;
+        right:0;
+        width:25px;
+        height:25px;
+        z-index:10;
+        padding:10px;
+        cursor:pointer;
     }
 }
+
 
 
 .overlay-arrow{
@@ -78,7 +43,6 @@
         border:none;
         &:focus{
             outline:none;
-            // @include rotateArrow(0, -180deg);
         }
         
     }
@@ -88,9 +52,9 @@
     margin: -20px 0 0 -20px;
     transform: rotate(225deg);
     border-left: none;
-    border-top: none;
+    border-bottom: none;
     border-right: 2px black solid;
-    border-bottom: 2px black solid;
+    border-top: 2px black solid;
 
     &:before{
         content: '';
@@ -99,9 +63,9 @@
         top: 50%;
         margin: -10px 0 0 -10px;
         border-left: none;
-        border-top: none;
+        border-bottom: none;
         border-right: 1px black solid;
-        border-bottom: 2px black solid;
+        border-top: 2px black solid;
         animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-name: arrow;

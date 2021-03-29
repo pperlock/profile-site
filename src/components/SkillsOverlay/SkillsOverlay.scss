@@ -1,4 +1,9 @@
 @import '../../styles/globalimports.scss';
+@import '../../styles/globalstyles.scss';
+
+.white-overlay__skills--on{
+    @extend .white-overlay--on
+}
 
 .skills{
     &__overlay{
@@ -10,6 +15,7 @@
     &__list{
         @include wide-screen{
             margin-left:10%;
+            width: 76%;
         }
     }
     &__title{
