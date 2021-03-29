@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './Experience.scss';
 
 import TrailIcon from '../../components/TrailIcon/TrailIcon';
+import TrailModal from '../../components/TrailModal/TrailModal';
 
 
 function Experience (){
@@ -41,12 +42,13 @@ function Experience (){
             {id:'1', date: "2020-2021", background:"/icons/brainstation3.png", place: "BrainStation", position: "Student: Full Stack Development"},
         ]}
     ];
-       
+
+           
     return (
         <>
             {/* render the trail image along with each icon using the declared mapIcons array */}
             <img className="trail__image" src='/images/trail-path2.png' alt="trail" />
-            {mapIcons.map(icon =><TrailIcon key={icon.id} icon={icon} />)}                    
+            {mapIcons.map(icon =><TrailIcon key={icon.id} icon={icon}/>)}                 
         </>
     )
 }

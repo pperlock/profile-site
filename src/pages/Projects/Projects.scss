@@ -1,19 +1,12 @@
 @import '../../styles/globalimports.scss';
 
 .projects{
-    // height:100vh;
     background-color:black;
     padding-bottom:50vw;
     overflow:hidden;
-    
-    @include tablet{
-        // padding-bottom:30vw;
-        // height:88.5vh;
-    }
 
     @include desktop{
         padding-bottom:25vw;
-        // height:89.5vh;
     }
 
     &__mountain{
@@ -21,9 +14,7 @@
         bottom:0;
         left:10%;
         min-width:480px;
-        // max-width:480px;
         min-height:289px;
-        // max-height:289px;
         z-index:6;
 
         @include tablet{
@@ -32,7 +23,6 @@
         }
 
         @include desktop{
-            left:60%;
             width:50%;
         }
     }
