@@ -65,7 +65,7 @@ function Projects({match}) {
                             <a href="https://github.com/pperlock/video-streaming-clone" target="_blank" rel="noopener noreferrer"><button className="projects__list-second--brainflix" target="_blank"> GITHUB </button> </a>
                             <div className = "projects__list-description">
                                 <p className = "projects__list-description-pitch"> A video-streaming type website built based on a provided mockup.</p>
-                                <p className = "projects__list-description-pitch"> Valid user names for sign in are mlyons, tduncan, cjones, and gwong.</p>
+                                <p className = "projects__list-description-users"> Valid user names for sign in are mlyons, tduncan, cjones, and gwong.</p>
                                 <p><span className="emphasize">Tech Stack:</span> React, Redux, Node, Express, SASS</p>
                             </div>
                         </div>
