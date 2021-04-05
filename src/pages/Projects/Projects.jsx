@@ -61,9 +61,11 @@ function Projects({match}) {
                     {(window.innerWidth>=768 || activeProject==="videoStreamer") && 
                         <div className="projects__list-project--brainflix" data-aos-anchor=".projects" data-aos="flip-down" data-aos-delay="300" data-aos-offset="500" data-aos-duration="800">
                             <img className="projects__list-img--brainflix" src="/images/video-streamer.png" alt="brainflix"/>
-                            <a href="https://github.com/pperlock/video-streaming-clone" target="_blank" rel="noopener noreferrer"><button className="projects__list-first--brainflix" target="_blank"> GITHUB </button> </a>
+                            <a href="https://video-streaming-clone.herokuapp.com/" target="_blank" rel="noopener noreferrer"> <button className="projects__list-first--brainflix"> VISIT </button> </a>
+                            <a href="https://github.com/pperlock/video-streaming-clone" target="_blank" rel="noopener noreferrer"><button className="projects__list-second--brainflix" target="_blank"> GITHUB </button> </a>
                             <div className = "projects__list-description">
                                 <p className = "projects__list-description-pitch"> A video-streaming type website built based on a provided mockup.</p>
+                                <p className = "projects__list-description-pitch"> Valid user names for sign in are mlyons, tduncan, cjones, and gwong.</p>
                                 <p><span className="emphasize">Tech Stack:</span> React, Redux, Node, Express, SASS</p>
                             </div>
                         </div>
