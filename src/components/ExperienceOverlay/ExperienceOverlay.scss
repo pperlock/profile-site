@@ -74,7 +74,15 @@
             text-align:left;
             padding:5px 0;
             font-size:13px;
+            &--last{
+                margin-bottom:150px;
+
+                @include tablet{
+                    margin-bottom:0;
+                }
+            }
         }
+
     }
 }
 

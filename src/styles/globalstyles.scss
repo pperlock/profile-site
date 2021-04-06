@@ -41,9 +41,9 @@ h1{
 
 //Set extra styling for the experience overlay
 #experience__full-text{
-	display:flex;
-	flex-direction:column;
-	justify-content:flex-start;
+	// display:flex;
+	// flex-direction:column;
+	// justify-content:flex-start;
 }
 
 //Used to emphasize any important text
@@ -207,33 +207,30 @@ h1{
 //global styling for all 3 overlays
 .white-overlay{
     position:absolute;
-    display:block;
-    width: 97%; 
+    //set to skills background color - skills is only section without a background image - will default to this color
     background-color:#1e1e1e; 
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     background-size:cover;
-    height:0;
+    width:0;
+    min-height:100vh;
+    z-index:100;
+
+    transition: 0.2s ease;
+    @include desktop{
+        transition: 0.5s ease;
+    }
+   
    
     &--on{
 		@extend .white-overlay;
-        // height:78.5vh;
-		min-height:78.5vh;
-		max-height:100vh;
-		@include tablet{
-			height:83vh;
-		}
-        // min-height:100vh;
         width:100%;
-        animation: slide-down 0.2s ease-in;
-		overflow:scroll;
-        // overflow-x:hidden;
-        z-index:100;
-    }
-    &--off{
-        height:0;
-        animation: slide-up 0.2s ease-out;
-		overflow:hidden;
+        overflow:auto;
+        transition: 0.2s ease;
+        @include desktop{
+            transition: 0.5s ease;
+        }
+
     }
 }

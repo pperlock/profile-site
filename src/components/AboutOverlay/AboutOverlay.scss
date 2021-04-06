@@ -11,15 +11,19 @@
     justify-content: center;
     align-items: center;
     z-index:20;
-    // padding-top:20px;
-    // height:120vh;
     padding:20px 4% 0 4%;
+    margin-bottom:200px;
     @include tablet{
         padding:20px 5% 0 5%;
+        margin-bottom:0;
     }
 
     @include desktop{
         padding:20px 10% 0 10%;
+        margin-bottom:200px;
+    }
+    @include wide-screen{
+        margin-bottom:0;
     }
     &-title{
         font-size:16px;

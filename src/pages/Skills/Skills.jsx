@@ -16,7 +16,7 @@ export const CardContext = createContext({
  * @param {Boolean} showOverlay
  */
 
-const Skills = ({match, showOverlay, toggleOverlay}) => {
+const Skills = ({showOverlay}) => {
     
     const [skillList, setSkillList] = useState([
         {id: "0", status:"out", name:'skills__html-css', image:'/icons/html5-css3.png', title:"", alt:"html 5", animation:"fade-up"},

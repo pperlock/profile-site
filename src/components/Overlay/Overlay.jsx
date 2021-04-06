@@ -16,14 +16,12 @@ function Overlay({section, showOverlay, toggleOverlay, overlayToShow}) {
 
         return (
             <div id={section +"__white-overlay"}
-                className={!showOverlay  ? "white-overlay--off full" : 
-                // section === "skills" ? `white-overlay__skills--on white-overlay--skills full` : `white-overlay__${overlayToShow}--on full`}
-                section !== overlayToShow ? `white-overlay__skills--off` : `white-overlay__${overlayToShow}--on full`}
+                className={!showOverlay  ? "white-overlay" :  section !== overlayToShow ? `white-overlay` : `white-overlay__${overlayToShow}--on`}
                 style={section !== "skills" ? {backgroundImage:"url('/images/white1.jpg')"} : {backgroundImage:"url('')"}}>
                 
                 
                 {/* Conditionally render the appropiate overlay based on the secion name */}
-                <div id={section + "__full-text"} className={!showOverlay ? "full-text full-text-off" : "full-text full-text--on"} > 
+                <div id={section + "__full-text"} className={!showOverlay ? "full-text" : "full-text--on"} > 
                     {(section ==="experience" && overlayToShow === "experience") &&  <ExperienceOverlay showOverlay={showOverlay}/>}
                     {(section ==="about"  && overlayToShow === "about") && <AboutOverlay showOverlay={showOverlay}/>}
                     {(section ==="skills"  && overlayToShow === "skills") &&  <SkillsOverlay showOverlay={showOverlay}/>}

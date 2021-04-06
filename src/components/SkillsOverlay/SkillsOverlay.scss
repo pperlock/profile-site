@@ -11,6 +11,17 @@
         margin-top:40px;
         width:100%;;
         background:$terminal-background;
+        margin-bottom:150px;
+
+        @include tablet{
+            margin-bottom:0;
+        }
+        @include desktop{
+            margin-bottom:150px;
+        }
+        @include wide-screen{
+            margin-bottom:0;
+        }
     }
     &__list{
         @include wide-screen{

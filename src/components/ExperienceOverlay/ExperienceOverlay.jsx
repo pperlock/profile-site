@@ -72,7 +72,7 @@ Using a Linear Inversion and Genetic Algorithm" </li>
                             <img className="education__list__place-image" src="/icons/sas.png" alt="St Andrews Goldfields logo"/>
                             <li className="education__list__place-title">St. Andrews Goldfields</li>
                         </div>
-                        <li className="education__list-description"> Orchestrated a validation program on an unstandardized, undocumented database to increase the accuracy of data used for making profitable business decisions. </li>
+                        <li className="education__list-description education__list-description--last"> Orchestrated a validation program on an unstandardized, undocumented database to increase the accuracy of data used for making profitable business decisions. </li>
                     </ul>
                 </div>
             </div>

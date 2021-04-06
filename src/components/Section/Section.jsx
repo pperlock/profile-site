@@ -30,8 +30,8 @@ function Section({section, reachedBottom, toggleOverlay, showOverlay}) {
             
             {/* Conditionally render the correct section component based on the name of the section */}
             <div className= {`${name}__content`} data-aos={scrollAnimation.animation} data-aos-anchor={scrollAnimation.anchor} data-aos-anchor-placement={scrollAnimation.anchorPlacement} data-aos-duration={scrollAnimation.speed}>
-                {name==="about" && <About toggleOverlay={toggleOverlay}/>}
-                {name==="skills" && <Skills showOverlay={showOverlay} toggleOverlay={toggleOverlay}/>}
+                {name==="about" && <About />}
+                {name==="skills" && <Skills showOverlay={showOverlay} />}
                 {name==="experience" && <Experience showOverlay={showOverlay}/>}
                 {name==="projects" && <Projects/>} 
                 {name==="contact" && <Contact reachedBottom={reachedBottom}/>}  
