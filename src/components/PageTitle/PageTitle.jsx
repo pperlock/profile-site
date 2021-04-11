@@ -2,7 +2,6 @@ import React from 'react'
 
 import './PageTitle.scss';
 
-import Sparkles from '../Sparkles/Sparkles';
 /**
  * Props Passed in from Section
  * @param {Object} section

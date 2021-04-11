@@ -4,7 +4,8 @@ import './Skills.scss';
 
 import SkillIcon from '../../components/SkillIcon/SkillIcon';
 import BackPack from '../../components/BackPack/BackPack';
-import Sparkles from '../../components/Sparkles/Sparkles';
+
+import {skillIcons} from '../../data/data';
 
 export const CardContext = createContext({
     markAsDone:null
@@ -18,16 +19,7 @@ export const CardContext = createContext({
 
 const Skills = ({showOverlay}) => {
     
-    const [skillList, setSkillList] = useState([
-        {id: "0", status:"out", name:'skills__html-css', image:'/icons/html5-css3.png', title:"", alt:"html 5", animation:"fade-up"},
-        {id: "1", status:"out", name:'skills__js', image:'/icons/js-icon2.png', title:"", alt:"javascript",  animation:"fade-left"},
-        {id: "2", status:"out", name:'skills__node', image:'/icons/nodejs-icon.svg', title:"", alt:"nodejs",  animation:"fade-down"},
-        {id: "3", status:"out", name:'skills__react', image:'/icons/react-icon.png', title:"", alt:"react",  animation:"fade-right"},
-        {id: "4", status:"out", name:'skills__sass', image:'/icons/sass-icon.png', title:"", alt:"sass",  animation:"fade-up-left"},
-        {id: "5", status:"out", name:'skills__axios', image:'/icons/axios-icon.png', title:"", alt:"axios",  animation:"fade-up-right"},
-        {id: "6", status:"out", name:'skills__git', image:'/icons/git-icon.png', title:"", alt:"git",  animation:"fade-down-left"}, 
-        {id: "7", status:"out", name:'skills__databases', image:'/icons/databases.png', title:"", alt:"sql",  animation:"fade-down-right"},   
-    ]);
+    const [skillList, setSkillList] = useState(skillIcons);
 
     //changes the status of the skill to "in" when it is dropped into the backpack
     const markAsDone = id => {

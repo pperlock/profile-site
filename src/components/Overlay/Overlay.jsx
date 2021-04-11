@@ -27,16 +27,10 @@ function Overlay({section, showOverlay, toggleOverlay, overlayToShow}) {
                     {(section ==="skills"  && overlayToShow === "skills") &&  <SkillsOverlay showOverlay={showOverlay}/>}
 
                 </div>
-                <img className="full-text__close" onClick={()=>toggleOverlay(section)} src="/icons/down-triangle.svg"/>
+                <img className="full-text__close" onClick={()=>toggleOverlay(section)} src="/icons/down-triangle.svg" alt="close modal"/>
             </div> 
             
         )
 }
 
 export default Overlay
-
-
-                   {/* <button className="overlay-arrow-wrapper">
-                        {/* Skills has a black background so give the arrow a different class to make it light */}
-                        {/* <div className={section !== "skills" ? "overlay-arrow" : "overlay-arrow overlay-arrow-skills"} onClick={()=>toggleOverlay(section)}></div> */}
-                    {/* </button> */}

@@ -11,9 +11,10 @@ function Intro() {
     const [displayReplay, setDisplayReplay] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const [showLoading, setShowLoading] = useState(false);
-    const [gifSrc, setGifSrc] = useState("/videos/intro-video-noloop.gif?"+new Date().getTime());
+    const [gifSrc] = useState("/videos/intro-video-noloop.gif?"+ new Date().getTime());
 
     useEffect(() => {
+        //ensures that the loading icon doesn't show if loading of the video is quick
         setTimeout(()=>{setShowLoading(true);},1000);
     },[]);
 
@@ -48,7 +49,7 @@ function Intro() {
                 </div>
                     <div className="intro__loading-container">
                         {/* <h1 className="intro__loading-text"> Loading </h1> */}
-                        <img className="intro__loading-img" src="/icons/loader.gif"/>
+                        <img className="intro__loading-img" src="/icons/loader.gif" alt="intro loading"/>
                     </div>
             </div>
         }
@@ -77,7 +78,7 @@ function Intro() {
                 <source src="/videos/Final-50mm.mp4" type="video/mp4"/>Your browser does not support the video tag.
             </video>}
 
-            {window.innerWidth < 768 && <img className='video-gif' src={gifSrc} onLoad = {playLoadedVideo}/>}
+            {window.innerWidth < 768 && <img className='video-gif' src={gifSrc} onLoad = {playLoadedVideo} alt="intro video playing"/>}
         </main>
         </>
     )

@@ -38,13 +38,12 @@ function TrailModal({icon, onCloseRequest}) {
       };
     }, [handleKeyUp, handleOutsideClick]);
 
-
     return (
         <div ref={modal} className={`trail-modal trail-modal-${icon.name}`}> 
             <div className="trail-modal__container">
                 {!!icon.experience && 
                     icon.experience.map(item =>
-                    <div className="trail-modal__experience">
+                    <div key={icon.id} className="trail-modal__experience">
                       <div className="trail-modal__place">
                           <div className="trail-modal__place-circle">
                               <img src={item.background} className="trail-modal__place-img" alt={icon.alt}/>

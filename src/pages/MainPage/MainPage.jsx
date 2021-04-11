@@ -2,11 +2,13 @@ import React, {useEffect, useState} from 'react';
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import "./MainPage.scss";
-import {disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks} from 'body-scroll-lock';
+import {disableBodyScroll, enableBodyScroll} from 'body-scroll-lock';
 
 import Header from '../../components/Header/Header';
 import Section from '../../components/Section/Section';
 import Overlay from '../../components/Overlay/Overlay';
+
+import {sections} from '../../data/data';
 
 /**
  * Props Passed in from App.js
@@ -14,13 +16,6 @@ import Overlay from '../../components/Overlay/Overlay';
 */
 
 function MainPage({match}) {
-
-    const sections=[
-        {name:"about", title:"ABOUT ME", background: '/images/about-background.jpg', scrollAnimation: {animation:"fade-up", anchor:"", anchorPlacement:"", speed:"1500"}, overlay:true},
-        {name:"skills", title:"SKILLS", background: false, scrollAnimation: {animation:"", anchor:"", anchorPlacement:"", speed:""}, overlay:true},
-        {name:"experience", title:"EXPERIENCE", background: '/images/home-background2-2.jpg', scrollAnimation: {animation:"zoom-in-up", anchor:".experience", anchorPlacement:"top-center", speed:"1000"}, overlay:true},
-        {name:"projects", title:"PROJECTS", background: false, scrollAnimation: {animation:"", anchor:"", anchorPlacement:"", speed:""}, overlay:false},
-        {name:"contact", title:"CONTACT", background: "/images/mist-transparent.png", scrollAnimation: {animation:"", anchor:"", anchorPlacement:"", speed:""}, overlay:false}];
 
     //state used to determine of the bottom of the page has been reached
     const [reachedBottom, setReachedBottom] = useState(false);

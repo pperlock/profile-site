@@ -1,7 +1,6 @@
-import React, {useState, useRef} from 'react';
+import React from 'react';
 import "./Section.scss";
 
-import Overlay from '../../components/Overlay/Overlay';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import About from '../../pages/About/About';
 import Skills from '../../pages/Skills/Skills';
@@ -19,7 +18,7 @@ import Sparkles from '../Sparkles/Sparkles';
 
 function Section({section, reachedBottom, toggleOverlay, showOverlay}) {
     
-    const {name, background, scrollAnimation, overlay} = section;
+    const {name, background, scrollAnimation} = section;
 
     return (
         <section id={name} className={`section ${name}`} style={{backgroundImage: `url(${background})`}}>
@@ -41,7 +40,7 @@ function Section({section, reachedBottom, toggleOverlay, showOverlay}) {
             {(name !== "projects" && name !== "contact") &&
                 <div className={`trail-marker__container--${name}`} onClick={()=>toggleOverlay(name)}>
                     <div className={`trail-marker--${name}`}>
-                        <img className={`trail-marker__image--${name}`} src= "/icons/trail-marker-3.png"/>
+                        <img className={`trail-marker__image--${name}`} src= "/icons/trail-marker-3.png" alt="trail marker"/>
                         <p className={`trail-marker__text-${name}--top`}> {`${name[0].toUpperCase() + name.slice(1)}`}</p>
                         <p className={"trail-marker__text--bottom"}>Trail</p>
                         <Sparkles><div className="trail-marker__base"></div></Sparkles>
