@@ -67,8 +67,13 @@
             font-size:40px;
         }
         @include desktop{
-            top:613px;
+            top:67%;
             left:38%;
+            width:30%;
+        }
+        @include wide-screen{
+            top:59%;
+            left:36%;
             width:30%;
         }
         &-start{

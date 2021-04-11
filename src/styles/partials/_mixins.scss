@@ -42,7 +42,7 @@
 }
 
 //Creates a div with default styling for each of the skills icon with a specified top and left position for each device
-@mixin buildSkillsIcon($top-mobile, $left-mobile, $top-tablet, $left-tablet, $top-wide, $left-wide){
+@mixin buildSkillsIcon($top-mobile, $left-mobile, $top-tablet, $left-tablet, $top-desktop, $left-desktop){
     position:absolute;
     top:$top-mobile;
     left:$left-mobile;
@@ -50,12 +50,10 @@
     @include tablet{
         top:$top-tablet;
         left:$left-tablet;
-
     }
-    @include wide-screen{
-        top:$top-wide;
-        left:$left-wide;
-
+    @include desktop{
+        top:$top-desktop;
+        left:$left-desktop;
     }
 }
 

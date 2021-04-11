@@ -16,11 +16,11 @@
     }
     
     &__html-css{
-        @include buildSkillsIcon(37%, 72%, 36%, 79%, 39%, 75%);
+        @include buildSkillsIcon(37%, 72%, 38%, 79%, 39%, 75%);
     }
 
     &__js{
-        @include buildSkillsIcon(28%, 10%, 25%, 66%, 26%, 66%);
+        @include buildSkillsIcon(27%, 10%, 29%, 66%, 26%, 66%);
         width:15%;
         @include tablet{
             width:10%;
@@ -39,7 +39,7 @@
     }
     
     &__react{
-        @include buildSkillsIcon(290px, 42%, 26%, 34%, 28%, 37%);
+        @include buildSkillsIcon(28%, 42%, 27%, 34%, 28%, 37%);
         width:18%;
         @include tablet{
             width:10%;
