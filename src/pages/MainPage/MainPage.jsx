@@ -22,6 +22,7 @@ function MainPage({match}) {
     const [showOverlay, setShowOverlay] = useState(false);
     const [overlayToShow, setOverlayToShow] = useState("about");
     const [overlayTop, setOverlayTop] = useState(0);
+    const [rotateSvg, setRotateSvg] = useState(false);
 
 
     useEffect(() => {
@@ -43,6 +44,20 @@ function MainPage({match}) {
             }
         })
     },[overlayTop])
+
+    useEffect(()=>{
+        if(reachedBottom){
+            //when the bottom is reached start spinning the svg
+            setRotateSvg(true);
+            //after the off-set path animation is finishde remove the animation
+            setTimeout(()=>{
+                setRotateSvg(false)
+            },750)
+        }else{
+            setRotateSvg(false);
+        }
+
+    }, [reachedBottom]);
 
     //Determines if the bottom of the page has been reached and sets the state
     window.onscroll = event => {
@@ -68,13 +83,13 @@ function MainPage({match}) {
             <main>
                 <aside className = {reachedBottom ? "main__contacts main__contacts--bottom" : "main__contacts"}>
                     <a href="https://github.com/pperlock" target="_blank" rel="noopener noreferrer">
-                        <img className={reachedBottom ? "main__contacts-icon--bottom1"  : "main__contacts-icon"} src="/icons/github-icon.svg" alt="github" /></a>
+                        <img className={reachedBottom ? "main__contacts-icon--bottom1"  : "main__contacts-icon"} src={!!rotateSvg ? "/icons/github-icon-rotating.svg" : "/icons/github-icon.svg"} alt="github" /></a>
                     <a href="https://www.linkedin.com/in/pattiperlock" target="_blank" rel="noopener noreferrer">
-                        <img className={reachedBottom ? "main__contacts-icon--bottom2"  : "main__contacts-icon"} src="/icons/linkedin-icon.svg" alt="linked in" /></a>
+                        <img className={reachedBottom ? "main__contacts-icon--bottom2"  : "main__contacts-icon"} src={!!rotateSvg ? "/icons/linkedin-icon-rotating.svg" : "/icons/linkedin-icon.svg"} alt="linked in" /></a>
                     <a href="mailto:pattiperlock@gmail.com">
-                        <img className={reachedBottom ? "main__contacts-icon--bottom3"  : "main__contacts-icon"} src="/icons/email-icon.svg" alt="email"/></a>
+                        <img className={reachedBottom ? "main__contacts-icon--bottom3"  : "main__contacts-icon"} src={!!rotateSvg ? "/icons/email-icon-rotating.svg" : "/icons/email-icon.svg"} alt="email"/></a>
                     <a href="/files/patti-perlock-resume-revised.pdf" target="_blank" rel="noopener noreferrer">
-                    <img className={reachedBottom ? "main__contacts-icon--bottom4"  : "main__contacts-icon"} src="/icons/user-profile-circle.svg" alt="resume"/></a>
+                    <img className={reachedBottom ? "main__contacts-icon--bottom4"  : "main__contacts-icon"} src={!!rotateSvg ? "/icons/user-profile-circle-rotating.svg" : "/icons/user-profile-circle.svg"} alt="resume"/></a>
                 </aside>
 
                 {sections.map((section,i) => section.overlay && <Overlay key={i} section={section.name} toggleOverlay={toggleOverlay} showOverlay={showOverlay} overlayToShow={overlayToShow}/>)}

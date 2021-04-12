@@ -110,7 +110,13 @@
     0%{opacity: 1;}
     100%{opacity: 0; transform: translate(5px, -5px);}
 }
+
 @keyframes show-modal{
     0%{transform: scale(0);}
     100%{transform:scale(1);}
+}
+
+@keyframes moveIcon {
+    0% {width:0px; left:0; offset-distance:0%}
+    100% {left: 500px; offset-distance:100%}
 }

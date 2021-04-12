@@ -43,49 +43,29 @@ main{
             animation:bounce 0.5s linear;
         }
         &--bottom1{
-            position:absolute;
-            width:50px;
-            // bottom:65px;
-            top:0;
-            left:-74vw;
-            @include growIcon(50px);
+            @include bottomContactIcon();
             offset-path: path('M0,0 C100, 0 -180,-200 -770,0');
         
             @include tablet{
-                width:75px;
-                left:-71vw;
                 offset-path: path('M0,0 C100, 0 -180,-200 -1050,0');
             }
             @include desktop{
-                width:100px;
-                left:-60vw;
-                top:0;
-                @include growIcon(100px);
                 offset-path: path('M0,0 C100, 0 -180,-210 -1400,0');
             }
             @include wide-screen{
-                offset-path: path('M0,0 C100, 0 -180,-210 -1700,0');
+                 offset-path: path('M0,0 C100, 0 -180,-210 -1700,0');
             }
         }
         &--bottom2{
-            position:absolute;
-            width:50px;
-            // bottom:60px;
-            top:0;
+            @include bottomContactIcon();
             left:-52vw;
-            @include growIcon(50px);
             offset-path: path('M0,0 C100, 0 -180,-200 -720,0');
         
             @include tablet{
-                width:75px;
-                left:-52vw;
                 offset-path: path('M0,0 C100, 0 -180,-200 -900,0');
             }
             @include desktop{
-                top:0;
-                width:100px;
                 left:-50vw;
-                @include growIcon(100px);
                 offset-path: path('M0,0 C100, 0 -180,-210 -1250,0');
             }
             @include wide-screen{
@@ -94,25 +74,16 @@ main{
         }
 
         &--bottom3{
-            position:absolute;
-            width:50px;
-            // bottom:60px;
-            top:0;
+            @include bottomContactIcon();
             left:-27vw;
-            // animation: growIcon 1s linear, bounce 2s;
-            @include growIcon(50px);
             offset-path: path('M0,0 C100, 0 -180,-200 -650,0');
         
             @include tablet{
-                width:75px;
                 left:-33vw;
                 offset-path: path('M0,0 C100, 0 -180,-200 -750,0');
             }
             @include desktop{
-                top:0;
-                width:100px;
                 left:-40vw;
-                @include growIcon(100px);
                 offset-path: path('M0,0 C100, 0 -180,-210 -1100,0');
             }
             @include wide-screen{
@@ -120,24 +91,16 @@ main{
             }
         }
         &--bottom4{
-            position:absolute;
-            width:50px;
-            // bottom:65px;
-            top:0;
+            @include bottomContactIcon();
             left:-6vw;
-            @include growIcon(50px);
             offset-path: path('M0,0 C100, 0 -180,-200 -560,0');
         
             @include tablet{
-                width:75px;
                 left:-15vw;
                 offset-path: path('M0,0 C100, 0 -180,-200 -600,0');
             }
             @include desktop{
-                top:0;
-                width:100px;
                 left:-30vw;
-                @include growIcon(100px);
                 offset-path: path('M0,0 C100, 0 -180,-210 -1000,0');
             }
             @include wide-screen{
