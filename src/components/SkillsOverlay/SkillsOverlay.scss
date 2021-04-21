@@ -48,7 +48,7 @@
         }
     }
     &__level{
-        font-family:"Consola";
+        font-family:"Consola", sans-serif;
         &-terminal{
             margin-top:10px;
             @include tablet{

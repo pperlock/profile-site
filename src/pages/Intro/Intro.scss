@@ -4,10 +4,6 @@ img{
     width:100%;
   }
 
-// div#intro {
-// 	background: url(image_01.png) no-repeat -9999px -9999px;
-// }
-  
 .intro{
     position:relative;
     display:flex;
@@ -96,7 +92,7 @@ img{
     align-items:center;
     margin-top:100px;
     color:white;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     width:100%;
 
     @include tablet{
@@ -155,7 +151,7 @@ img{
     text-align:center;
     color:$text-accent;
     font-size:27px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight:600;
     top:43vh;
     z-index:1;

@@ -15,9 +15,8 @@ a{
 
 //set the default font for anything in the body
 body{
-	font-family:"SourceSansPro";
+	font-family:"SourceSansPro", sans-serif;
 	font-weight:400;
-	// position:fixed;
 }
 
 //Remove the bullet points from all list elements
@@ -35,15 +34,7 @@ h1{
 
 //Set defaults for text for all of the overlays
 #about__full-text, #skills__full-text, #experience__full-text{
-    // padding-top:230px;
     box-sizing:border-box;
-}
-
-//Set extra styling for the experience overlay
-#experience__full-text{
-	// display:flex;
-	// flex-direction:column;
-	// justify-content:flex-start;
 }
 
 //Used to emphasize any important text

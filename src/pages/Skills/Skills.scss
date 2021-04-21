@@ -34,11 +34,9 @@
         margin-right:40px;
         justify-content:center;
         align-items:center;
-        // position:relative;
-
+   
         @include tablet{
             margin-top:100px;
-            // width:100%;
         }
     }
 
