@@ -26,6 +26,7 @@ function Section({section, reachedBottom, toggleOverlay, showOverlay}) {
             {name==="experience" && <div className="transition2"></div>}
             
             <PageTitle section={section}/>
+
             
             {/* Conditionally render the correct section component based on the name of the section */}
             <div className= {`${name}__content`} data-aos={scrollAnimation.animation} data-aos-anchor={scrollAnimation.anchor} data-aos-anchor-placement={scrollAnimation.anchorPlacement} data-aos-duration={scrollAnimation.speed}>
@@ -38,14 +39,19 @@ function Section({section, reachedBottom, toggleOverlay, showOverlay}) {
             </div>
 
             {(name !== "projects" && name !== "contact") &&
-                <div className={`trail-marker__container--${name}`} onClick={()=>toggleOverlay(name)}>
-                    <div className={`trail-marker--${name}`}>
-                        <img className={`trail-marker__image--${name}`} src= "/icons/trail-marker-3.png" alt="trail marker"/>
-                        <p className={`trail-marker__text-${name}--top`}> {`${name[0].toUpperCase() + name.slice(1)}`}</p>
-                        <p className={"trail-marker__text--bottom"}>Trail</p>
-                        <Sparkles><div className="trail-marker__base"></div></Sparkles>
+                <>
+                    <div className="open__overlay">
+                        <img className= "open__overlay-icon" onClick={()=>toggleOverlay(name)} src="/icons/down-triangle.svg" alt="close modal"/>
                     </div>
-                </div>
+                    <div className={`trail-marker__container--${name}`} onClick={()=>toggleOverlay(name)}>
+                        <div className={`trail-marker--${name}`}>
+                            <img className={`trail-marker__image--${name}`} src= "/icons/trail-marker-3.png" alt="trail marker"/>
+                            <p className={`trail-marker__text-${name}--top`}> {`${name[0].toUpperCase() + name.slice(1)}`}</p>
+                            <p className={"trail-marker__text--bottom"}>Trail</p>
+                            <Sparkles><div className="trail-marker__base"></div></Sparkles>
+                        </div>
+                    </div>
+                </>
             }
 
           

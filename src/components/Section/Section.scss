@@ -1,4 +1,5 @@
 @import '../../styles/globalimports.scss';
+@import '../../styles/globalstyles.scss';
 
 .section{
     width:100%;
@@ -11,4 +12,23 @@
 
 #skills{
     overflow-x:hidden;
+}
+
+.open__overlay{
+    @include open-close-overlay;
+    left:-25px;
+    
+    @include tablet{
+        left:-30px;
+    }
+    @include desktop{
+        left:-50px;
+    }
+    
+    &-icon{
+        margin-left:22px;
+        @include desktop{
+            margin-left:40px;
+        }
+    }
 }

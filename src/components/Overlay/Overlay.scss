@@ -1,4 +1,5 @@
  @import '../../styles/globalimports.scss';
+ @import '../../styles/globalstyles.scss';
 
 .full-text{
     position:absolute;
@@ -14,22 +15,36 @@
         flex-direction:column;
         align-items:center;
         justify-content:space-between;
-        transition: 2s ease;
-    }
-    &__close{
-        position:absolute;
-        filter:$accent-filter;
-        top:0;
-        right:0;
-        width:25px;
-        height:25px;
-        z-index:10;
-        padding:10px;
-        cursor:pointer;
-        &:hover{
-            transform:rotate(90deg);
-        }
+       
+        animation:fade-in 3s;
+        // animation-delay:0.5s;
     }
 }
 
+.close__overlay{
+    @include open-close-overlay();
+
+    right:-20px;
+    border-top-left-radius:100%;
+    border-bottom-left-radius:100%;
+    @include tablet{
+        right:-30px;
+    }
+    @include desktop{
+        right:-50px;
+    }
+    
+    &-icon{
+        filter:$accent-filter;
+        transform:rotate(90deg);
+        margin-right:22px;
+        @include desktop{
+            margin-right:40px;
+        }
+    }
+    
+    &--off{
+        display:none;
+    }
+}
 

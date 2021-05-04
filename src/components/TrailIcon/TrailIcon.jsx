@@ -23,7 +23,7 @@ function TrailIcon({icon}) {
         
         const devices = [
             {minWidth:320, maxWidth:768, headerHeight:140, contentTop:1938, topLeft:0, middleLeft:0, bottomLeft:0, pageYMiddle:2300, scrollYMiddle:1881, scrollYBottom: 1500, sectionOffset:500},
-            {minWidth:768, maxWidth:1280, headerHeight: 179, contentTop:2556, topLeft:35, middleLeft:-5, bottomLeft:35, pageYMiddle:0, scrollYMiddle:0, scrollYBottom: 0, sectionOffset:500},
+            {minWidth:768, maxWidth:1280, headerHeight: 179, contentTop:2556, topLeft:35, middleLeft:-5, bottomLeft:35, pageYMiddle:3217, scrollYMiddle:2000, scrollYBottom: 3000, sectionOffset:500},
             {minWidth:1280, maxWidth:1700, headerHeight:179, contentTop: 2900, topLeft:35, middleLeft:-5, bottomLeft:35, pageYMiddle:3217, scrollYMiddle:2800, scrollYBottom: 3000, sectionOffset:300},
             {minWidth:1700, maxWidth:3000, headerHeight: 179, contentTop:2900, topLeft:35, middleLeft:-15, bottomLeft:35, pageYMiddle: 3301, scrollYMiddle: 2991, scrollYBottom: 3000, sectionOffset:320}
         ]
