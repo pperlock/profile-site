@@ -2,32 +2,66 @@
 
 .trail-modal{
     animation: show-modal 0.2s linear;
-    // width: 100%;
     background-color: white;
     border-radius:20px;
-    padding: 5%;
+    padding:35px;
     box-sizing: border-box;
-    position:fixed;
-    z-index:102;
-    // right:-65px;
-    // margin-left:auto;
+    position:absolute;
+    z-index:101;
     width:98%;
+    top:22%;
+    
     @include tablet{
-        width:64%;
+        width:64vw;
+        padding:53px;
+    }
+
+    @include desktop{
+        width:40vw;
+    }
+
+    @include wide-screen{
+        width:37vw;
+    }
+
+    &--left{
+        @extend .trail-modal;
+        left:0;
+
+        @include tablet{
+            left:17vw;
+        }
+        
+        @include desktop{
+            left:5vw;
+        }
+        
+        @include wide-screen{
+            left:15vw;
+        }
+    }
+    &--right{
+        @extend .trail-modal;
+        
+        left:0;
+
+        @include tablet{
+            left:17vw;
+        }
+        
+        @include desktop{
+            left:55vw;
+        }
     }
 
     &__container{
         border-radius:20px;
         color:black;
-        @include tablet{
-            // display:flex;
-        }
     }
         
     &__experience{
         display:flex;
         flex-direction:column;
-        // position:relative;
         margin-bottom: 30px;
         @include tablet{
             width:100%;
@@ -38,16 +72,13 @@
 
     &__place{
         width:100%;
-        // margin-right:5px;
         box-sizing:border-box;
         display:flex;
         align-items:center;
         margin-bottom:20px;
         @include tablet{
-            // flex-direction:column;
             align-items:center;
             margin-bottom:0;
-            // width:47%;
         }
         &-circle{
             position:relative;
