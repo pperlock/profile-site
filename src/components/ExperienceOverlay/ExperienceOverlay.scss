@@ -7,6 +7,17 @@
 
 .overlay-container{
     padding:20px;
+    width:88vw;
+
+    @include tablet{
+        width:98vw;
+    }
+    @include desktop{
+        width:60vw;
+    }
+    @include wide-screen{
+        width:46vw;
+    }
 }
 
 .timeline{
@@ -188,4 +199,21 @@
     @include tablet{
        align-items:flex-start;
     }
+}
+
+.experience__list{
+    list-style-type: none;
+    margin-left:15px;
+    &-item{
+        margin-bottom:5px;
+        text-indent:-22px;
+    }
+}
+
+ul li::before {
+    content: "\2022";
+    color: #eb2db4;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-right: 9px;
 }
