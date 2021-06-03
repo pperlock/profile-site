@@ -16,21 +16,26 @@
         justify-content:space-between;
        
         animation:fade-in 3s;
-        // animation-delay:0.5s;
     }
 }
 
 .close__overlay{
     @include open-close-overlay();
-
-    right:-20px;
+    
     border-top-left-radius:100%;
     border-bottom-left-radius:100%;
+    background-color:rgba(250,250,250,1);
+    position:sticky;
+    margin-left: 92.5vw;
+
     @include tablet{
-        right:-30px;
+        margin-left: 94.5vw;
     }
     @include desktop{
-        right:-50px;
+        margin-left: 95.5vw;
+    }
+    @include wide-screen{
+        margin-left: 96.5vw;
     }
     
     &-icon{
