@@ -1,6 +1,4 @@
 @import '../../styles/globalimports.scss';
-@import '../../styles/globalstyles.scss';
-
 
 .experience{
     // height:136vh;
@@ -81,47 +79,3 @@
     height:10vh;
 }
 
-
-.trail-marker{
-    &__container--experience{
-        position:absolute;
-        bottom:50px;
-        left:26px;
-        @include desktop{
-            left:163px;
-        }  
-    }
-
-    &--experience{
-        @extend .trail-marker;
-    }
-
-    &__image--experience{
-        @extend .trail-marker__image;
-    }
-
-    &__text-experience--top{
-        @extend .trail-marker__text--top;
-        font-size:13px;
-        top:19px;
-        left:18px;
-
-        @include tablet{
-            font-size:16px;
-            top:23px;
-            left:21px;
-        }
-
-        @include desktop{
-            font-size:20px;
-            top:31px;
-            left:31px;
-        }
-
-        @include wide-screen{
-            font-size:25px;
-            top:38px;
-            left:43px;
-        }
-    }
-}

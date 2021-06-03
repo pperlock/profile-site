@@ -23,9 +23,9 @@ const Skills = ({showOverlay}) => {
 
     //changes the status of the skill to "in" when it is dropped into the backpack
     const markAsDone = id => {
-        const skill = skillList.filter((skill,i)=> skill.id === id);
+        const skill = skillList.filter(skill=> skill.id === id);
         skill[0].status="in";
-        setSkillList(skillList.filter((skill,i) => skill.id !== id).concat(skill[0]));
+        setSkillList(skillList.filter(skill => skill.id !== id).concat(skill[0]));
     }
 
     return (
@@ -47,7 +47,7 @@ const Skills = ({showOverlay}) => {
             {/* render the backpack and skills icons*/}
             <div className="skills__main">
                 <BackPack/>
-                {skillList.filter((skill,i)=> skill.status === "out").map((skill,index) => 
+                {skillList.filter((skill,i)=> skill.status === "out").map(skill => 
                     <SkillIcon  
                         key={skill.id} 
                         id={skill.id} 

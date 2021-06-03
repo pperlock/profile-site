@@ -7,7 +7,9 @@ import { DndProvider, TouchTransition, MouseTransition, Preview} from 'react-dnd
 
 import objectAssign from 'object-assign';
 
-import './App.scss';
+import './styles/globalstyles.scss';
+import './styles/globalimports.scss';
+import './styles/trailMarkers.scss';
 
 import Intro from './pages/Intro/Intro';
 import MainPage from './pages/MainPage/MainPage';

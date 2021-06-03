@@ -1,11 +1,8 @@
 import React from 'react';
 import {useDrag} from 'react-dnd';
-// import ItemTypes from "../../utils/items";
 import './SkillIcon.scss';
 
-const ItemTypes = {
-    CARD:'card',
-};
+import ItemTypes from "../../utils/items";
 
 /**
  * Props Passed in from Skills

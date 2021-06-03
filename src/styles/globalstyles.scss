@@ -35,8 +35,6 @@ h1{
 //Set defaults for text for all of the overlays
 #about__full-text, #skills__full-text, #experience__full-text{
     box-sizing:border-box; 
-    
-    //CHECK ME!!
     width: 100%;
 
 }
@@ -78,126 +76,6 @@ h1{
 	height:100px;
 }
 
-//global styling for all 3 trail markers
-.trail-marker{
-    position:relative;
-	display:flex;
-	flex-direction: column;
-
-    &__image{
-        width:100px;
-        cursor:pointer;
-        transform:skewX(15deg);
-        transform:skewY(15deg);
-
-        animation:shake-marker 2s linear infinite;
-
-        @include tablet{
-			width:120px;
-		}
-		@include desktop{
-        	width:160px;
-        }
-		@include wide-screen{
-        	width:200px;
-        }
-
-    }
-    &__text{
-        cursor:pointer;
-        text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
-        color:black;
-        opacity: 0.6;
-        font: 18px 'Museo700';
-        position:absolute;
-        transform:skewX(15deg);
-        transform:skewY(15deg);
-        animation:shake-marker 2s linear infinite;
-
-        @include tablet{
-            font-size:20px;
-        }
-
-        @include desktop{
-            font-size:25px;
-        }
-
-        @include wide-screen{
-            font-size:30px;
-        }
-
-        &:hover{
-            color:white;
-            font-style:italic;
-        }
-
-        &--top{
-            @extend .trail-marker__text;
-            top:16px;
-            left:23px;
-			
-			@include tablet{
-				top:20px;
-				left:32px;
-			}
-			
-            @include desktop{
-                top:28px;
-                left:44px;
-            }
-
-            @include wide-screen{
-                top:36px;
-                left:58px;
-            }
-            
-        }
-        &--bottom{
-            @extend .trail-marker__text;
-            top:40px;
-            left:30px;
- 
-			@include tablet{
-				top:49px;
-				left:38px;
-			}
-
-			@include desktop{
-                top:67px;
-                left:53px;
-            }
-            
-            @include wide-screen{
-                top:85px;
-                left:67px;
-            }
-        }
-    }
-    &__base{
-		height:8px;
-		width:10vw;
-		box-shadow: 0px 2px 20px $text-accent;
-		border-radius: 50%;
-        transform:skew(10deg);
-		margin-left:33px;
-
-		@include tablet{
-			height:10px;
-			width:6vw;
-			margin-left:40px;
-		}
-
-		@include desktop{
-			width:4vw;
-			margin-left:55px;
-		}
-
-		@include wide-screen{
-			margin-left:72px;
-			width:3.5vw;
-		}
-    }
-}
 
 //global styling for all 3 overlays
 .white-overlay{
@@ -228,6 +106,18 @@ h1{
         }
     }
     
+}
+
+.white-overlay__experience--on{
+    @extend .white-overlay--on
+}
+
+.white-overlay__about--on{
+    @extend .white-overlay--on;
+}
+
+.white-overlay__skills--on{
+    @extend .white-overlay--on
 }
 
 .open-close-overlay{

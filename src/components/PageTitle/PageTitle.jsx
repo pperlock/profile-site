@@ -5,7 +5,6 @@ import './PageTitle.scss';
 /**
  * Props Passed in from Section
  * @param {Object} section
- * @param {Function} toggleOverlay - modifies state in the section component to hide/show overlay
  * @param {Boolean} showOverlay
  */
 

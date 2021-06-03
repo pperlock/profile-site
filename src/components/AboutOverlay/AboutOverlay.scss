@@ -1,9 +1,4 @@
 @import '../../styles/globalimports.scss';
-@import '../../styles/globalstyles.scss';
-
-.white-overlay__about--on{
-    @extend .white-overlay--on;
-}
 
 .about__overlay{
     display:flex;

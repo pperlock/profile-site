@@ -5,14 +5,11 @@ import "aos/dist/aos.css";
 
 
 import './BackPack.scss';
+import ItemTypes from "../../utils/items";
 
 /**
 * Rendered from Skills
 */
-
-const ItemTypes = {
-    CARD:'card',
-};
 
 const BackPack = () => {
 

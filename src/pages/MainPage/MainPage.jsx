@@ -26,10 +26,24 @@ function MainPage({match}) {
 
 
     useEffect(() => {
-        //ensure that the about section renders at the appropriate spot when page initially loads
-        document.getElementById("about").scrollIntoView({behavior: 'smooth'});
-        Aos.init({duration:3000});
-    },[]);
+        if(!reachedBottom){
+            //ensure that the about section renders at the appropriate spot when page initially loads
+            document.getElementById("about").scrollIntoView({behavior: 'smooth'});
+            Aos.init({duration:3000});
+        }
+
+        if(reachedBottom){
+            //when the bottom is reached start spinning the svg
+            setRotateSvg(true);
+            //after the off-set path animation is finishde remove the animation
+            setTimeout(()=>{
+                setRotateSvg(false)
+            },750)
+        }else{
+            setRotateSvg(false);
+        }
+
+    },[reachedBottom]);
 
 
     useEffect(()=>{
@@ -45,22 +59,8 @@ function MainPage({match}) {
         })
     },[overlayTop])
 
-    useEffect(()=>{
-        if(reachedBottom){
-            //when the bottom is reached start spinning the svg
-            setRotateSvg(true);
-            //after the off-set path animation is finishde remove the animation
-            setTimeout(()=>{
-                setRotateSvg(false)
-            },750)
-        }else{
-            setRotateSvg(false);
-        }
-
-    }, [reachedBottom]);
-
     //Determines if the bottom of the page has been reached and sets the state
-    window.onscroll = event => {
+    window.onscroll = () => {
         setReachedBottom((window.innerHeight + window.pageYOffset+200) >= document.body.offsetHeight);
         setOverlayTop(document.documentElement.scrollTop);
     };

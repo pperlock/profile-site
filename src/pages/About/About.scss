@@ -1,5 +1,4 @@
 @import '../../styles/globalimports.scss';
-@import '../../styles/globalstyles.scss';
 
 .about{
     display:flex;
@@ -79,35 +78,6 @@
     }
     @include desktop{
         // height:120px;
-    }
-}
-
-
-.trail-marker{
-    &__container--about{
-        position:absolute;
-        bottom:60px;
-        left:26px;
-        
-        @include tablet{
-            bottom:60px;
-            left:15vw;
-        }
-
-        @include desktop{
-            bottom:120px;
-            left:10vw;
-        }
-    }
-
-    &--about{
-        @extend .trail-marker;
-    }
-    &__image--about{
-        @extend .trail-marker__image;
-    }
-    &__text-about--top{
-        @extend .trail-marker__text--top;
     }
 }
 

@@ -1,5 +1,4 @@
 @import '../../styles/globalimports.scss';
-@import '../../styles/globalstyles.scss';
 
 .skills{
     background: rgb(0,0,0);
@@ -95,24 +94,3 @@
     }
 }
 
-.trail-marker{
-    &__container--skills{
-        position:absolute;
-        bottom:30px;
-        right:26px;  
-    }
-
-    @include desktop{
-        right:88px;  
-    }
-
-    &--skills{
-        @extend .trail-marker;
-    }
-    &__image--skills{
-        @extend .trail-marker__image;
-    }
-    &__text-skills--top{
-        @extend .trail-marker__text--top;
-    }
-}

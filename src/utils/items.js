@@ -1,3 +1,5 @@
-export const ItemTypes = {
+const ItemTypes = {
     CARD:'card',
 };
+
+export default ItemTypes;

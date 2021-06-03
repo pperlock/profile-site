@@ -3,12 +3,7 @@ import {NavHashLink} from 'react-router-hash-link';
 import {Link} from 'react-router-dom';
 import './Header.scss';
 
-/**
- * Props Passed in from MainPage
- * @param {String} path
-*/
-
-function Header({path}) {
+function Header() {
 
     // store the active link in state
     const [activeLink, setActiveLink] = useState("about-nav")
@@ -21,12 +16,8 @@ function Header({path}) {
         setSectionLocs(document.querySelectorAll("section[id]"));   
     },[]);
 
-    // // Get all sections that have an id defined
-    // const sectionLocs = document.querySelectorAll("section[id]");
-
     //used to determine the location of the page and set link associated with that section to be the active link
     const setActive = () => {
-        // console.log("hit");
     
         // get the current scroll position
         let scrollY = window.pageYOffset;

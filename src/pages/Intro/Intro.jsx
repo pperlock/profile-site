@@ -15,14 +15,16 @@ function Intro() {
 
     useEffect(() => {
         //ensures that the loading icon doesn't show if loading of the video is quick
-        setTimeout(()=>{setShowLoading(true);},1000);
-    },[]);
+        const loadingTimer = setTimeout(()=>{setShowLoading(true);},1000);
 
+        return () => clearTimeout(loadingTimer);
+    },[]);
+    
     useEffect(() => {
         // once the video 6s video is over replace the skip control with the replay
-        if(!isLoading){
-            setTimeout(()=>{setDisplayReplay(true);},6000);
-        }
+        const replayTimer = setTimeout(()=>{setDisplayReplay(true);},6000);
+        
+        return () => clearTimeout(replayTimer);
     },[isLoading]);
 
     // reload the page if the replay button is selected
@@ -31,7 +33,6 @@ function Intro() {
     }
 
     const playLoadedVideo = () =>{
-        // setTimeout(()=>{setIsLoading(false)},3000);
         setIsLoading(false);
     }
 
@@ -71,7 +72,7 @@ function Intro() {
                 </div>
             </div>}
 
-            {/* if the replay button is showing then add the abilit to enter the site */}
+            {/* if the replay button is showing then add the ability to enter the site */}
             {(!isLoading && displayReplay) && <Link  to="/main" className="enter">ENTER</Link>}
 
             {window.innerWidth >= 768 && <video className="video" autoPlay muted onCanPlayThrough = {playLoadedVideo}>

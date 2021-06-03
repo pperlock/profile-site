@@ -14,6 +14,8 @@ import Sparkles from '../Sparkles/Sparkles';
  * Props Passed in from MainPage
  * @param {Object} section
  * @param {Boolean} reachedBottom
+ * @param {Function} toggleOverlay
+ * @param {Boolean} showOverlay
  */
 
 function Section({section, reachedBottom, toggleOverlay, showOverlay}) {
