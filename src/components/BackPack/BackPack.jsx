@@ -15,7 +15,7 @@ const BackPack = () => {
 
     const {markAsDone} = useContext(CardContext);
 
-    const[{isOver}, drop] = useDrop({
+    const[{isOver},drop] = useDrop({
         accept: ItemTypes.CARD,
         drop: (item, monitor)=> markAsDone(item.id),
         collect: monitor => ({

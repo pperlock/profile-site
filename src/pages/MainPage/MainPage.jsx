@@ -36,9 +36,11 @@ function MainPage({match}) {
             //when the bottom is reached start spinning the svg
             setRotateSvg(true);
             //after the off-set path animation is finishde remove the animation
-            setTimeout(()=>{
+            const svgTimer = setTimeout(()=>{
                 setRotateSvg(false)
             },750)
+
+            return () => clearTimeout(svgTimer);
         }else{
             setRotateSvg(false);
         }

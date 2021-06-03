@@ -44,8 +44,8 @@ function TrailModal({icon, onCloseRequest, modalHorizontal, modalTop}) {
 			<div ref={modal} className={modalHorizontal ==="left" ? "trail-modal--left" : "trail-modal--right"} style={{top:`${modalTop}px`}}> 
 				<div className="trail-modal__container">
 					{!!icon.experience && 
-						icon.experience.map(item =>
-						<div key={icon.id} className="trail-modal__experience">
+						icon.experience.map((item,i) =>
+						<div key={i} className="trail-modal__experience">
 							<div className="trail-modal__place">
 									<div className="trail-modal__place-circle">
 											<img src={item.background} className="trail-modal__place-img" alt={icon.alt}/>

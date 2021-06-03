@@ -40,8 +40,8 @@ function ExperienceOverlay() {
                                         {event.thesis && <p><span className="event--emphasize">Thesis:</span> {event.thesis} </p>}
                                         {event.summary && 
                                             <ul className="experience__list">
-                                                {event.summary.map(item=>
-                                                    <li className="experience__list-item">{item}</li>
+                                                {event.summary.map((item, i)=>
+                                                    <li key={i} className="experience__list-item">{item}</li>
                                                 )}
                                             </ul>}
                                     </div>
