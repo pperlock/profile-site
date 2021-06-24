@@ -94,6 +94,7 @@ function MainPage({match}) {
                     <img className={reachedBottom ? "main__contacts-icon--bottom4"  : "main__contacts-icon"} src={!!rotateSvg ? "/icons/user-profile-circle-rotating.svg" : "/icons/user-profile-circle.svg"} alt="resume"/></a>
                 </aside>
 
+                {/* renders an Overlay component for each individual section */}
                 {sections.map((section,i) => section.overlay && <Overlay key={i} section={section.name} toggleOverlay={toggleOverlay} showOverlay={showOverlay} overlayToShow={overlayToShow}/>)}
                 
                 {/* renders a Section component for each individual section */}

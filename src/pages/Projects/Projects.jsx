@@ -2,15 +2,12 @@ import React, {useState} from 'react'
 
 import './Projects.scss';
 
-/**
- * Props Passed in from Section
- * @param {Object} match
-*/
 
-function Projects({match}) {
+function Projects() {
 
     //set state to control the video modal
     const [showVideo, setShowVideo] = useState(false);
+
     //set state to control project selection on mobile devices
     const [activeProject, setActiveProject] = useState("p2t");
 
@@ -43,14 +40,6 @@ function Projects({match}) {
                                 <p className = "projects__list-description-pitch">An organizational app focused on helping small businesses in the personal training space.</p>
                                 <p><span className="emphasize">Ideation to Submission:</span> 10 days </p>
                                 <p><span className="emphasize">Tech Stack:</span> React, Node, Express, MongoDB, Passport, SASS, Google Maps API, Firebase Storage, React Hooks</p>
-                                {/* <div className="projects__tech">
-                                    <img className="projects__tech-icon" src="./icons/react-icon.png" alt=""/>
-                                    <img className="projects__tech-icon" src="./icons/nodejs-icon.svg" alt=""/>
-                                    <img className="projects__tech-icon" src="./icons/mongodb-icon.svg" alt=""/>
-                                    <img className="projects__tech-icon" src="./icons/express.png" alt=""/>
-                                    <img className="projects__tech-icon" src="./icons/passport.png" alt=""/>
-                                    <img className="projects__tech-icon--sass" src="./icons/sass-icon.png" alt=""/>
-                                </div> */}
                             </div>
                             <img className="projects__list-img" src="/images/plan2train.png" alt="plan 2 train"/>
                             <button className="projects__list-first" onClick={()=>{toggleVideo(true)}}> DEMO </button>

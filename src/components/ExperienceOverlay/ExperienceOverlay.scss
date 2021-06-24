@@ -205,7 +205,7 @@
     }
 }
 
-ul li::before {
+.experience__list li::before {
     content: "\2022";
     color: #eb2db4;
     font-weight: bold;
